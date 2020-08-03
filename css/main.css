@@ -4,6 +4,7 @@
     background-image: linear-gradient(0, #fe6433, #f53e2d);
 }
 .header__navbar{
+    height: 34px;
     display: flex;
     justify-content: space-between;
 }
@@ -311,11 +312,13 @@
     margin: 0 16px;
 }
 .header-with-search{
-    height: 95px;
+    height: 86px;
     display: flex;
     align-items: center;
 }
 .header__logo{
+    position: relative;
+    top: -6px;
     width: 200px;
 }
 .header__logo-img{
@@ -432,7 +435,7 @@
     background-color:#f76b5e ;
 }
 .header_cart{
-    width: 140px;
+    width: 100px;
     text-align: center;
 }
 .header_cart-icon{

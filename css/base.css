@@ -3,6 +3,9 @@
     --black-color: #000;
     --text-color: #333;
     --primary-color:#f53e2d;
+    /* --header-height--:120px;
+    --header-navbar--:34px;
+    --header-with-search-height--:calc (var(--header-height--) - var(--header-navbar--)) */
 }
 *{
     box-sizing: inherit;
@@ -13,15 +16,7 @@ html{
     font-family: 'Roboto', sans-serif;
     box-sizing: border-box;
 }
-/* responsive */
-.grid{
-    width: 80vw;
-    max-width: 100% ;
-    margin: 0px auto;
-}
-.grid__full-width{
-    width: 100%;
-}
+
 .grid__row{
     display: flex;
     flex-wrap: wrap;
