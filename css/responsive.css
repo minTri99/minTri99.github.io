@@ -49,7 +49,7 @@
         display: none;
     }
     .pagination-item{
-        margin: 0 10px;
+        margin: 0;
     }
     .pagination-link{       
         line-height: 30px;
