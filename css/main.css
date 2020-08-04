@@ -1,3 +1,6 @@
+.app{
+    overflow: hidden;
+}
 .header{
     width: 100%;
     height: var( --header-height);
@@ -504,12 +507,12 @@
 }
 .notifybox{
     font-size: 1.3rem;
-    position: fixed;
+    position: absolute;
     color: black;
     background-color: white;
-    width: 100%;
-    top: 68px;
-    right: 0%;
+    width: 400px;
+    top: 140%;
+    right: 30%;
     box-shadow: 0 1px 5px rgb(172,172,172);
     border-radius: 3px;
     display: none;
@@ -916,6 +919,7 @@ i.home-product-item__like-icon-fill{
 .home-product-pagination{
     margin-top: 70px;
     margin-bottom: 100px;
+    padding-left: 0;
 }
 /* footer */
 .footer{
