@@ -104,23 +104,33 @@
                 </nav>
                 
                 <div class="header-with-search">
+                    
                     <ul class="nav-on-mobile">
                         <li class="">
-                            <i class="nav-mobile-icon fas fa-bars"></i>
+                            <label for="nav-bar-input"><i class="nav-mobile-icon fas fa-bars"></i></label>
                         </li>
                         <li class="search-mobile">
-                            <i class="search-mobile-icon fas fa-search"></i>                           
+                            <label for="nav-bar-input-search"><i class="search-mobile-icon fas fa-search"></i></label>                           
                         </li>
                     </ul>
+                    <input type="checkbox" hidden class="nav-input" id="nav-bar-input">
+                    <label for="nav-bar-input" class="overclay"></label>
                     <div class="nav-mobile">
                         <ul class="nav-mobile-list">
-                            <li><a href="" class="nav-mobile-link">Tất cả sản phẩm</a></li>
-                            <li><a href="" class="nav-mobile-link">Đăng kí</a></li>
-                            <li><a href="" class="nav-mobile-link">Đăng nhập</a></li>
-                            <li><a href="" class="nav-mobile-link">Đến shop</a></li>
-                            
+                            <li class="nav-mobile-item"><i class="nav-on-mobile-icon fas fa-home"></i><a href="" class="nav-mobile-link">Trở về trang chủ</a></li>
+                            <li class="nav-mobile-item"><i class="nav-on-mobile-icon far fa-question-circle"></i><a href="" class="nav-mobile-link">Cần trợ giúp</a></li>
                         </ul>
                     </div>
+                    <!-- <input type="checkbox" hidden class="nav-input-search" id="nav-bar-input-search">
+                    <label for="nav-bar-input-search" class="overclay"></label>
+                    <div class="search-mobile-input">
+                        <input class="header_search-input" type="text" placeholder="Nhập để tìm kiếm sản phẩm">
+                            <ul class="header_search-history">
+                                <a href="" class="header_search-item">Lịch sữ 1</a>
+                                <a href="" class="header_search-item">Lịch sữ 2</a>
+                                <a href="" class="header_search-item">Lịch sữ 3</a>
+                            </ul>
+                    </div>  -->
                     <div class="header__logo hide-on-tablet">
                         <a href="" class="header__logo-img"><img src="/image/logoshop.png" alt="" class="header__logo-img"></a>
                     </div>
@@ -215,26 +225,19 @@
                                     </div>
                                 </div>                              
                             </div>
-                        </div>
-                        
-                        
+                        </div>                           
                     </div>                   
                 </div>
             </div>
-            <ul class="header__sort-bar">
-                <li class="header__sort-item">
-                    <a href="" class="header__sort-link ">Liên quan</a>
-                </li>
-                <li class="header__sort-item">
-                    <a href="" class="header__sort-link header__sort-link-active">Mới nhất</a>
-                </li>
-                <li class="header__sort-item">
-                    <a href="" class="header__sort-link">Bán chạy</a>
-                </li>
-                <li class="header__sort-item">
-                    <a href="" class="header__sort-link">Giá</a>
-                </li>
-            </ul>
+            <div class="search-mobile-input">
+                <input class="header_search-input" type="text" placeholder="Nhập để tìm kiếm sản phẩm">
+                    <ul class="header_search-history">
+                        <a href="" class="header_search-item">Lịch sữ 1</a>
+                        <a href="" class="header_search-item">Lịch sữ 2</a>
+                        <a href="" class="header_search-item">Lịch sữ 3</a>
+                    </ul>
+            </div>
+            
         </header>
 
         <div class="app__container">

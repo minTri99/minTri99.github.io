@@ -80,5 +80,35 @@
     .header_cart-icon{
         margin-left: 0;
     }
-
+    .nav-input:checked ~ .overclay{
+        display: block;
+    }
+    .nav-input:checked ~ .nav-mobile{
+        transform: translateX(0);
+        opacity: 1;
+    }
+    .header_search-input{
+        position: fixed;
+        top: var(--header-with-search-height);
+        left: 0;
+        right:0;
+        height: var(--header-sort-bar-height);
+        z-index: 1;
+    }
+    .nav-input-search:checked ~ .search-mobile-input{
+        display: block;
+    }
+    .nav-input-search:checked ~ .overclay{
+        display: block;
+    }
+    .header_search-history{
+        position: absolute;
+        left: 0;
+        width: 100%;
+        background-color: white;
+        top: 90%;
+        border-radius: 3px;
+        display: none ;
+        box-shadow: 0 1px 5px rgb(172,172,172);
+    }
 }
