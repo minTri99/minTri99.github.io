@@ -358,6 +358,7 @@
     width: 110px;
     border-radius: 2px;
     margin: 0 5px;
+    padding: 0 6px;
 }
 
 /* Header sort bar */
@@ -525,6 +526,7 @@
     border-radius: 3px;
     display: none ;
     box-shadow: 0 1px 5px rgb(172,172,172);
+    z-index: 1;
 }
 .header_search-input:focus ~ .header_search-history{
     display: block;
@@ -1050,7 +1052,7 @@ i.home-product-item__like-icon-fill{
     background-color: white;
 }
 .footer__heading{
-    font-size: 1.5rem;
+    font-size: 1.4rem;
     text-transform: uppercase;
     color: var(--text-color);
 }
