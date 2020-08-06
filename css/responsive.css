@@ -87,16 +87,9 @@
         transform: translateX(0);
         opacity: 1;
     }
-    .header_search-input{
-        position: fixed;
-        top: var(--header-with-search-height);
-        left: 0;
-        right:0;
-        height: var(--header-sort-bar-height);
-        z-index: 1;
-    }
     .nav-input-search:checked ~ .search-mobile-input{
-        display: block;
+        transform: translateX(0%);
+        z-index: 1;
     }
     .nav-input-search:checked ~ .overclay{
         display: block;
@@ -107,8 +100,11 @@
         width: 100%;
         background-color: white;
         top: 90%;
-        border-radius: 3px;
+        border-radius: 5px;
         display: none ;
         box-shadow: 0 1px 5px rgb(172,172,172);
+    }
+    .app__content{
+        padding-top: 8px;
     }
 }

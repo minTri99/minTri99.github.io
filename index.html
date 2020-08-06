@@ -229,17 +229,20 @@
                     </div>                   
                 </div>
             </div>
-            <div class="search-mobile-input">
-                <input class="header_search-input" type="text" placeholder="Nhập để tìm kiếm sản phẩm">
-                    <ul class="header_search-history">
-                        <a href="" class="header_search-item">Lịch sữ 1</a>
-                        <a href="" class="header_search-item">Lịch sữ 2</a>
-                        <a href="" class="header_search-item">Lịch sữ 3</a>
-                    </ul>
+            <div class=>
+                <ul class="header__sort-bar">
+                    <li class="header__sort-item"><a href="" class="header__sort-link">Liên quan</a></li>
+                    <li class="header__sort-item"><a href="" class="header__sort-link header__sort-link-active">Mới nhất</a></li>
+                    <li class="header__sort-item"><a href="" class="header__sort-link">Bán chạy</a></li>
+                    <li class="header__sort-item"><a href="" class="header__sort-link">Giá</a></li>
+                </ul>
             </div>
-            
+            <input type="checkbox" hidden class="nav-input-search" id="nav-bar-input-search">
+            <label for="nav-bar-input-search" class="overclay"></label>
+            <div class="search-mobile-input">
+                <input class="header_search-input" type="text" placeholder="Nhập để tìm kiếm sản phẩm">  
+            </div> 
         </header>
-
         <div class="app__container">
             <div class="grid wide">
                 <div class="row app__content sm-gutter">
@@ -316,6 +319,18 @@
                                 </div>
                             </div>
                         </div>
+                        <nav class="mobile-category">
+                            <ul class="mobile-category-list">
+                                <li class="mobile-category-item"><a href="" class="mobile-category-link">Phụ kiện bên trong oto</a></li>
+                                <li class="mobile-category-item"><a href="" class="mobile-category-link">Phụ kiện bên ngoài oto</a></li>
+                                <li class="mobile-category-item"><a href="" class="mobile-category-link">Linh kiện thay thế</a></li>
+                                <li class="mobile-category-item"><a href="" class="mobile-category-link">Chăm sóc xe</a></li>
+                                <li class="mobile-category-item"><a href="" class="mobile-category-link">Đồ chơi</a></li>
+                                <li class="mobile-category-item"><a href="" class="mobile-category-link">Bảo dưỡng</a></li>
+                                <li class="mobile-category-item"><a href="" class="mobile-category-link">Phụ tùng khác</a></li>
+                            </ul>
+                        </nav>
+
                         <div class="home-product">
                             <div class="row sm-gutter">
                                 <div class="col l-2-4 m-4 c-6 ">
