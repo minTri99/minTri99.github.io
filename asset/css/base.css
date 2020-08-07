@@ -1,0 +1,16 @@
+:root{
+    --white-color: #fff;
+    --black-color: #000;
+    --text-color: #333;
+    --primary-color:
+}
+
+html{
+    font-size: 62.5%;
+    line-height: 1.6rem;
+    font-family: 'Poppins, Arimo','Arimo', sans-serif;
+    box-sizing: border-box;
+}
+*{
+    box-sizing: inherit;
+}

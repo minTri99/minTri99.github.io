@@ -1,0 +1,299 @@
+.brand{
+    z-index: 1;
+   text-align: center;
+   margin-top: 25px;
+}
+.logo{
+    z-index: 1;
+}
+.logo-img{
+    position: relative;
+    z-index: 2;
+    font-size: 0;
+    width: 100px;
+    height: 50px;  
+}
+.underline{
+    text-align: center;
+    position: relative;
+    margin: 0;
+    margin-left: 0px;
+    line-height: 0;
+}
+.underline::before{
+    content: '';
+    border-bottom: 1px solid #e3e4e4;
+    font-size: 0;
+    position: absolute;
+    top: -9px;
+    bottom: 2px;
+    right: 35px;
+    left: 666px;
+    height: 1px;
+    overflow: hidden; 
+}
+.underline::after{
+    content: '';
+    border-bottom: 1px solid #e3e4e4;
+    font-size: 0;
+    position: absolute;
+    top: -9px;
+    bottom: 2px;
+    right: 666px;
+    left: 35px;
+    height: 1px;
+    overflow: hidden; 
+}
+.main-navigation{
+    margin-top: 20px;
+    position: relative;
+}
+.main-navigation-list{
+    padding-left: 0;
+    list-style: none;
+    display: flex;
+}
+.main-navigation-item{
+    margin-right: 32px;
+}
+.main-navigation-link{
+    text-decoration: none;
+    color: var(--text-color);
+    font-size: 1.5rem;
+}
+
+.main-navigation-list:first-child::after{
+    position: absolute;
+    content: "";
+    border-right: 1px solid black;
+    height: 15px;
+    line-height: 15px;
+    left: 125px;
+    top:6px
+    
+}
+/* Slide intro */
+#slider {
+    margin:0;
+    
+    max-width: 100%;
+    text-align: center;
+    position: relative;
+ }
+ #slider input[type=radio] {
+    display: none;
+ }
+ #slider label {
+    cursor:pointer;
+    text-decoration: none;
+ }
+ #slides {
+    background: #fff;
+    position: relative;
+    z-index: 1;
+ }
+ #overflow {
+    width: 100%;
+    overflow: hidden;
+ }
+ #slide1:checked ~ #slides .inner {
+    margin-left: 0;
+ }
+ #slide2:checked ~ #slides .inner {
+    margin-left: -100%;
+ }
+ #slide3:checked ~ #slides .inner {
+    margin-left: -200%;
+ }
+ #slide4:checked ~ #slides .inner {
+    margin-left: -300%;
+ }
+ #slides .inner {
+    transition: margin-left 800ms cubic-bezier(0.770, 0.000, 0.175, 1.000);
+    width: 400%;
+    line-height: 0;
+    height: 730px;
+ }
+ #slides .slide {
+    width: 25%;
+    float:left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    color: #fff;
+ }
+
+ #slides .slide_1 {
+    
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image:url(https://porsche-vietnam.vn/wp-content/uploads/2020/06/992-ta4-headbanner-1600x615.jpg);
+ }
+ #slides .slide_2 {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image:url(https://porsche-vietnam.vn/wp-content/uploads/2017/01/718-Boxster-S-718-Cayman-S-1600x615.jpg);
+ }
+ #slides .slide_3 {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image:url(https://porsche-vietnam.vn/wp-content/uploads/2019/04/rd-2018-homepage-banner-ww-g24-kw04-1600x615.jpg);
+ }
+ #slides .slide_4 {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image:url(https://porsche-vietnam.vn/wp-content/uploads/2019/04/rd-2018-homepage-banner-ww-macans-kw50-1600x615.jpg);
+ }
+ .slide_1 .slide-content{
+    position: relative;
+    font-size: 1.8rem;
+    top: 30%;
+    left: -35%;
+    text-align: left;
+ }
+ .slide_1 .slide-content p{
+    padding-top: 15px;
+ }
+ #controls {
+    margin: -180px 0 0 0;
+    width: 93%;
+    left: 63px;
+    bottom: 300px;
+    height: 50px;
+    z-index: 3;
+    position: relative;
+    
+ }
+ 
+ #controls label {
+    position: relative;
+    transition: opacity 0.3s ease-out;
+    display: none;
+    width: 50px;
+    height: 50px;
+    opacity: .4;
+ }
+ #controls label:hover {
+    opacity: 1;
+ }
+ #slide1:checked ~ #controls label:nth-child(2),
+ #slide2:checked ~ #controls label:nth-child(3),
+ #slide3:checked ~ #controls label:nth-child(4),
+ #slide4:checked ~ #controls label:nth-child(1) {
+    background: url(https://image.flaticon.com/icons/svg/130/130884.svg) no-repeat;
+    float:right;
+    margin: 0 -50px 0 0;
+    display: block;
+    z-index: 5;
+ }
+ #slide1:checked ~ #controls label:nth-last-child(2),
+ #slide2:checked ~ #controls label:nth-last-child(3),
+ #slide3:checked ~ #controls label:nth-last-child(4),
+ #slide4:checked ~ #controls label:nth-last-child(1) {
+    background: url(https://image.flaticon.com/icons/svg/130/130882.svg) no-repeat;
+    float:left;
+    margin: 0 0 0 -50px;
+    display: block;
+ }
+ #bullets {
+    margin: 150px 0 0;
+    text-align: center;
+ }
+ #bullets label {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius:100%;
+    background: #ccc;
+    margin: 0 10px;
+ }
+ #slide1:checked ~ #bullets label:nth-child(1),
+ #slide2:checked ~ #bullets label:nth-child(2),
+ #slide3:checked ~ #bullets label:nth-child(3),
+ #slide4:checked ~ #bullets label:nth-child(4) {
+    background: #444;
+ }
+ /* @media screen and (max-width: 900px) {
+    #slide1:checked ~ #controls label:nth-child(2),
+    #slide2:checked ~ #controls label:nth-child(3),
+    #slide3:checked ~ #controls label:nth-child(4),
+    #slide4:checked ~ #controls label:nth-child(1),
+    #slide1:checked ~ #controls label:nth-last-child(2),
+    #slide2:checked ~ #controls label:nth-last-child(3),
+    #slide3:checked ~ #controls label:nth-last-child(4),
+    #slide4:checked ~ #controls label:nth-last-child(1) {
+       margin: 0;
+    }
+    #slides {
+       max-width: calc(100% - 140px);
+       margin: 0 auto;
+    }
+ } */
+.model_heading{
+    display: block;
+    font-size: 2rem;
+    font-weight: 500;
+    margin-left: 30px;
+    margin-bottom: 35px;
+}
+.item-wrap{
+    position: relative;
+}
+.item-wrap-price{
+    padding-left: 30px;
+    position: absolute;
+    top: 0;
+    left: 10px;
+    color: white;
+    font-size: 1.8rem;
+    font-weight: 500;
+}
+.item-name{
+    font-size: 3.8rem;
+    margin: 20px 0;
+    font-weight: 500;
+}
+.item-wrap-info{
+    position: absolute;
+    display: flex;
+    bottom: 15px;
+    left: 40px;
+    color: white;
+    font-size: 1.7rem;
+    text-align: center;
+    line-height: 50px;
+    height: 50px;
+}
+.item-wrap-custom{
+    width: 180px;
+    color: black;
+    background-color: white;
+    margin-right: 25px; 
+    animation: fadeIn linear 0.2s;
+}
+@keyframes fadeIn{
+   from{
+      color: black;
+    background-color: white;
+   }
+   to{
+      background-color: red;
+      color: white;
+   }
+}
+.item-wrap-custom:hover{
+   animation: fadeIn linear 0.2s;
+   background-color: red;
+   color: white;
+}
+.item-wrap-more{
+    padding: 0 30px;
+    border: 1px solid white;
+    box-sizing: border-box;
+    padding: -1px 0;
+}
+.item-wrap-more:hover{
+   border-color: red;
+   color: red;
+}

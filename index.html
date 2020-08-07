@@ -3,1077 +3,218 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shop car</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
-    <link rel="stylesheet" href="/css/base.css">
-    <link rel="stylesheet" href="/css/main.css">
-    <link rel="stylesheet" href="/css/grid-system.css">
-    <link rel="stylesheet" href="/css/responsive.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet"> 
-    <link rel="stylesheet" href="/font/fontawesome-free-5.14.0-web/css/all.css">
+    <title>Document</title>
+    <link rel="stylesheet" href="asset/css/reset-css.css">
+    <link rel="stylesheet" href="asset/css/style.css">
+    <link rel="stylesheet" href="/asset/css/base.css">
+    <link rel="stylesheet" href="asset/css/grid-system.css">
+    <link rel="stylesheet" href="asset/font/font-awsome/css/all.css">
+    <link href="https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet"> 
 </head>
 <body>
     <div class="app">
-        <header class="header">
+        <div class="header">
             <div class="grid wide">
-                <nav class="header__navbar hide-on-mobile-tablet">
-                    <ul class="header__navbar--list">
-                        <li class="header__navbar--item show__qr ">Tải ứng dụng
-                            <div class="header__qr">
-                                <img src="/image/qrcode.png" alt="qr-code" class="qr__code">
-                                <div class="app__download">
-                                    <a href="" class="app__download--link">
-                                        <img src="/image/googleplay.png" alt="" class="play__store--icon">
-                                    </a>
-                                    <a href="" class="app_download--link">
-                                        <img src="/image/appstore.png" alt="" class="app__store--icon">
-                                    </a>   
-                                </div>
-                            </div>
-                        </li>
-                        <li class="header__navbar--item"><span style=" color: white; cursor: text;">Kết nối</span>
-                            <a href="https://fb.com/minhtri0795" class="header__navbar--icon-link"><i style="color: white;" class="fab fa-facebook-square header__navbar--icon"></i></a>
-                            <a href="https://www.instagram.com/min_minhtri/" class="header__navbar--icon-link"><i style="color: white;" class="fab fa-instagram header__navbar--icon"></i></a>
-                        </li>
-                    </ul>
-                    <ul class="header__navbar--list">
-                        <li class="header__navbar--item header__notify--show ">
-                            
-                            <a href="" class="header__navbar--link"><i class="far fa-bell header__navbar--icon"></i>Thông báo
-                            </a>
-                            <div class="header__notify">
-                                <header class="header__notify--top">
-                                    <h3>Thông báo mới nhận</h3>
-                                </header>
-                                <ul class="header__notify--list">
-                                    <li class="header__notify--item">
-                                        <a href="" class="header__notify--link">
-                                            <img src="/image/notify-img (1).jpg" alt="" class="header__notify--img">
-                                            <div class="header__notify--info">
-                                                <span class="header__notify--name">Lamborghini tiếp tục tung ra màu sơn mới cho siêu SUV Urus</span>
-                                                <span class="header__notify--desc">Lamborghini colection</span>
-                                            </div>
-                                        </a>
-                                    </li>
-                                    <li class="header__notify--item">
-                                        <a href="" class="header__notify--link">
-                                            <img src="/image/notify-img (2).jpg" alt="" class="header__notify--img">
-                                            <div class="header__notify--info">
-                                                <span class="header__notify--name">Cơ hội nhận ngay Audi A7 mới tại Việt Nam</span>
-                                                <span class="header__notify--desc">Audi News</span>
-                                            </div>
-                                        </a>
-                                    </li>
-                                    <li class="header__notify--item">
-                                        <a href="" class="header__notify--link">
-                                            <img src="/image/notify-img (3).jpg" alt="" class="header__notify--img">
-                                            <div class="header__notify--info">
-                                                <span class="header__notify--name">BMW X7 2021 xuất hiện với diện mạo “hầm hố” </span>
-                                                <span class="header__notify--desc">Dark Shadow Edition</span>
-                                            </div>
-                                        </a>
-                                    </li>
-                                </ul>
-                                <footer class="header__notify--footer"> 
-                                    <a href="" class="header__notify--btn">Xem tất cả</a> 
-                                </footer>
-                            </div>
-                        </li>
-                        <li class="header__navbar--item">
-                            <a href="" class="header__navbar--link"><i class="far fa-question-circle header__navbar--icon"></i>Trợ giúp</a>  
-                        <!-- </li>
-                        <li class="header__navbar--item">
-                            <a href="" class="header__navbar--link"  style="font-weight: 500;">Đăng kí</a>
-            
-                        </li>
-                        <li class="header__navbar--item">
-                            <a href="" class="header__navbar--link" style="font-weight: 500;" >Đăng nhập</a>
-                        </li> -->
-                        <li class="header__navbar--item header__navbar--user">
-                                <div style="display: flex; align-items: center;">
-                                    <img style="width: 20px;height: 20px;" src="/image/user.png" alt="" class="header__navbar--user-icon">
-                                    <span class="header__navbar--username">Minh Tri</span>
-                                </div>
-                                <div class="header__navbar--userinfo">
-                                    <a href="" class="header__navbar--user-link">Tài khoản của tôi</a>
-                                    <a href="" class="header__navbar--user-link">Đơn mua</a>
-                                    <a href="" class="header__navbar--user-link ">Đăng xuất</a>
-                                </div>
-                        </li>
-                    </ul>
-                </nav>
-                
-                <div class="header-with-search">
-                    
-                    <ul class="nav-on-mobile">
-                        <li class="">
-                            <label for="nav-bar-input"><i class="nav-mobile-icon fas fa-bars"></i></label>
-                        </li>
-                        <li class="search-mobile">
-                            <label for="nav-bar-input-search"><i class="search-mobile-icon fas fa-search"></i></label>                           
-                        </li>
-                    </ul>
-                    <input type="checkbox" hidden class="nav-input" id="nav-bar-input">
-                    <label for="nav-bar-input" class="overclay"></label>
-                    <div class="nav-mobile">
-                        <ul class="nav-mobile-list">
-                            <li class="nav-mobile-item"><i class="nav-on-mobile-icon fas fa-home"></i><a href="" class="nav-mobile-link">Trở về trang chủ</a></li>
-                            <li class="nav-mobile-item"><i class="nav-on-mobile-icon far fa-question-circle"></i><a href="" class="nav-mobile-link">Cần trợ giúp</a></li>
+                <div class="brand">
+                    <div class="logo"><a class="logo-img" href=""><img class="logo-img" src="/asset/image/logo.png" alt=""></a></div>
+                    <div class="underline">
+                    </div>
+                    <div class="main-navigation">
+                        <ul class="main-navigation-list">
+                            <li class="main-navigation-item" style="margin-right: 62px;">
+                                <a href="" class="main-navigation-link">Các dòng xe</a>
+                            </li>
+                            <li class="main-navigation-item">
+                                <a href="" class="main-navigation-link">Xe mới</a>
+                            </li>
+                            <li class="main-navigation-item">
+                                <a href="" class="main-navigation-link">Trung tâm Porche</a>
+                            </li>
+                            <li class="main-navigation-item">
+                                <a href="" class="main-navigation-link">Dịch vụ</a>
+                            </li>
+                            <li class="main-navigation-item">
+                                <a href="" class="main-navigation-link">Về Porsche</a>
+                            </li>
                         </ul>
                     </div>
-                    <!-- <input type="checkbox" hidden class="nav-input-search" id="nav-bar-input-search">
-                    <label for="nav-bar-input-search" class="overclay"></label>
-                    <div class="search-mobile-input">
-                        <input class="header_search-input" type="text" placeholder="Nhập để tìm kiếm sản phẩm">
-                            <ul class="header_search-history">
-                                <a href="" class="header_search-item">Lịch sữ 1</a>
-                                <a href="" class="header_search-item">Lịch sữ 2</a>
-                                <a href="" class="header_search-item">Lịch sữ 3</a>
-                            </ul>
-                    </div>  -->
-                    <div class="header__logo hide-on-tablet">
-                        <a href="" class="header__logo-img"><img src="/image/logoshop.png" alt="" class="header__logo-img"></a>
-                    </div>
-                    <div class="header_search hide-on-mobile">
-                        
-                        <div class="header_search-input-wrap">
-                            <input class="header_search-input" type="text" placeholder="Nhập để tìm kiếm sản phẩm">
-                            <ul class="header_search-history">
-                                <a href="" class="header_search-item">Lịch sữ 1</a>
-                                <a href="" class="header_search-item">Lịch sữ 2</a>
-                                <a href="" class="header_search-item">Lịch sữ 3</a>
-                            </ul>
-                        </div>
-                        
-                        <div class="header_search-select">
-                            <span class="header_search-label">Trong shop</span>
-                            <i class="header_search-icondown fas fa-chevron-down"></i>
-                            <ul class="search_option">
-                                <li class="search_optine-item">Trong shop <i class="search_optine-item fas fa-check"></i></li>             
-                                <li class="search_optine-item">Ngoài shop <i class="search_optine-item fas fa-check"></i></li>                                
-                            </ul>
-                            <a href="" class=""><i class="header_search-iconsreach fas fa-search"></i></a>                     
-                        </div>                    
-                    </div>
-                    <div class="header_cart">
-                        <div class="header_cart-wrap">
-                            <div class="header_cart-icon">
-                                <i class=" fas fa-shopping-cart"></i>
-                                <span class="header_cart-notice">3</span>
-                                <div class="notifybox">
-                                    <div class="notifybox-nocart">
-                                        <img class=" nocart header_cart-img" src="/image/cart.png" alt="">
-                                        <span class="nocart header_cart-text">Chưa có sản phẩm</span>
-                                    </div>
-                                    <div class="notifybox-have-cart">
-                                        <h4 class="notifybox-have-cart-heading">Sản phẩm đã thêm</h4>
-                                        <ul class="notifybox-have-cart-list">
-                                            <!-- cart item -->
-                                            <li class="notifybox-have-cart-item">
-                                                <img style="width: 40px; height: 40px; border: 1px solid #e8e8e8 ;" class="notifybox-have-cart-img" src="/image/car/Porsche 911 GT3 RS.jpg" alt="">
-                                                <div class="cart_info">
-                                                    <div class="cart_info-name">
-                                                        <h5 class="cart_info-name-item">Porsche 911 đỏ mạnh mẽ</h5>
-                                                        <div class="cart_info-name-price-wrap">
-                                                            <span class="cart_info-name-price">32.900 USD</span>
-                                                            <span style="font-size: 1rem; color:#757575; margin: 0 4px;" class="cart_info-name-multiply">x</span>
-                                                            <span style="font-size: 1.2rem; color:#757575" class="cart_info-name-count">2</span>
-                                                        </div>
-                                                    </div>
-                                                    <div class="cart_info-decs">
-                                                        <span class="cart_info-decs-name">Phân loại:</span>                                                           
-                                                        <span class="cart_info-decs-remove">Xoá</span>
-                                                    </div>
-                                                </div>
-                                            </li>
-                                            <li class="notifybox-have-cart-item">
-                                                <img style="width: 40px; height: 40px; border: 1px solid #e8e8e8 ;" class="notifybox-have-cart-img" src="/image/car/Cadillac CT6.jpg" alt="">
-                                                <div class="cart_info">
-                                                    <div class="cart_info-name">
-                                                        <h5 class="cart_info-name-item">Cadillac CT6 trắng sang chảnh</h5>
-                                                        <div class="cart_info-name-price-wrap">
-                                                            <span class="cart_info-name-price">32.900 USD</span>
-                                                            <span style="font-size: 1rem; color:#757575; margin: 0 4px;" class="cart_info-name-multiply">x</span>
-                                                            <span style="font-size: 1.2rem; color:#757575" class="cart_info-name-count">3</span>
-                                                        </div>
-                                                    </div>
-                                                    <div class="cart_info-decs">
-                                                        <span class="cart_info-decs-name">Phân loại:</span>                                                           
-                                                        <span class="cart_info-decs-remove">Xoá</span>
-                                                    </div>
-                                                </div>
-                                            </li>
-                                            <li class="notifybox-have-cart-item">
-                                                <img style="width: 40px; height: 40px; border: 1px solid #e8e8e8 ;" class="notifybox-have-cart-img" src="/image/car/Aventador-pink.jpg" alt="">
-                                                <div class="cart_info">
-                                                    <div class="cart_info-name">
-                                                        <h5 class="cart_info-name-item">Lamborghini Aventador hồng</h5>
-                                                        <div class="cart_info-name-price-wrap">
-                                                            <span class="cart_info-name-price">32.900 USD</span>
-                                                            <span style="font-size: 1rem; color:#757575; margin: 0 4px;" class="cart_info-name-multiply">x</span>
-                                                            <span style="font-size: 1.2rem; color:#757575" class="cart_info-name-count">1</span>
-                                                        </div>
-                                                    </div>
-                                                    <div class="cart_info-decs">
-                                                        <span class="cart_info-decs-name">Phân loại:</span>                                                           
-                                                        <span class="cart_info-decs-remove">Xoá</span>
-                                                    </div>
-                                                </div>
-                                            </li>
-                                        </ul>
-                                        <button class="btn btn--primary cart-btn">Xem giỏ hàng</button>
-                                    </div>
-                                </div>                              
-                            </div>
-                        </div>                           
-                    </div>                   
                 </div>
             </div>
-            <div class=>
-                <ul class="header__sort-bar">
-                    <li class="header__sort-item"><a href="" class="header__sort-link">Liên quan</a></li>
-                    <li class="header__sort-item"><a href="" class="header__sort-link header__sort-link-active">Mới nhất</a></li>
-                    <li class="header__sort-item"><a href="" class="header__sort-link">Bán chạy</a></li>
-                    <li class="header__sort-item"><a href="" class="header__sort-link">Giá</a></li>
-                </ul>
-            </div>
-            <input type="checkbox" hidden class="nav-input-search" id="nav-bar-input-search">
-            <label for="nav-bar-input-search" class="overclay"></label>
-            <div class="search-mobile-input">
-                <input class="header_search-input" type="text" placeholder="Nhập để tìm kiếm sản phẩm">  
-            </div> 
-        </header>
-        <div class="app__container">
-            <div class="grid wide">
-                <div class="row app__content sm-gutter">
-                    <div class="col l-2 m-0 c-0">
-                        <nav class="category">
-                            <h3 class="category-heading">Danh mục</h3>
-                            <ul class="category-list">
-                                <li class="category-item category-item--active">
-                                    <a href="" class="category-item__link">Tất cả</a>
-                                </li>
-                                <li class="category-item">
-                                    <a href="" class="category-item__link">Ferrari</a>
-                                </li>
-                                <li class="category-item">
-                                    <a href="" class="category-item__link">Lamborghini</a>
-                                </li>
-                                <li class="category-item">
-                                    <a href="" class="category-item__link">Porsche</a>
-                                </li>
-                                <li class="category-item">
-                                    <a href="" class="category-item__link">Ford Mustang</a>
-                                </li>
-                                <li class="category-item">
-                                    <a href="" class="category-item__link">Maclaren</a>
-                                </li>
-                                <li class="category-item">
-                                    <a href="" class="category-item__link">Nissan</a>
-                                </li>
-                                <li class="category-item">
-                                    <a href="" class="category-item__link">Mercedes</a>
-                                </li>
-                                <li class="category-item">
-                                    <a href="" class="category-item__link">Maserati</a>
-                                </li>
-                                <li class="category-item">
-                                    <a href="" class="category-item__link">Audi</a>
-                                </li>
-                                <li class="category-item">
-                                    <a href="" class="category-item__link">Bugatti</a>
-                                </li>
-                                <li class="category-item">
-                                    <a href="" class="category-item__link">Cadillac</a>
-                                </li>
-                            </ul>
-                        </nav>
-                    </div>
-                    <div class="col l-10 m-12 c-12">
-                        <div class="home-filter hide-on-mobile-tablet">
-                            <span class="home-filter__label">Sắp xếp theo</span>
-                            <button class="btn home-filter__btn">Phổ biến</button>
-                            <button class="btn btn--primary home-filter__btn">Mới nhất</button>
-                            <button class="btn home-filter__btn">Bán chạy</button>
-                            <div class="select-input">
-                                <ul class="select-input__list">
-                                    <li class="select-input__item">
-                                        <a href="" class="select-input__link">Giá: thấp đến cao</a>
-                                    </li>
-                                    <li class="select-input__item">
-                                        <a href="" class="select-input__link">Giá: cao đến thấp</a>
-                                    </li>
-                                </ul>
-                                <span class="select-input-label">Giá</span>
-                                <i class= "fas fa-chevron-down"></i>
-                            </div>
-                            <div class="home-filter__page">
-                                <span class="home-filter__page-num"><span class="home-filter__page-current">1</span>/14</span>
-                                <div class="home-filter__page-control">
-                                    <a href="" class="home-filter__page-btn home-filter__page-btn--disable ">
-                                        <i class= "home-filter__page-icon fas fa-chevron-left"></i>
-                                    </a>
-                                    <a href="" class="home-filter__page-btn">
-                                        <i class= "home-filter__page-icon fas fa-chevron-right"></i>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <nav class="mobile-category">
-                            <ul class="mobile-category-list">
-                                <li class="mobile-category-item"><a href="" class="mobile-category-link">Phụ kiện bên trong oto</a></li>
-                                <li class="mobile-category-item"><a href="" class="mobile-category-link">Phụ kiện bên ngoài oto</a></li>
-                                <li class="mobile-category-item"><a href="" class="mobile-category-link">Linh kiện thay thế</a></li>
-                                <li class="mobile-category-item"><a href="" class="mobile-category-link">Chăm sóc xe</a></li>
-                                <li class="mobile-category-item"><a href="" class="mobile-category-link">Đồ chơi</a></li>
-                                <li class="mobile-category-item"><a href="" class="mobile-category-link">Bảo dưỡng</a></li>
-                                <li class="mobile-category-item"><a href="" class="mobile-category-link">Phụ tùng khác</a></li>
-                            </ul>
-                        </nav>
-
-                        <div class="home-product">
-                            <div class="row sm-gutter">
-                                <div class="col l-2-4 m-4 c-6 ">
-                                    <a href="#" class="home-product-item">
-                                        <div class="home-product-item-img" style="background-image: url(/image/car/2019_lamborghini_huracan_sterrato_off_road_supercar-wallpaper-480x272.jpg);"></div>
-                                        <h4 class="home-product-item-name"> Lamborghini Gallardo vàng độ full option</h4>
-                                        <div class="home-product-item-price">
-                                            <span class="home-product-item-price-old">35.000 USD</span>
-                                            <span class="home-product-item-price-current">32.900 USD</span>
-                                        </div>
-                                        <div class="home-product-item-action">
-                                            <span class="home-product-item__like home-product-item__liked ">
-                                                <i class="far fa-heart home-product-item__like-icon-empty"></i>
-                                                <i class="fas fa-heart home-product-item__like-icon-fill"></i>
-                                            </span>
-                                            <div class="home-product-item__rating">
-                                                <i class="home-product-item-gold fas fa-star"></i>
-                                                <i class="home-product-item-gold fas fa-star"></i>
-                                                <i class="home-product-item-gold fas fa-star"></i>
-                                                <i class="home-product-item-gold fas fa-star"></i>
-                                                <i class=" fas fa-star"></i>
-                                            </div>
-                                            <span class="home-product-item__sold">88 đã bán</span>
-                                        </div>
-                                        <div class="home-product-item__origin">
-                                            <span class="home-product-item__brand">Lamborghini</span>
-                                            <span class="home-product-item__origin-name">Italia</span>
-                                        </div>
-                                        <div class="home-product-item__favourite">
-                                            <i class="fas fa-check"></i>
-                                            Yêu thích
-                                        </div>
-                                        <div class="home-product-item__sale-off">
-                                            <span class="home-product-item__percent">10%</span>
-                                            <span class="home-product-item__sale-off-label">GIẢM</span>
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="col l-2-4 m-4 c-6">
-                                    <a href="#" class="home-product-item">
-                                        <div class="home-product-item-img" style="background-image: url(/image/car/Aventador.jpg);"></div>
-                                        <h4 class="home-product-item-name"> Lamborghini Gallardo trắng độ full option</h4>
-                                        <div class="home-product-item-price">
-                                            <span class="home-product-item-price-old">35.000 USD</span>
-                                            <span class="home-product-item-price-current">32.900 USD</span>
-                                        </div>
-                                        <div class="home-product-item-action">
-                                            <span class="home-product-item__like home-product-item__liked ">
-                                                <i class="far fa-heart home-product-item__like-icon-empty"></i>
-                                                <i class="fas fa-heart home-product-item__like-icon-fill"></i>
-                                            </span>
-                                            <div class="home-product-item__rating">
-                                                <i class="home-product-item-gold fas fa-star"></i>
-                                                <i class="home-product-item-gold fas fa-star"></i>
-                                                <i class="home-product-item-gold fas fa-star"></i>
-                                                <i class="home-product-item-gold fas fa-star"></i>
-                                                <i class=" fas fa-star"></i>
-                                            </div>
-                                            <span class="home-product-item__sold">88 đã bán</span>
-                                        </div>
-                                        <div class="home-product-item__origin">
-                                            <span class="home-product-item__brand">Lamborghini</span>
-                                            <span class="home-product-item__origin-name">Italia</span>
-                                        </div>
-                                        <div class="home-product-item__favourite">
-                                            <i class="fas fa-check"></i>
-                                            Yêu thích
-                                        </div>
-                                        <div class="home-product-item__sale-off">
-                                            <span class="home-product-item__percent">10%</span>
-                                            <span class="home-product-item__sale-off-label">GIẢM</span>
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="col l-2-4 m-4 c-6">
-                                    <a href="#" class="home-product-item">
-                                        <div class="home-product-item-img" style="background-image: url(/image/car/Audi\ R8\ V10.jpg);"></div>
-                                        <h4 class="home-product-item-name"> Audi R8 cam-trắng mới 95%</h4>
-                                        <div class="home-product-item-price">
-                                            <span class="home-product-item-price-old">35.000 USD</span>
-                                            <span class="home-product-item-price-current">32.900 USD</span>
-                                        </div>
-                                        <div class="home-product-item-action">
-                                            <span class="home-product-item__like home-product-item__liked ">
-                                                <i class="far fa-heart home-product-item__like-icon-empty"></i>
-                                                <i class="fas fa-heart home-product-item__like-icon-fill"></i>
-                                            </span>
-                                            <div class="home-product-item__rating">
-                                                <i class="home-product-item-gold fas fa-star"></i>
-                                                <i class="home-product-item-gold fas fa-star"></i>
-                                                <i class="home-product-item-gold fas fa-star"></i>
-                                                <i class="home-product-item-gold fas fa-star"></i>
-                                                <i class=" fas fa-star"></i>
-                                            </div>
-                                            <span class="home-product-item__sold">88 đã bán</span>
-                                        </div>
-                                        <div class="home-product-item__origin">
-                                            <span class="home-product-item__brand">Audi</span>
-                                            <span class="home-product-item__origin-name">Đức</span>
-                                        </div>
-                                        <div class="home-product-item__favourite">
-                                            <i class="fas fa-check"></i>
-                                            Yêu thích
-                                        </div>
-                                        <div class="home-product-item__sale-off">
-                                            <span class="home-product-item__percent">10%</span>
-                                            <span class="home-product-item__sale-off-label">GIẢM</span>
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="col l-2-4 m-4 c-6">
-                                    <a href="#" class="home-product-item">
-                                        <div class="home-product-item-img" style="background-image: url(/image/car/Aventador-pink.jpg);"></div>
-                                        <h4 class="home-product-item-name"> Lamborghini Aventador hồng</h4>
-                                        <div class="home-product-item-price">
-                                            <span class="home-product-item-price-old">35.000 USD</span>
-                                            <span class="home-product-item-price-current">32.900 USD</span>
-                                        </div>
-                                        <div class="home-product-item-action">
-                                            <span class="home-product-item__like home-product-item__liked ">
-                                                <i class="far fa-heart home-product-item__like-icon-empty"></i>
-                                                <i class="fas fa-heart home-product-item__like-icon-fill"></i>
-                                            </span>
-                                            <div class="home-product-item__rating">
-                                                <i class="home-product-item-gold fas fa-star"></i>
-                                                <i class="home-product-item-gold fas fa-star"></i>
-                                                <i class="home-product-item-gold fas fa-star"></i>
-                                                <i class="home-product-item-gold fas fa-star"></i>
-                                                <i class=" fas fa-star"></i>
-                                            </div>
-                                            <span class="home-product-item__sold">88 đã bán</span>
-                                        </div>
-                                        <div class="home-product-item__origin">
-                                            <span class="home-product-item__brand">Lamborghini</span>
-                                            <span class="home-product-item__origin-name">Italia</span>
-                                        </div>
-                                        <div class="home-product-item__favourite">
-                                            <i class="fas fa-check"></i>
-                                            Yêu thích
-                                        </div>
-                                        <div class="home-product-item__sale-off">
-                                            <span class="home-product-item__percent">10%</span>
-                                            <span class="home-product-item__sale-off-label">GIẢM</span>
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="col l-2-4 m-4 c-6">
-                                    <a href="#" class="home-product-item">
-                                        <div class="home-product-item-img" style="background-image: url(/image/car/bugatti\ divo.jpg);"></div>
-                                        <h4 class="home-product-item-name"> Bugatti Divo</h4>
-                                        <div class="home-product-item-price">
-                                            <span class="home-product-item-price-old">55.000 USD</span>
-                                            <span class="home-product-item-price-current">32.900 USD</span>
-                                        </div>
-                                        <div class="home-product-item-action">
-                                            <span class="home-product-item__like home-product-item__liked ">
-                                                <i class="far fa-heart home-product-item__like-icon-empty"></i>
-                                                <i class="fas fa-heart home-product-item__like-icon-fill"></i>
-                                            </span>
-                                            <div class="home-product-item__rating">
-                                                <i class="home-product-item-gold fas fa-star"></i>
-                                                <i class="home-product-item-gold fas fa-star"></i>
-                                                <i class="home-product-item-gold fas fa-star"></i>
-                                                <i class="home-product-item-gold fas fa-star"></i>
-                                                <i class=" fas fa-star"></i>
-                                            </div>
-                                            <span class="home-product-item__sold">88 đã bán</span>
-                                        </div>
-                                        <div class="home-product-item__origin">
-                                            <span class="home-product-item__brand">Bugatti</span>
-                                            <span class="home-product-item__origin-name">Italia</span>
-                                        </div>
-                                        <div class="home-product-item__favourite">
-                                            <i class="fas fa-check"></i>
-                                            Yêu thích
-                                        </div>
-                                        <div class="home-product-item__sale-off">
-                                            <span class="home-product-item__percent">10%</span>
-                                            <span class="home-product-item__sale-off-label">GIẢM</span>
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="col l-2-4 m-4 c-6">
-                                    <a href="#" class="home-product-item">
-                                        <div class="home-product-item-img" style="background-image: url(/image/car/Cadillac\ CT6.jpg)"></div>
-                                        <h4 class="home-product-item-name">Cadillac CT6 trắng sang chảnh</h4>
-                                        <div class="home-product-item-price">
-                                            <span class="home-product-item-price-old">35.000 USD</span>
-                                            <span class="home-product-item-price-current">32.900 USD</span>
-                                        </div>
-                                        <div class="home-product-item-action">
-                                            <span class="home-product-item__like home-product-item__liked ">
-                                                <i class="far fa-heart home-product-item__like-icon-empty"></i>
-                                                <i class="fas fa-heart home-product-item__like-icon-fill"></i>
-                                            </span>
-                                            <div class="home-product-item__rating">
-                                                <i class="home-product-item-gold fas fa-star"></i>
-                                                <i class="home-product-item-gold fas fa-star"></i>
-                                                <i class="home-product-item-gold fas fa-star"></i>
-                                                <i class="home-product-item-gold fas fa-star"></i>
-                                                <i class=" fas fa-star"></i>
-                                            </div>
-                                            <span class="home-product-item__sold">88 đã bán</span>
-                                        </div>
-                                        <div class="home-product-item__origin">
-                                            <span class="home-product-item__brand">Cadillac</span>
-                                            <span class="home-product-item__origin-name">Anh</span>
-                                        </div>
-                                        <div class="home-product-item__favourite">
-                                            <i class="fas fa-check"></i>
-                                            Yêu thích
-                                        </div>
-                                        <div class="home-product-item__sale-off">
-                                            <span class="home-product-item__percent">10%</span>
-                                            <span class="home-product-item__sale-off-label">GIẢM</span>
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="col l-2-4 m-4 c-6">
-                                    <a href="#" class="home-product-item">
-                                        <div class="home-product-item-img" style="background-image: url(/image/car/Ferrari\ 458\ Italia.jpg)"></div>
-                                        <h4 class="home-product-item-name">Ferrari 458 xanh rêu quân đội</h4>
-                                        <div class="home-product-item-price">
-                                            <span class="home-product-item-price-old">35.000 USD</span>
-                                            <span class="home-product-item-price-current">32.900 USD</span>
-                                        </div>
-                                        <div class="home-product-item-action">
-                                            <span class="home-product-item__like home-product-item__liked ">
-                                                <i class="far fa-heart home-product-item__like-icon-empty"></i>
-                                                <i class="fas fa-heart home-product-item__like-icon-fill"></i>
-                                            </span>
-                                            <div class="home-product-item__rating">
-                                                <i class="home-product-item-gold fas fa-star"></i>
-                                                <i class="home-product-item-gold fas fa-star"></i>
-                                                <i class="home-product-item-gold fas fa-star"></i>
-                                                <i class="home-product-item-gold fas fa-star"></i>
-                                                <i class=" fas fa-star"></i>
-                                            </div>
-                                            <span class="home-product-item__sold">88 đã bán</span>
-                                        </div>
-                                        <div class="home-product-item__origin">
-                                            <span class="home-product-item__brand">Ferrari</span>
-                                            <span class="home-product-item__origin-name">Italia</span>
-                                        </div>
-                                        <div class="home-product-item__favourite">
-                                            <i class="fas fa-check"></i>
-                                            Yêu thích
-                                        </div>
-                                        <div class="home-product-item__sale-off">
-                                            <span class="home-product-item__percent">10%</span>
-                                            <span class="home-product-item__sale-off-label">GIẢM</span>
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="col l-2-4 m-4 c-6">
-                                    <a href="#" class="home-product-item">
-                                        <div class="home-product-item-img" style="background-image: url(/image/car/ferrari488.jpg)"></div>
-                                        <h4 class="home-product-item-name">Ferrari 488 vàng cá tính</h4>
-                                        <div class="home-product-item-price">
-                                            <span class="home-product-item-price-old">35.000 USD</span>
-                                            <span class="home-product-item-price-current">32.900 USD</span>
-                                        </div>
-                                        <div class="home-product-item-action">
-                                            <span class="home-product-item__like home-product-item__liked ">
-                                                <i class="far fa-heart home-product-item__like-icon-empty"></i>
-                                                <i class="fas fa-heart home-product-item__like-icon-fill"></i>
-                                            </span>
-                                            <div class="home-product-item__rating">
-                                                <i class="home-product-item-gold fas fa-star"></i>
-                                                <i class="home-product-item-gold fas fa-star"></i>
-                                                <i class="home-product-item-gold fas fa-star"></i>
-                                                <i class="home-product-item-gold fas fa-star"></i>
-                                                <i class=" fas fa-star"></i>
-                                            </div>
-                                            <span class="home-product-item__sold">88 đã bán</span>
-                                        </div>
-                                        <div class="home-product-item__origin">
-                                            <span class="home-product-item__brand">Ferrari</span>
-                                            <span class="home-product-item__origin-name">Italia</span>
-                                        </div>
-                                        <div class="home-product-item__favourite">
-                                            <i class="fas fa-check"></i>
-                                            Yêu thích
-                                        </div>
-                                        <div class="home-product-item__sale-off">
-                                            <span class="home-product-item__percent">10%</span>
-                                            <span class="home-product-item__sale-off-label">GIẢM</span>
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="col l-2-4 m-4 c-6">
-                                    <a href="#" class="home-product-item">
-                                        <div class="home-product-item-img" style="background-image: url(/image/car/Huracan\ RWD-blue.jpg)"></div>
-                                        <h4 class="home-product-item-name">Lamborghini Huracan xanh tự do </h4>
-                                        <div class="home-product-item-price">
-                                            <span class="home-product-item-price-old">35.000 USD</span>
-                                            <span class="home-product-item-price-current">32.900 USD</span>
-                                        </div>
-                                        <div class="home-product-item-action">
-                                            <span class="home-product-item__like home-product-item__liked ">
-                                                <i class="far fa-heart home-product-item__like-icon-empty"></i>
-                                                <i class="fas fa-heart home-product-item__like-icon-fill"></i>
-                                            </span>
-                                            <div class="home-product-item__rating">
-                                                <i class="home-product-item-gold fas fa-star"></i>
-                                                <i class="home-product-item-gold fas fa-star"></i>
-                                                <i class="home-product-item-gold fas fa-star"></i>
-                                                <i class="home-product-item-gold fas fa-star"></i>
-                                                <i class=" fas fa-star"></i>
-                                            </div>
-                                            <span class="home-product-item__sold">88 đã bán</span>
-                                        </div>
-                                        <div class="home-product-item__origin">
-                                            <span class="home-product-item__brand">Lamborghini</span>
-                                            <span class="home-product-item__origin-name">Italia</span>
-                                        </div>
-                                        <div class="home-product-item__favourite">
-                                            <i class="fas fa-check"></i>
-                                            Yêu thích
-                                        </div>
-                                        <div class="home-product-item__sale-off">
-                                            <span class="home-product-item__percent">10%</span>
-                                            <span class="home-product-item__sale-off-label">GIẢM</span>
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="col l-2-4 m-4 c-6">
-                                    <a href="#" class="home-product-item">
-                                        <div class="home-product-item-img" style="background-image: url(/image/car/Lamborghini\ Urus.jpg)"></div>
-                                        <h4 class="home-product-item-name">Lamborghini bò tót đen</h4>
-                                        <div class="home-product-item-price">
-                                            <span class="home-product-item-price-old">35.000 USD</span>
-                                            <span class="home-product-item-price-current">32.900 USD</span>
-                                        </div>
-                                        <div class="home-product-item-action">
-                                            <span class="home-product-item__like home-product-item__liked ">
-                                                <i class="far fa-heart home-product-item__like-icon-empty"></i>
-                                                <i class="fas fa-heart home-product-item__like-icon-fill"></i>
-                                            </span>
-                                            <div class="home-product-item__rating">
-                                                <i class="home-product-item-gold fas fa-star"></i>
-                                                <i class="home-product-item-gold fas fa-star"></i>
-                                                <i class="home-product-item-gold fas fa-star"></i>
-                                                <i class="home-product-item-gold fas fa-star"></i>
-                                                <i class=" fas fa-star"></i>
-                                            </div>
-                                            <span class="home-product-item__sold">88 đã bán</span>
-                                        </div>
-                                        <div class="home-product-item__origin">
-                                            <span class="home-product-item__brand">Lamborghini</span>
-                                            <span class="home-product-item__origin-name">Italia</span>
-                                        </div>
-                                        <div class="home-product-item__favourite">
-                                            <i class="fas fa-check"></i>
-                                            Yêu thích
-                                        </div>
-                                        <div class="home-product-item__sale-off">
-                                            <span class="home-product-item__percent">10%</span>
-                                            <span class="home-product-item__sale-off-label">GIẢM</span>
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="col l-2-4 m-4 c-6">
-                                    <a href="#" class="home-product-item">
-                                        <div class="home-product-item-img" style="background-image: url(/image/car/maclauren-720s.jpg)"></div>
-                                        <h4 class="home-product-item-name">Maclauren 720s đen huyền bí</h4>
-                                        <div class="home-product-item-price">
-                                            <span class="home-product-item-price-old">35.000 USD</span>
-                                            <span class="home-product-item-price-current">32.900 USD</span>
-                                        </div>
-                                        <div class="home-product-item-action">
-                                            <span class="home-product-item__like home-product-item__liked ">
-                                                <i class="far fa-heart home-product-item__like-icon-empty"></i>
-                                                <i class="fas fa-heart home-product-item__like-icon-fill"></i>
-                                            </span>
-                                            <div class="home-product-item__rating">
-                                                <i class="home-product-item-gold fas fa-star"></i>
-                                                <i class="home-product-item-gold fas fa-star"></i>
-                                                <i class="home-product-item-gold fas fa-star"></i>
-                                                <i class="home-product-item-gold fas fa-star"></i>
-                                                <i class=" fas fa-star"></i>
-                                            </div>
-                                            <span class="home-product-item__sold">88 đã bán</span>
-                                        </div>
-                                        <div class="home-product-item__origin">
-                                            <span class="home-product-item__brand">Maclauren</span>
-                                            <span class="home-product-item__origin-name">Anh</span>
-                                        </div>
-                                        <div class="home-product-item__favourite">
-                                            <i class="fas fa-check"></i>
-                                            Yêu thích
-                                        </div>
-                                        <div class="home-product-item__sale-off">
-                                            <span class="home-product-item__percent">10%</span>
-                                            <span class="home-product-item__sale-off-label">GIẢM</span>
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="col l-2-4 m-4 c-6">
-                                    <a href="#" class="home-product-item">
-                                        <div class="home-product-item-img" style="background-image: url(/image/car/porsche.jpg)"></div>
-                                        <h4 class="home-product-item-name">Porche 911 xám mới 99%</h4>
-                                        <div class="home-product-item-price">
-                                            <span class="home-product-item-price-old">35.000 USD</span>
-                                            <span class="home-product-item-price-current">32.900 USD</span>
-                                        </div>
-                                        <div class="home-product-item-action">
-                                            <span class="home-product-item__like home-product-item__liked ">
-                                                <i class="far fa-heart home-product-item__like-icon-empty"></i>
-                                                <i class="fas fa-heart home-product-item__like-icon-fill"></i>
-                                            </span>
-                                            <div class="home-product-item__rating">
-                                                <i class="home-product-item-gold fas fa-star"></i>
-                                                <i class="home-product-item-gold fas fa-star"></i>
-                                                <i class="home-product-item-gold fas fa-star"></i>
-                                                <i class="home-product-item-gold fas fa-star"></i>
-                                                <i class=" fas fa-star"></i>
-                                            </div>
-                                            <span class="home-product-item__sold">88 đã bán</span>
-                                        </div>
-                                        <div class="home-product-item__origin">
-                                            <span class="home-product-item__brand">Porche</span>
-                                            <span class="home-product-item__origin-name">Đức</span>
-                                        </div>
-                                        <div class="home-product-item__favourite">
-                                            <i class="fas fa-check"></i>
-                                            Yêu thích
-                                        </div>
-                                        <div class="home-product-item__sale-off">
-                                            <span class="home-product-item__percent">10%</span>
-                                            <span class="home-product-item__sale-off-label">GIẢM</span>
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="col l-2-4 m-4 c-6">
-                                    <a href="#" class="home-product-item">
-                                        <div class="home-product-item-img" style="background-image: url(/image/car/Porsche\ 911\ GT3\ RS.jpg)"></div>
-                                        <h4 class="home-product-item-name">Porsche 911 đỏ mạnh mẽ</h4>
-                                        <div class="home-product-item-price">
-                                            <span class="home-product-item-price-old">35.000 USD</span>
-                                            <span class="home-product-item-price-current">32.900 USD</span>
-                                        </div>
-                                        <div class="home-product-item-action">
-                                            <span class="home-product-item__like home-product-item__liked ">
-                                                <i class="far fa-heart home-product-item__like-icon-empty"></i>
-                                                <i class="fas fa-heart home-product-item__like-icon-fill"></i>
-                                            </span>
-                                            <div class="home-product-item__rating">
-                                                <i class="home-product-item-gold fas fa-star"></i>
-                                                <i class="home-product-item-gold fas fa-star"></i>
-                                                <i class="home-product-item-gold fas fa-star"></i>
-                                                <i class="home-product-item-gold fas fa-star"></i>
-                                                <i class=" fas fa-star"></i>
-                                            </div>
-                                            <span class="home-product-item__sold">88 đã bán</span>
-                                        </div>
-                                        <div class="home-product-item__origin">
-                                            <span class="home-product-item__brand">Porsche</span>
-                                            <span class="home-product-item__origin-name">Đức</span>
-                                        </div>
-                                        <div class="home-product-item__favourite">
-                                            <i class="fas fa-check"></i>
-                                            Yêu thích
-                                        </div>
-                                        <div class="home-product-item__sale-off">
-                                            <span class="home-product-item__percent">10%</span>
-                                            <span class="home-product-item__sale-off-label">GIẢM</span>
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="col l-2-4 m-4 c-6">
-                                    <a href="#" class="home-product-item">
-                                        <div class="home-product-item-img" style="background-image: url(/image/car/Rolls-Royce\ Ghost\ Series\ II.jpg)"></div>
-                                        <h4 class="home-product-item-name">Rolls-Royce Ghost Series II</h4>
-                                        <div class="home-product-item-price">
-                                            <span class="home-product-item-price-old">35.000 USD</span>
-                                            <span class="home-product-item-price-current">32.900 USD</span>
-                                        </div>
-                                        <div class="home-product-item-action">
-                                            <span class="home-product-item__like home-product-item__liked ">
-                                                <i class="far fa-heart home-product-item__like-icon-empty"></i>
-                                                <i class="fas fa-heart home-product-item__like-icon-fill"></i>
-                                            </span>
-                                            <div class="home-product-item__rating">
-                                                <i class="home-product-item-gold fas fa-star"></i>
-                                                <i class="home-product-item-gold fas fa-star"></i>
-                                                <i class="home-product-item-gold fas fa-star"></i>
-                                                <i class="home-product-item-gold fas fa-star"></i>
-                                                <i class=" fas fa-star"></i>
-                                            </div>
-                                            <span class="home-product-item__sold">88 đã bán</span>
-                                        </div>
-                                        <div class="home-product-item__origin">
-                                            <span class="home-product-item__brand">Rolls-Royce</span>
-                                            <span class="home-product-item__origin-name">Anh</span>
-                                        </div>
-                                        <div class="home-product-item__favourite">
-                                            <i class="fas fa-check"></i>
-                                            Yêu thích
-                                        </div>
-                                        <div class="home-product-item__sale-off">
-                                            <span class="home-product-item__percent">10%</span>
-                                            <span class="home-product-item__sale-off-label">GIẢM</span>
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="col l-2-4 m-4 c-6">
-                                    <a href="#" class="home-product-item">
-                                        <div class="home-product-item-img" style="background-image: url(/image/car/Audi\ R8\ V10.jpg)"></div>
-                                        <h4 class="home-product-item-name">Audi R8 nhập khẩu</h4>
-                                        <div class="home-product-item-price">
-                                            <span class="home-product-item-price-old">35.000 USD</span>
-                                            <span class="home-product-item-price-current">32.900 USD</span>
-                                        </div>
-                                        <div class="home-product-item-action">
-                                            <span class="home-product-item__like home-product-item__liked ">
-                                                <i class="far fa-heart home-product-item__like-icon-empty"></i>
-                                                <i class="fas fa-heart home-product-item__like-icon-fill"></i>
-                                            </span>
-                                            <div class="home-product-item__rating">
-                                                <i class="home-product-item-gold fas fa-star"></i>
-                                                <i class="home-product-item-gold fas fa-star"></i>
-                                                <i class="home-product-item-gold fas fa-star"></i>
-                                                <i class="home-product-item-gold fas fa-star"></i>
-                                                <i class=" fas fa-star"></i>
-                                            </div>
-                                            <span class="home-product-item__sold">88 đã bán</span>
-                                        </div>
-                                        <div class="home-product-item__origin">
-                                            <span class="home-product-item__brand">Audi</span>
-                                            <span class="home-product-item__origin-name">Đức</span>
-                                        </div>
-                                        <div class="home-product-item__favourite">
-                                            <i class="fas fa-check"></i>
-                                            Yêu thích
-                                        </div>
-                                        <div class="home-product-item__sale-off">
-                                            <span class="home-product-item__percent">10%</span>
-                                            <span class="home-product-item__sale-off-label">GIẢM</span>
-                                        </div>
-                                    </a>
-                                </div>                               
-                            </div>
-                        </div>
-
-                        <ul class="pagination home-product-pagination">
-                            <li class="pagination-item">
-                                <a href="" class="pagination-link"><i class="pagination-icon fas fa-chevron-left"></i></a>
-                            </li>
-                            <li class="pagination-item pagination-item--active">
-                                <a href="" class="pagination-link">1</i></a>
-                            </li>
-                            <li class="pagination-item">
-                                <a href="" class="pagination-link">2</i></a>
-                            </li>
-                            <li class="pagination-item">
-                                <a href="" class="pagination-link">3</i></a>
-                            </li>
-                            <li class="pagination-item">
-                                <a href="" class="pagination-link">4</i></a>
-                            </li>
-                            <li class="pagination-item">
-                                <a href="" class="pagination-link">5</i></a>
-                            </li>
-                            <li class="pagination-item">
-                                <a href="" class="pagination-link">...</i></a>
-                            </li>
-                            <li class="pagination-item">
-                                <a href="" class="pagination-link">7</i></a>
-                            </li>
-                            <li class="pagination-item">
-                                <a href="" class="pagination-link"><i class="pagination-icon fas fa-chevron-right"></i></a>
-                            </li>
-                        </ul>
-                        
-                    </div>
-                </div>
-            </div>             
         </div>
-        <footer class="footer">
-            <div class="grid wide ">
-                <div class="row">
-                    <div class="col l-2-4 m-4 c-6 footer__content">
-                        <h3 class="footer__heading">Chăm sóc khách hàng</h3>
-                        <ul class="footer-list">
-                            <li class="footer-item">
-                                <a href="" class="footer-item__link">Trung tâm trợ giúp </a>
-                            </li>
-                            <li class="footer-item">
-                                <a href="" class="footer-item__link">ShopS.car Mall</a>
-                            </li>
-                            <li class="footer-item">
-                                <a href="" class="footer-item__link">Hướng dẫn mua hàng</a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="col l-2-4 m-4 c-6 footer__content">
-                        <h3 class="footer__heading">Giới thiệu</h3>
-                        <ul class="footer-list">
-                            <li class="footer-item">
-                                <a href="" class="footer-item__link">Giới thiệu S.car Việt Nam </a>
-                            </li>
-                            <li class="footer-item">
-                                <a href="" class="footer-item__link">Tuyển dụng</a>
-                            </li>
-                            <li class="footer-item">
-                                <a href="" class="footer-item__link">Điều khoản</a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="col l-2-4 m-4 c-6 footer__content">
-                        <h3 class="footer__heading">Danh mục</h3>
-                        <ul class="footer-list">
-                            <li class="footer-item">
-                                <a href="" class="footer-item__link">Ferrari</a>
-                            </li>
-                            <li class="footer-item">
-                                <a href="" class="footer-item__link">Ford</a>
-                            </li>
-                            <li class="footer-item">
-                                <a href="" class="footer-item__link">Lamborghini</a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="col l-2-4 m-4 c-6 footer__content">
-                        <h3 class="footer__heading">Theo dõi</h3>
-                        <ul class="footer-list">
-                            <li class="footer-item">
-                                <a href="" class="footer-item__link"><i class="footer-item-icon fab fa-facebook-square"></i>Facebook</a>
-                            </li>
-                            <li class="footer-item">
-                                <a href="" class="footer-item__link"><i class="footer-item-icon fab fa-instagram"></i>Instagram</a>
-                            </li>
-                            <li class="footer-item">   
-                                <a href="" class="footer-item__link"><i class="footer-item-icon fab fa-linkedin"></i>Linkedin</a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="col l-2-4 m-4 c-12 footer__content">
-                        <h3 class="footer__heading">Vào cửa hàng trên ứng dụng</h3>
-                        <div class="footer__download">
-                            <img src="/image/qrcode.png" alt="" class="footer__download-qr">
-                            <div class="footer__download-apps">
-                                <a href="" class="footer__download-apps-link">
-                                    <img src="/image/googleplay.png" alt="" class="footer__download-apps-img">
-                                </a>
-                                <a href="" class="footer__download-apps-link">
-                                    <img src="/image/appstore.png" alt="" class="footer__download-apps-img">
-                                </a>
+        <div class="body">
+            <div id="slider">
+                <input type="radio" name="slider" id="slide1" checked>
+                <input type="radio" name="slider" id="slide2">
+                <input type="radio" name="slider" id="slide3">
+                <input type="radio" name="slider" id="slide4">
+                <div id="slides">
+                   <div id="overflow">
+                      <div class="inner">
+                         <div class="slide slide_1">
+                            <div class="slide-content">
+                               <h2>Cổ máy kinh điển</h2>
+                               <p>911 Targa 4 cổ máy hoàn toàn mới</p>
                             </div>
-                        </div>
-                    </div>
+                         </div>
+                         <div class="slide slide_2">
+                            <div class="slide-content">
+                               <h2>Slide 2</h2>
+                               <p>Content for Slide 2</p>
+                            </div>
+                         </div>
+                         <div class="slide slide_3">
+                            <div class="slide-content">
+                               <h2>Slide 3</h2>
+                               <p>Content for Slide 3</p>
+                            </div>
+                         </div>
+                         <div class="slide slide_4">
+                            <div class="slide-content">
+                               <h2>Slide 4</h2>
+                               <p>Content for Slide 4</p>
+                            </div>
+                         </div>
+                      </div>
+                   </div>
                 </div>
-                
-                
+                <div id="controls">
+                   <label class="label_pos" for="slide1"></label>
+                   <label class="label_pos" for="slide2"></label>
+                   <label class="label_pos" for="slide3"></label>
+                   <label class="label_pos" for="slide4"></label>
+                </div>
+                <div id="bullets">
+                   <label for="slide1"></label>
+                   <label for="slide2"></label>
+                   <label for="slide3"></label>
+                   <label for="slide4"></label>
+                </div>
             </div>
-            <div class="footer__bottom">
-                <div class="grid wide">
-                    <p class="footer__bottom-text">Bản quyền thuộc về công ty S.car Inc</p>
+            <div class="model">
+                <div class="grid">
+                    <span class="model_heading"><h1 style="font-weight: 500;">Model</h1></span>
+                    <div class="row no-gutter"> 
+                        <div class="col l-4">
+                            <div class="item-wrap">
+                                <div class="item-wrap-img">
+                                    <img style="height: 340px;" src="https://files.porsche.com/filestore/image/multimedia/none/carrange-flyout-718/small/ccc805c0-6693-11e9-80c4-005056bbdc38;sQ;tjpeg060;c1693;gc/porsche-small.jpg" alt="">
+                                </div>
+                                <div class="item-wrap-price">
+                                    <h3 class="item-name">718</h3>
+                                    <p class="item-price">From $ 59,900,00*</p>
+                                </div>
+                                <div class="item-wrap-info">
+                                    <div class="item-wrap-custom">
+                                        Build Your Porsche
+                                    </div>
+                                    <div class="item-wrap-more">
+                                        All Model
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col l-4">
+                            <div class="item-wrap">
+                                <div class="item-wrap-img">
+                                    <img style="height: 340px;" src="https://files.porsche.com/filestore/image/multimedia/none/carrange-flyout-718/small/ccc805c0-6693-11e9-80c4-005056bbdc38;sQ;tjpeg060;c1693;gc/porsche-small.jpg" alt="">
+                                </div>
+                                <div class="item-wrap-price">
+                                    <h3 class="item-name">718</h3>
+                                    <p class="item-price">From $ 59,900,00*</p>
+                                </div>
+                                <div class="item-wrap-info">
+                                    <div class="item-wrap-custom">
+                                        Build Your Porsche
+                                    </div>
+                                    <div class="item-wrap-more">
+                                        All Model
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col l-4">
+                            <div class="item-wrap">
+                                <div class="item-wrap-img">
+                                    <img style="height: 340px;" src="https://files.porsche.com/filestore/image/multimedia/none/carrange-flyout-718/small/ccc805c0-6693-11e9-80c4-005056bbdc38;sQ;tjpeg060;c1693;gc/porsche-small.jpg" alt="">
+                                </div>
+                                <div class="item-wrap-price">
+                                    <h3 class="item-name">718</h3>
+                                    <p class="item-price">From $ 59,900,00*</p>
+                                </div>
+                                <div class="item-wrap-info">
+                                    <div class="item-wrap-custom">
+                                        Build Your Porsche
+                                    </div>
+                                    <div class="item-wrap-more">
+                                        All Model
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col l-4">
+                            <div class="item-wrap">
+                                <div class="item-wrap-img">
+                                    <img style="height: 340px;" src="https://files.porsche.com/filestore/image/multimedia/none/carrange-flyout-718/small/ccc805c0-6693-11e9-80c4-005056bbdc38;sQ;tjpeg060;c1693;gc/porsche-small.jpg" alt="">
+                                </div>
+                                <div class="item-wrap-price">
+                                    <h3 class="item-name">718</h3>
+                                    <p class="item-price">From $ 59,900,00*</p>
+                                </div>
+                                <div class="item-wrap-info">
+                                    <div class="item-wrap-custom">
+                                        Build Your Porsche
+                                    </div>
+                                    <div class="item-wrap-more">
+                                        All Model
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col l-4">
+                            <div class="item-wrap">
+                                <div class="item-wrap-img">
+                                    <img style="height: 340px;" src="https://files.porsche.com/filestore/image/multimedia/none/carrange-flyout-718/small/ccc805c0-6693-11e9-80c4-005056bbdc38;sQ;tjpeg060;c1693;gc/porsche-small.jpg" alt="">
+                                </div>
+                                <div class="item-wrap-price">
+                                    <h3 class="item-name">718</h3>
+                                    <p class="item-price">From $ 59,900,00*</p>
+                                </div>
+                                <div class="item-wrap-info">
+                                    <div class="item-wrap-custom">
+                                        Build Your Porsche
+                                    </div>
+                                    <div class="item-wrap-more">
+                                        All Model
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col l-4">
+                            <div class="item-wrap">
+                                <div class="item-wrap-img">
+                                    <img style="height: 340px;" src="https://files.porsche.com/filestore/image/multimedia/none/carrange-flyout-718/small/ccc805c0-6693-11e9-80c4-005056bbdc38;sQ;tjpeg060;c1693;gc/porsche-small.jpg" alt="">
+                                </div>
+                                <div class="item-wrap-price">
+                                    <h3 class="item-name">718</h3>
+                                    <p class="item-price">From $ 59,900,00*</p>
+                                </div>
+                                <div class="item-wrap-info">
+                                    <div class="item-wrap-custom">
+                                        Build Your Porsche
+                                    </div>
+                                    <div class="item-wrap-more">
+                                        All Model
+                                    </div>
+                                </div>
+                            </div>
+                        </div>           
+                    </div>
                 </div>
-        </footer>
+            </div>
+        <div class="footer">
+
+        </div>
     </div>
-    <!-- <div class="modal"> -->
-        <!-- <div class="modal__overlay"></div> -->
-        <!-- <div class="modal__body"> -->
-            <!-- đăng kí -->
-            <!-- <div class="auth-form">
-                <div class="auth-form__container">
-                    <header class="auth-form__header">
-                        <h3 class="auth-form__heading">Đăng kí</h3>
-                        <span class="auth-form__switchbtn">Đăng nhập</span>
-                    </header>
-                    <div class="auth-form__form">
-                        <div class="auth-form__group">
-                            <input class="auth-form__input" type="text" placeholder="Email của bạn">
-                        </div>
-                        <div class="auth-form__group">
-                                <input class="auth-form__input" type="password" placeholder="Mật khẩu của bạn">
-                            </div>
-                            <div class="auth-form__group">
-                                <input class="auth-form__input" type="password" placeholder="Nhập lại mật khẩu">
-                            </div>
-                    </div>
-                    <div class="auth-form__aside">
-                        <p class="auth-form__policy">Bằng việc đăng kí, bạn đã đồng ý với Shoppe về
-                        <a href="" class="policy-link">Điều khoản dịch vụ</a> & <a href="" class="policy-link">Chính sách bảo mật</a></p>
-                    </div>
-                    <div class="auth-form__control">
-                        <button class="btn btn--back">TRỞ LẠI</button>
-                        <button class="btn btn--primary">ĐĂNG KÍ</button>
-                    </div>
-                </div>
-                <div class="auth-form__social">
-                    <a href="" class="auth-form__icon--fb btn btn__size-s">
-                        <i class="auth-form__icon fab fa-facebook"></i>
-                        <span class="auth-form_title">Đăng kí với Facebook</span>
-                    </a>
-                    <a href="" class="auth-form__icon--gg btn btn__size-s">
-                        <i class="auth-form__icon fab fa-google"></i>
-                        <span class="auth-form_title">Đăng kí với Google</span>
-                    </a>
-                </div>
-            </div> -->
-            <!-- đăng nhập -->
-            <!-- <div class="auth-form">
-                <div class="auth-form__container">
-                    <header class="auth-form__header">
-                        <h3 class="auth-form__heading">Đăng nhập</h3>
-                        <span class="auth-form__switchbtn">Đăng kí</span>
-                    </header>
-                    <div class="auth-form__form">
-                        <div class="auth-form__group">
-                            <input class="auth-form__input" type="text" placeholder="Email của bạn, Số điện thoại, Tài khoản">
-                        </div>
-                        <div class="auth-form__group">
-                                <input class="auth-form__input" type="password" placeholder="Mật khẩu của bạn">
-                            </div>
-                    </div>
-                    <div class="auth-form__aside">
-                        <div class="auth-form__help">
-                            <a href="" style="color: #f53e2d" class="auth-form__link">Quên mật khẩu</a>
-                            <span class="auth-form__spre"></span>
-                            <a href="" style="color: #939393" class="auth-form__link">Cần trợ giúp?</a>
-                        </div>
-                    </div>
-                    <div class="auth-form__control">
-                        <button class="btn btn--back">TRỞ LẠI</button>
-                        <button class="btn btn--primary">ĐĂNG NHẬP</button>
-                    </div>
-                </div>
-                <div class="auth-form__social">
-                    <a href="" class="auth-form__icon--fb btn btn__size-s">
-                        <i class="auth-form__icon fab fa-facebook"></i>
-                        <span class="auth-form_title">Đăng nhập với Facebook</span>
-                    </a>
-                    <a href="" class="auth-form__icon--gg btn btn__size-s">
-                        <i class="auth-form__icon fab fa-google"></i>
-                        <span class="auth-form_title">Đăng nhập với Google</span>
-                    </a>
-                </div>
-            </div> -->
-        <!-- </div>
-    </div> -->
-    <!-- </div> -->
 </body>
 </html>
