@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="asset/css/reset-css.css">
     <link rel="stylesheet" href="asset/css/style.css">
     <link rel="stylesheet" href="/asset/css/base.css">
+    <link rel="stylesheet" href="/asset/css/slider.css">
     <link rel="stylesheet" href="asset/css/grid-system.css">
     <link rel="stylesheet" href="asset/font/font-awsome/css/all.css">
     <link href="https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
@@ -43,67 +44,57 @@
             </div>
         </div>
         <div class="body">
-            <!-- <div class="grid">
-                <div id="slider">
-                    <input type="radio" name="slider" id="slide1" checked>
-                    <input type="radio" name="slider" id="slide2">
-                    <input type="radio" name="slider" id="slide3">
-                    <input type="radio" name="slider" id="slide4">
-                    <div id="slides">
-                       <div id="overflow">
-                          <div class="inner">
-                             <div class="slide slide_1">
-                                <div class="slide-content">
-                                   <h2>Cổ máy kinh điển</h2>
-                                   <p>911 Targa 4 cổ máy hoàn toàn mới</p>
-                                </div>
-                             </div>
-                             <div class="slide slide_2">
-                                <div class="slide-content">
-                                   <h2>Slide 2</h2>
-                                   <p>Content for Slide 2</p>
-                                </div>
-                             </div>
-                             <div class="slide slide_3">
-                                <div class="slide-content">
-                                   <h2>Slide 3</h2>
-                                   <p>Content for Slide 3</p>
-                                </div>
-                             </div>
-                             <div class="slide slide_4">
-                                <div class="slide-content">
-                                   <h2>Slide 4</h2>
-                                   <p>Content for Slide 4</p>
-                                </div>
-                             </div>
-                          </div>
-                       </div>
-                    </div>
-                    <div id="controls">
-                       <label class="label_pos" for="slide1"></label>
-                       <label class="label_pos" for="slide2"></label>
-                       <label class="label_pos" for="slide3"></label>
-                       <label class="label_pos" for="slide4"></label>
-                    </div>
-                    <div id="bullets">
-                       <label for="slide1"></label>
-                       <label for="slide2"></label>
-                       <label for="slide3"></label>
-                       <label for="slide4"></label>
-                    </div>
+            <div id="slider">
+                <input type="radio" name="slider" id="slide1" checked>
+                <input type="radio" name="slider" id="slide2">
+                <input type="radio" name="slider" id="slide3">
+                <input type="radio" name="slider" id="slide4">
+                <div id="slides">
+                   <div id="overflow">
+                      <div class="inner">
+                         <div style="background-image: url(https://porsche-vietnam.vn/wp-content/uploads/2020/06/992-ta4-headbanner-1600x615.jpg);" class="slide slide_1">
+                            <div class="slide-content">
+                               <h2>Slide 1</h2>
+                               <p>Content for Slide 1</p>
+                            </div>
+                         </div>
+                         <div style="background-image: url(https://porsche-vietnam.vn/wp-content/uploads/2019/04/rd-2018-homepage-banner-ww-g24-kw04-1600x615.jpg);" class="slide slide_2">
+                            <div class="slide-content">
+                               <h2>Slide 2</h2>
+                               <p>Content for Slide 2</p>
+                            </div>
+                         </div>
+                         <div style="background-image: url(https://porsche-vietnam.vn/wp-content/uploads/2019/05/rd-2019-homepage-banner-ww-e3coupeturbo-kw14-1600x615.jpg);" class="slide slide_3">
+                            <div class="slide-content">
+                               <h2>Slide 3</h2>
+                               <p>Content for Slide 3</p>
+                            </div>
+                         </div>
+                         <div style="background-image: url(https://porsche-vietnam.vn/wp-content/uploads/2019/04/rd-2018-homepage-banner-ww-macans-kw50-1600x615.jpg);" class="slide slide_4">
+                            <div class="slide-content">
+                               <h2>Slide 4</h2>
+                               <p>Content for Slide 4</p>
+                            </div>
+                         </div>
+                      </div>
+                   </div>
                 </div>
-            </div> -->
-            
+                <div id="controls">
+                   <label for="slide1"></label>
+                   <label for="slide2"></label>
+                   <label for="slide3"></label>
+                   <label for="slide4"></label>
+                </div>
+             </div>
             <div class="model">
                 <div class="grid">
                     <div class="grid wide">
                         <span class="model_heading"><h2 style="font-weight: 500;">Model</h2></span>
                     </div>
                     <div class="row no-gutter"> 
-                        <div class="col l-4 item-wrap">
-                            <div class="">
-                                <div class="item-wrap-img">
-                                    <img style="height: 340px;" src="https://files.porsche.com/filestore/image/multimedia/none/carrange-flyout-718/small/ccc805c0-6693-11e9-80c4-005056bbdc38;sQ;tjpeg060;c1693;gc/porsche-small.jpg" alt="">
+                        <div class="col l-4 ">
+                            <div class="item-wrap">
+                                <div style=" background-image:url(https://files.porsche.com/filestore/image/multimedia/none/carrange-flyout-718/small/ccc805c0-6693-11e9-80c4-005056bbdc38;sQ;tjpeg060;c1693;gc/porsche-small.jpg)" class="item-wrap-img">
                                 </div>
                                 <div class="item-wrap-price">
                                     <h3 class="item-name">718</h3>
@@ -114,101 +105,100 @@
                                         Build Your Porsche
                                     </div>
                                     <div class="item-wrap-more">
+                                        <span><i class="item-wrap-more-icon fas fa-angle-right"></i></span>
                                         All Model
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="col l-4 item-wrap">
-                            <div class="">
-                                <div class="item-wrap-img">
-                                    <img style="height: 340px;" src="https://files.porsche.com/filestore/image/multimedia/none/carrange-flyout-718/small/ccc805c0-6693-11e9-80c4-005056bbdc38;sQ;tjpeg060;c1693;gc/porsche-small.jpg" alt="">
-                                </div>
+                        <div class="col l-4 ">
+                            <div class="item-wrap">
+                                <div style=" background-image:url(https://files.porsche.com/filestore/image/multimedia/none/carrange-flyout-911/small/3cf76e8c-6694-11e9-80c4-005056bbdc38;sQ;twebp065;c1693;gc/porsche-small.webp)" class="item-wrap-img">                                </div>
                                 <div class="item-wrap-price">
-                                    <h3 class="item-name">718</h3>
-                                    <p class="item-price">From $ 59,900,00*</p>
+                                    <h3 class="item-name">911</h3>
+                                    <p class="item-price">From $ 99,200,00*</p>
                                 </div>
                                 <div class="item-wrap-info">
                                     <div class="item-wrap-custom">
                                         Build Your Porsche
                                     </div>
                                     <div class="item-wrap-more">
+                                        <span><i class="item-wrap-more-icon fas fa-angle-right"></i></span>
                                         All Model
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="col l-4 item-wrap">
-                            <div class="">
-                                <div class="item-wrap-img">
-                                    <img style="height: 340px;" src="https://files.porsche.com/filestore/image/multimedia/none/carrange-flyout-718/small/ccc805c0-6693-11e9-80c4-005056bbdc38;sQ;tjpeg060;c1693;gc/porsche-small.jpg" alt="">
-                                </div>
+                        <div class="col l-4 ">
+                            <div class="item-wrap">
+                                <div style=" background-image:url(https://files.porsche.com/filestore/image/multimedia/none/carrange-flyout-taycan/small/094d1c1c-bab0-11e9-80c4-005056bbdc38;sQ;twebp065;c1693;gc/porsche-small.webp)" class="item-wrap-img">                                </div>
                                 <div class="item-wrap-price">
-                                    <h3 class="item-name">718</h3>
-                                    <p class="item-price">From $ 59,900,00*</p>
+                                    <h3 class="item-name">Taycan</h3>
+                                    <p class="item-price">From $ 103,800,00*</p>
                                 </div>
                                 <div class="item-wrap-info">
                                     <div class="item-wrap-custom">
                                         Build Your Porsche
                                     </div>
                                     <div class="item-wrap-more">
+                                        <span><i class="item-wrap-more-icon fas fa-angle-right"></i></span>
                                         All Model
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="col l-4 item-wrap">
-                            <div class="">
-                                <div class="item-wrap-img">
-                                    <img style="height: 340px;" src="https://files.porsche.com/filestore/image/multimedia/none/carrange-flyout-718/small/ccc805c0-6693-11e9-80c4-005056bbdc38;sQ;tjpeg060;c1693;gc/porsche-small.jpg" alt="">
+                        <div class="col l-4 ">
+                            <div class="item-wrap">
+                                <div style=" background-image:url(https://files.porsche.com/filestore/image/multimedia/none/carrange-flyout-panamera/small/3cf76e8d-6694-11e9-80c4-005056bbdc38;sQ;twebp065;c1693;gc/porsche-small.webp)" class="item-wrap-img">
                                 </div>
                                 <div class="item-wrap-price">
-                                    <h3 class="item-name">718</h3>
-                                    <p class="item-price">From $ 59,900,00*</p>
+                                    <h3 class="item-name">Panamera</h3>
+                                    <p class="item-price">From $ 87,200,00*</p>
                                 </div>
                                 <div class="item-wrap-info">
                                     <div class="item-wrap-custom">
                                         Build Your Porsche
                                     </div>
                                     <div class="item-wrap-more">
+                                        <span><i class="item-wrap-more-icon fas fa-angle-right"></i></span>
                                         All Model
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="col l-4 item-wrap">
-                            <div class="">
-                                <div class="item-wrap-img">
-                                    <img style="height: 340px;" src="https://files.porsche.com/filestore/image/multimedia/none/carrange-flyout-718/small/ccc805c0-6693-11e9-80c4-005056bbdc38;sQ;tjpeg060;c1693;gc/porsche-small.jpg" alt="">
+                        <div class="col l-4">
+                            <div class="item-wrap">
+                                <div style=" background-image:url(https://files.porsche.com/filestore/image/multimedia/none/carrange-flyout-macan/small/46131fe4-6694-11e9-80c4-005056bbdc38;sQ;twebp065;c1693;gc/porsche-small.webp)" class="item-wrap-img">
                                 </div>
                                 <div class="item-wrap-price">
-                                    <h3 class="item-name">718</h3>
-                                    <p class="item-price">From $ 59,900,00*</p>
+                                    <h3 class="item-name">Macan</h3>
+                                    <p class="item-price">From $ 52,100,00*</p>
                                 </div>
                                 <div class="item-wrap-info">
                                     <div class="item-wrap-custom">
                                         Build Your Porsche
                                     </div>
                                     <div class="item-wrap-more">
+                                        <span><i class="item-wrap-more-icon fas fa-angle-right"></i></span>
                                         All Model
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="col l-4 item-wrap">
-                            <div class="">
-                                <div class="item-wrap-img">
-                                    <img style="height: 340px;" src="https://files.porsche.com/filestore/image/multimedia/none/carrange-flyout-718/small/ccc805c0-6693-11e9-80c4-005056bbdc38;sQ;tjpeg060;c1693;gc/porsche-small.jpg" alt="">
+                        <div class="col l-4 ">
+                            <div class="item-wrap">
+                                <div style="background-image: url(https://files.porsche.com/filestore/image/multimedia/none/carrange-flyout-cayenne/small/46131fe5-6694-11e9-80c4-005056bbdc38;sQ;twebp065;c1693;gc/porsche-small.webp);" class="item-wrap-img">
                                 </div>
                                 <div class="item-wrap-price">
-                                    <h3 class="item-name">718</h3>
-                                    <p class="item-price">From $ 59,900,00*</p>
+                                    <h3 class="item-name">Cayenne</h3>
+                                    <p class="item-price">From $ 67,500,00*</p>
                                 </div>
                                 <div class="item-wrap-info">
                                     <div class="item-wrap-custom">
                                         Build Your Porsche
                                     </div>
                                     <div class="item-wrap-more">
+                                        <span><i class="item-wrap-more-icon fas fa-angle-right"></i></span>
                                         All Model
                                     </div>
                                 </div>
@@ -217,7 +207,7 @@
                     </div>
                 </div>
             </div>
-            <div class="tools" style="position: relative;">
+            <div class="tools">
                 <div class="grid wide">
                     <div class="tools__heading">
                         <h2 style="font-weight: 500;">Shopping Tools</h2>
@@ -225,7 +215,7 @@
                     <div class="row no-gutter" >
                         <div class="col l-2-5 shopping">
                             <a href="" class="tool__compare" style="background-image:url(https://files.porsche.com/filestore/image/multimedia/none/homepage-teaser-shoppingtools-compare/normal/4365f64f-2c10-11e7-9f74-0019999cd470;sO;twebp065/porsche-normal.webp) ;">                       
-                                <div class="tool__compare-heading"><span>Compare</span></div>
+                                <div class="tool__compare-heading"><span><i class="tool__compare-icon fas fa-angle-right"></i>Compare</span></div>
                             </a>  
                         </div>
                         <div class="col l-2-4 shopping">
@@ -241,13 +231,42 @@
                         </div>
                         <div class="col l-2-4 shopping">
                             <a href="" class="finacial" style="background-image: url(https://files.porsche.com/filestore/image/multimedia/none/homepage-teaser-shoppingtools-financialservice/normal/24394ea0-992d-11e7-b591-0019999cd470;sR;twebp065/porsche-normal.webp);">
-                                <div class="finacial-heading"><span>Finacial Services</span></div>
+                                <div class="finacial-heading"><span><i class="finacial-icon fas fa-angle-right"></i>Finacial Services</span></div>
                             </a>
                             
                         </div>
                     </div>
                 </div>
-            </div>              
+            </div>
+            <div class="discover">
+                <div class="grid wide">
+                    <div class="discover__heading">
+                        <h2 style="font-weight: 500;">Discover</h2>
+                    </div>
+                    <div class="row no-gutter" >
+                        <div class="col l-3 aaa">
+                            <a href="" class="perfomance" style="background-image:url(https://files.porsche.com/filestore/image/multimedia/none/rd-2018-homepage-teaser-ww-e-performance-kw12/normal/f7cc8e7c-6599-11e9-80c4-005056bbdc38;sM;twebp065/porsche-normal.webp) ;">                       
+                            <div class="perfomance-heading"><span><i class="perfomance-icon fas fa-angle-right"></i>Porche E-Perfomance</span></div>
+                            </a>  
+                        </div>
+                        <div class="col l-3 aaa">
+                            <a href="" class="tech" style="background-image:url(https://files.porsche.com/filestore/image/multimedia/none/rd-2017-homepage-teaser-ww-tequipmentsound-design-kw27/normal/e19a7537-5cd4-11e7-9717-0019999cd470;sM;twebp065/porsche-normal.webp) ;">                       
+                            <div class="tech-heading"><span>Tequipment Sound & Design</span></div>
+                            </a>  
+                        </div>
+                        <div class="col l-3 aaa">
+                            <a href="" class="exclusive" style="background-image:url(https://files.porsche.com/filestore/image/multimedia/none/rd-2017-homepage-teaser-porscheexclusivemanufaktur-kw24/normal/3cbd9b47-4c59-11e7-bfe2-0019999cd470;sM;twebp065/porsche-normal.webp) ;">                       
+                            <div class="exclusive-heading"><span><i class="exclusive-icon fas fa-angle-right"></i>Porsche Exclusive Manufaktur</span></div>
+                            </a>  
+                        </div>
+                        <div class="col l-3 aaa">
+                            <a href="" class="online-shop" style="background-image:url(https://files.porsche.com/filestore/image/multimedia/none/rd-2013-homepage-teaser-pcna-pds/normal/7373793e-f672-11e5-84b6-0019999cd470;sM;twebp065/porsche-normal.webp) ;">                       
+                            <div class="online-shop-heading"><span>Porche Online Shop</span></div>
+                            </a>  
+                        </div>
+                    </div>
+                </div>
+            </div>         
         <div class="footer">
 
         </div>
