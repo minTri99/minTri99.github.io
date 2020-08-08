@@ -234,8 +234,8 @@
     display: block;
     font-size: 2rem;
     font-weight: 500;
-    margin-left: 30px;
-    margin-bottom: 35px;
+    /* margin-left: 30px;
+    margin-bottom: 35px; */
 }
 .item-wrap{
     position: relative;
@@ -264,36 +264,65 @@
     text-align: center;
     line-height: 50px;
     height: 50px;
+    margin-bottom: 30px;
 }
 .item-wrap-custom{
     width: 180px;
     color: black;
     background-color: white;
     margin-right: 25px; 
-    animation: fadeIn linear 0.2s;
-}
-@keyframes fadeIn{
-   from{
-      color: black;
-    background-color: white;
-   }
-   to{
-      background-color: red;
-      color: white;
-   }
+    transition: 0.3s ease;
 }
 .item-wrap-custom:hover{
-   animation: fadeIn linear 0.2s;
-   background-color: red;
+   transition: 0.3s ease;
+   background: #D5001C;
    color: white;
 }
+
 .item-wrap-more{
     padding: 0 30px;
     border: 1px solid white;
     box-sizing: border-box;
     padding: -1px 0;
+    transition: 0.3s ease;
 }
 .item-wrap-more:hover{
-   border-color: red;
+   transition: 0.3s ease;
+   border-color: #D5001C;
+   color: #D5001C;
+}
+/* change color background */
+/* div {
+  transition: background-color 0.5s ease;
+  background-color: red;
+}
+div:hover {
+  background-color: green;
+} */
+.tools__heading{
+   font-size: 2rem;
+   
+}
+.shopping{
+   position: relative;
+}
+.tool__compare,.build,.offer,.finacial{
+   display: block;
+   height: 260px;
+   background-position-y: center;
+   
+}
+.tool__compare-heading,.build-heading,.offer-heading,.finacial-heading{
+   position: absolute;
+   text-decoration: none;
+   color: white;
+   font-size: 2rem;
+   font-weight: 600;
+   top: 80%;
+   left: 10%;
+   transition: color 0.3s ease;
+}
+
+.tool__compare-heading:hover,.build-heading:hover,.offer-heading:hover,.finacial-heading:hover{
    color: red;
 }
