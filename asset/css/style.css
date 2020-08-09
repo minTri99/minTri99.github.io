@@ -157,6 +157,47 @@
 div:hover {
   background-color: green;
 } */
+
+/* MAP/////////////////// */
+/* /////////////////// */
+.map{
+   margin-top: 50px;
+   position: relative;
+}
+.map-heading{
+   display: block;
+   font-size: 2rem;
+   font-weight: 500;
+    
+}
+.map-search{
+   position: absolute;
+   height: 42px;
+   display: flex;
+   top: 8%;
+   left: 4px
+}
+
+.map-search-input{
+   min-width: 250px;
+   height: 100%;
+   font-size: 1.6rem;
+   padding-left: 6px;
+}
+.map-search-btn{
+   height: 100%;
+   width: 100px;
+   background-color: gray;
+   font-size: 1.6rem;
+   color: white;
+   text-align: center;
+   line-height: 42px;
+   margin-left:10px ;
+   transition: color 0.2s ease;
+}
+.map-search-btn:hover{
+   color: red;
+}
 .tools__heading{
    font-size: 2rem;
    
@@ -167,7 +208,8 @@ div:hover {
 .tool__compare,.build,.offer,.finacial{
    display: block;
    height: 260px;
-   background-position-y: center;
+   background-size: cover;
+   background-position: center;
    
 }
 .tool__compare-heading,.build-heading,.offer-heading,.finacial-heading{
@@ -182,7 +224,6 @@ div:hover {
 }
 .tool__compare-icon,.finacial-icon{
    margin-right: 4px;
-   
    font-size: 2rem;
    color: red;
 }
@@ -190,12 +231,17 @@ div:hover {
 .tool__compare-heading:hover,.build-heading:hover,.offer-heading:hover,.finacial-heading:hover{
    color: red;
 }
+
+.discover__heading{
+   font-size: 2rem;
+}
 .aaa{
    position: relative;
 }
 .perfomance,.tech,.exclusive,.online-shop{
    display: block;
    height: 220px;
+   background-size: cover;
    background-position-x: center; 
    background-repeat: no-repeat;   
 }
@@ -219,4 +265,13 @@ div:hover {
 }
 .perfomance-heading:hover{
    color: red;
+}
+.footer{
+   margin-top: 20px;
+}
+.elect-region{
+   width: 100%;
+   height: 40px;
+   background-color: wheat;
+   color: black;
 }
