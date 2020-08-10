@@ -1,3 +1,6 @@
+.header{
+   position: relative;
+}
 .brand{
     z-index: 1;
    text-align: center;
@@ -27,29 +30,30 @@
    bottom: 20%;
    left: 0;
    width: 44%;
-   height: 1px;
-   
-}
-.logo::after{
-  
+   height: 1px; 
 }
 .logo-img{
    position: relative;
-   z-index: 2;
    font-size: 0;
    width: 100px;
    height: 50px;  
 }
 
-
 .main-navigation{
-    margin-top: 20px;
+   --nav-height: 60px;
+   display: flex;
     position: relative;
+    height: var(--nav-height) ;
+    align-items: center;
 }
 .main-navigation-list{
-    padding-left: 0;
+   
+   text-align: center;
+   margin: 0;
+    padding: 0;
     list-style: none;
     display: flex;
+    box-sizing: border-box;
 }
 .main-navigation-item{
     margin-right: 32px;
@@ -65,11 +69,92 @@
     content: "";
     border-right: 1px solid black;
     height: 15px;
-    line-height: 15px;
     left: 125px;
-    top:6px
-    
+    top:20px
 }
+.model-select{
+   /* display: flex; */
+   z-index: 5;
+   position: absolute;
+   background-color: white;
+   top: var(--nav-height);
+   left: 0;
+   width: 100%;
+   border: 1px solid #ccc;
+   display: none;
+   overflow: visible;
+}
+.models{
+   
+   background-color: red;
+}
+.models:hover .model-select{
+   display: flex;
+}
+.model-select-list{
+   padding: 0;
+}   
+.model-select-item{
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   padding: 2px 50px;
+   font-size: 1.7rem;
+   color: var(--text-color);
+   list-style: none;
+   position: relative;
+}
+.model-select-item:last-child{
+   padding-bottom: 20px;
+}
+.model-select-img{
+   width: 120px;
+   height: 60px;
+}
+.model-select-item:hover{
+   border-bottom: 2px solid red;
+}
+/* ////////////////////////
+/////////// MODEL MORE///// */
+
+.model-select-718-img{
+   display: flex;
+   background-size: cover;
+   background-position: center;
+   width: 100%;
+   border-left: 1px solid #ccc;
+   position: relative;
+}
+.model-select-718{
+   position: absolute;
+   width: var(--width-718);
+   height: 100%;
+   background-color: rgba(255, 255, 255, 0.9);
+}
+.model-select-718-list{
+   padding: 0;
+   margin: 0;
+   list-style: none;
+
+}
+.model-select-718-item{
+   font-size: 1.6rem;
+   color: var(--text-color);
+}
+.specifications-718{
+   position: absolute;
+   left: var(--width-718);
+   height: 100%;
+   width: 100%;
+   background-color: rgba(49, 54, 57,0.3);
+   color: white;
+   font-size: 2rem;
+   text-align: left;
+   
+}
+
+/* /////////////////////////
+///////BODY/////////////// */
 .model{
    margin-top: 110px;
 }
@@ -311,28 +396,22 @@ div:hover {
 .mapsite-select-region-select{
    position: absolute;
    width: 100%;
-   height: 180px;
-   top: 100%;
+   height: 50px;
+   top: 0;
    left: 0;
-   z-index: 1;
-   overflow-y: scroll;
-   background-color: white;
-   display: none;
-}
-#mapsite-check:checked ~ .mapsite-select-region-select{
-   display: block;
-}
-.mapsite-select-region-list{
-   padding-left: 12px;
-   list-style: none;
+   background-color: #313639;
+   color: white;
+   border: none;
+   padding:0 14px;
+   font-size: 1.5rem;
+   font-weight: 500;
 }
 
-.mapsite-select-region-link{
-   color: var(--text-color);
-   text-decoration: none;
-}
-.mapsite-select-region-link:hover{
-   color: red;
+.mapsite-select-region-item{
+   background-color: white;
+   color: #313639;
+   font-size: 1.5rem;
+   
 }
 .coppyright{
    margin-top: 30px;
