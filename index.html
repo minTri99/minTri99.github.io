@@ -18,9 +18,14 @@
         <div class="header">
             <div class="grid wide">
                 <div class="brand">
-                    <div class="logo"><a class="logo-img" href=""><img class="logo-img" src="/asset/image/logo.png" alt=""></a></div>
-                    <div class="underline">
+                    <div class="logo">
+                        <div class="underline1"></div>
+                        <a class="logo-link" href="">
+                            <img class="logo-img" src="/asset/image/logo.png" alt="">
+                        </a>
+                        <div class="underline2"></div>
                     </div>
+                    
                     <div class="main-navigation">
                         <ul class="main-navigation-list">
                             <li class="main-navigation-item" style="margin-right: 62px;">
@@ -89,7 +94,7 @@
             <div class="model">
                 <div class="grid">
                     <div class="grid wide">
-                        <span class="model_heading"><h2 style="font-weight: 500;">Model</h2></span>
+                        <span class="model_heading"><h2>Model</h2></span>
                     </div>
                     <div class="row no-gutter"> 
                         <div class="col l-4 ">
@@ -209,7 +214,7 @@
             </div>
             <div class="map">
                 <div class="grid wide">
-                    <span class="map-heading"><h2 style="font-weight: 500;">Find a Dealer</h2></span>
+                    <span class="map-heading"><h2>Find a Dealer</h2></span>
                 </div>
                 <div class="map-container">
                     <iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d1003657.780129767!2d106.0253987!3d10.6929077!3m2!1i1024!2i768!4f13.1!5e0!3m2!1svi!2s!4v1596937597191!5m2!1svi!2s" width="100%" height="600" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
@@ -227,7 +232,7 @@
             <div class="tools">
                 <div class="grid wide">
                     <div class="tools__heading">
-                        <h2 style="font-weight: 500;">Shopping Tools</h2>
+                        <h2>Shopping Tools</h2>
                     </div>
                     <div class="row no-gutter" >
                         <div class="col l-2-5 shopping">
@@ -258,7 +263,7 @@
             <div class="discover">
                 <div class="grid wide">
                     <div class="discover__heading">
-                        <h2 style="font-weight: 500;">Discover</h2>
+                        <h2>Discover</h2>
                     </div>
                     <div class="row no-gutter" >
                         <div class="col l-3 aaa">
@@ -287,20 +292,41 @@
         
         </div>
         <div class="footer">
-            <div class="grid wide">
-                <div class="row">
+            <div class="grid sm-gutter wide">
+                <div class="mapsite-heading"><p>Change country/region:</p></div>
+                <div class="row mapsite">
                     <div class="col l-3">
-                        <div class="mapsite-select-region">Select a region</div>
+                        <label for="mapsite-check" class="mapsite-select-region">
+                            Select a region<i class="fas fa-angle-down"></i>
+                            <input hidden id="mapsite-check" type="checkbox">
+                            <div class="mapsite-select-region-select">
+                                <ul class="mapsite-select-region-list">
+                                    <li class="mapsite-select-region-item"><a class="mapsite-select-region-link"href="">North America</a></li>
+                                    <li class="mapsite-select-region-item"><a class="mapsite-select-region-link"href="">Latin America</a></li>
+                                    <li class="mapsite-select-region-item"><a class="mapsite-select-region-link"href="">Europe</a></li>
+                                    <li class="mapsite-select-region-item"><a class="mapsite-select-region-link"href="">Middle East</a></li>
+                                    <li class="mapsite-select-region-item"><a class="mapsite-select-region-link"href="">Africa</a></li>
+                                    <li class="mapsite-select-region-item"><a class="mapsite-select-region-link"href="">Asia</a></li>
+                                    <li class="mapsite-select-region-item"><a class="mapsite-select-region-link"href="">Australia/Oceania</a></li>
+                                </ul>
+                            </div>
+                        </label>
                     </div>
                     <div class="col l-3">
-                        <div class="mapsite-select-country">Select a country/region</div>
+                        <div class="mapsite-select-country">
+                            Select a country/region
+                            <i class="fas fa-angle-down"></i>
+                        </div>
                     </div>
                     <div class="col l-3"></div>
                     <div class="col l-3"></div>                                              
-                        </div>
-                    </div>
                 </div>
-
+                <div class="coppyrigt-heading">© 2020 Porsche Cars North America, Inc.<u>Legal notice.</u>&#32;<u>Privacy Notice.</u></div>
+                <div class="row coppyright">
+                    <div class="contact"><i class="coppyright-icon fas fa-angle-right"></i>Contact</div>
+                    <div class="recall"><i class="coppyright-icon fas fa-angle-right"></i>Reacll Infomation</div>
+                    <div class="col l-3 privacy"><i class="coppyright-icon fas fa-angle-right"></i>Do not sell person infomation</div>
+                </div>
             </div>
         </div>
     </div>

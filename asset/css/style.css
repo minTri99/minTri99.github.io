@@ -4,46 +4,44 @@
    margin-top: 25px;
 }
 .logo{
-    z-index: 1;
+   position: relative;
+   display: flex;
+   justify-content: center;
+}
+.logo-link{
+   display: block;
+  
+}
+.underline1{
+   border-bottom: 1px solid #e3e4e4;
+   position: absolute;
+   bottom: 20%;
+   right: 0;
+   width: 44%;
+   height: 1px;
+   
+}
+.underline2{
+   border-bottom: 1px solid #e3e4e4;
+   position: absolute;
+   bottom: 20%;
+   left: 0;
+   width: 44%;
+   height: 1px;
+   
+}
+.logo::after{
+  
 }
 .logo-img{
-    position: relative;
-    z-index: 2;
-    font-size: 0;
-    width: 100px;
-    height: 50px;  
+   position: relative;
+   z-index: 2;
+   font-size: 0;
+   width: 100px;
+   height: 50px;  
 }
-.underline{
-    text-align: center;
-    position: relative;
-    margin: 0;
-    margin-left: 0px;
-    line-height: 0;
-}
-.underline::before{
-    content: '';
-    border-bottom: 1px solid #e3e4e4;
-    font-size: 0;
-    position: absolute;
-    top: -9px;
-    bottom: 2px;
-    right: 35px;
-    left: 666px;
-    height: 1px;
-    overflow: hidden; 
-}
-.underline::after{
-    content: '';
-    border-bottom: 1px solid #e3e4e4;
-    font-size: 0;
-    position: absolute;
-    top: -9px;
-    bottom: 2px;
-    right: 666px;
-    left: 35px;
-    height: 1px;
-    overflow: hidden; 
-}
+
+
 .main-navigation{
     margin-top: 20px;
     position: relative;
@@ -73,12 +71,11 @@
     
 }
 .model{
-   margin-top: 130px;
+   margin-top: 110px;
 }
-.model_heading{
-    display: block;
-    font-size: 2rem;
-    font-weight: 500;
+.model_heading h2{
+    font-size: 4rem;
+    font-weight: 550;
     
 }
 .item-wrap{
@@ -161,20 +158,20 @@ div:hover {
 /* MAP/////////////////// */
 /* /////////////////// */
 .map{
-   margin-top: 50px;
+   margin-top: 30px;
    position: relative;
 }
-.map-heading{
-   display: block;
-   font-size: 2rem;
-   font-weight: 500;
+.map-heading h2{
+   
+   font-size: 4rem;
+   font-weight: 550;
     
 }
 .map-search{
    position: absolute;
    height: 42px;
    display: flex;
-   top: 8%;
+   top: 10%;
    left: 4px
 }
 
@@ -183,23 +180,29 @@ div:hover {
    height: 100%;
    font-size: 1.6rem;
    padding-left: 6px;
+   border: none;
 }
 .map-search-btn{
    height: 100%;
    width: 100px;
-   background-color: gray;
+   background-color: #191f22;
    font-size: 1.6rem;
    color: white;
    text-align: center;
    line-height: 42px;
    margin-left:10px ;
-   transition: color 0.2s ease;
+   transition: background-color 0.2s ease;
 }
 .map-search-btn:hover{
-   color: red;
+  background-color: red;
 }
-.tools__heading{
-   font-size: 2rem;
+.tools{
+   margin-top: 30px
+}
+.tools__heading h2{
+   font-size: 4rem;
+   font-weight: 550;
+   margin-bottom: 35px;
    
 }
 .shopping{
@@ -232,8 +235,9 @@ div:hover {
    color: red;
 }
 
-.discover__heading{
-   font-size: 2rem;
+.discover__heading h2{
+   font-size: 4rem;
+   font-weight: 550;
 }
 .aaa{
    position: relative;
@@ -267,11 +271,93 @@ div:hover {
    color: red;
 }
 .footer{
-   margin-top: 20px;
+   display: block;
+   padding: 10px 0 40px 0;
+   margin-top: 50px;
+   background-color: #191f22;
 }
-.elect-region{
+.mapsite{
+   position: relative;
+}
+.mapsite::after{
+   position: absolute;
+   content: "";
+   border-bottom: 2px solid #494e51;
    width: 100%;
-   height: 40px;
-   background-color: wheat;
-   color: black;
+   margin-left: 12px;
+   top: 170%;
+}
+.mapsite-heading p{
+   font-size:2.3rem;
+   font-weight: 600;
+   color: white;
+}
+.mapsite-select-region,.mapsite-select-country{
+   width: 100%;
+   height: 50px;
+   background-color: #313639;
+   padding: 0 20px;
+   line-height: 50px;
+   font-size: 1.5rem;
+   font-weight: 500;
+   color: white;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+.mapsite-select-region{
+   position: relative;
+}
+.mapsite-select-region-select{
+   position: absolute;
+   width: 100%;
+   height: 180px;
+   top: 100%;
+   left: 0;
+   z-index: 1;
+   overflow-y: scroll;
+   background-color: white;
+   display: none;
+}
+#mapsite-check:checked ~ .mapsite-select-region-select{
+   display: block;
+}
+.mapsite-select-region-list{
+   padding-left: 12px;
+   list-style: none;
+}
+
+.mapsite-select-region-link{
+   color: var(--text-color);
+   text-decoration: none;
+}
+.mapsite-select-region-link:hover{
+   color: red;
+}
+.coppyright{
+   margin-top: 30px;
+}
+.coppyright-icon{
+   padding-right: 10px;
+}
+.coppyrigt-heading{
+   margin-top: 60px;
+   color: white;
+   font-size: 1.5rem;
+}
+.contact,.recall,.privacy{
+   height: 50px;
+   min-width: 130px;
+   background-color: #313639;
+   color: white;
+   margin:0 24px 0 12px;
+   text-align: center;
+   line-height: 50px;
+   font-size: 1.5rem;
+   font-weight: 500;
+   padding:0 20px;
+   transition: background-color 0.2s ease;
+}
+.contact:hover,.recall:hover,.privacy:hover{
+   background-color:#D5001C ;
 }
