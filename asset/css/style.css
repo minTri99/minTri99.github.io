@@ -1,37 +1,38 @@
 .header{
    position: relative;
 }
-.brand{
-    z-index: 1;
+
+.logo{
+   z-index: 1;
    text-align: center;
    margin-top: 25px;
-}
-.logo{
    position: relative;
    display: flex;
    justify-content: center;
 }
-.logo-link{
-   display: block;
-  
-}
-.underline1{
+.logo::after{
+   content: "";
    border-bottom: 1px solid #e3e4e4;
    position: absolute;
    bottom: 20%;
    right: 0;
    width: 44%;
    height: 1px;
-   
 }
-.underline2{
+.logo::before{
+   content: "";
    border-bottom: 1px solid #e3e4e4;
    position: absolute;
    bottom: 20%;
    left: 0;
    width: 44%;
-   height: 1px; 
+   height: 1px;
 }
+.logo-link{
+   display: block;
+  
+}
+
 .logo-img{
    position: relative;
    font-size: 0;
@@ -73,26 +74,26 @@
     top:20px
 }
 .model-select{
-   /* display: flex; */
+   display: flex;
    z-index: 5;
    position: absolute;
    background-color: white;
    top: var(--nav-height);
    left: 0;
    width: 100%;
-   border: 1px solid #ccc;
-   display: none;
+   border-top: 1px solid #ccc;
+   /* display: none; */
    overflow: visible;
 }
 .models{
-   
    background-color: red;
 }
 .models:hover .model-select{
-   display: flex;
+   /* display: flex; */
 }
 .model-select-list{
-   padding: 0;
+   padding:0;
+   width: 30%;
 }   
 .model-select-item{
    display: flex;
@@ -138,6 +139,8 @@
 
 }
 .model-select-718-item{
+   padding-left: 20px;
+   text-align: left;
    font-size: 1.6rem;
    color: var(--text-color);
 }
@@ -150,6 +153,7 @@
    color: white;
    font-size: 2rem;
    text-align: left;
+   padding-left: 50px;
    
 }
 
