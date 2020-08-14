@@ -93,7 +93,7 @@
 }
 .model-select-list{
    padding:0;
-   width: 30%;
+   width: 40%;
 }   
 .model-select-item{
    display: flex;
@@ -119,18 +119,22 @@
 /////////// MODEL MORE///// */
 
 .model-select-718-img{
-   display: flex;
+   /* display: flex; */
    background-size: cover;
    background-position: center;
    width: 100%;
    border-left: 1px solid #ccc;
    position: relative;
+   display: none;
+}
+#checkkey:checked ~ .model-select-718-img{
+   display: flex;
 }
 .model-select-718{
    position: absolute;
    width: var(--width-718);
    height: 100%;
-   background-color: rgba(255, 255, 255, 0.9);
+   background-color: #eff0f1;
 }
 .model-select-718-list{
    padding: 0;
