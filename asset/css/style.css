@@ -39,130 +39,294 @@
    width: 100px;
    height: 50px;  
 }
-
-.main-navigation{
-   --nav-height: 60px;
-   display: flex;
-    position: relative;
-    height: var(--nav-height) ;
-    align-items: center;
-}
-.main-navigation-list{
-   
-   text-align: center;
-   margin: 0;
-    padding: 0;
-    list-style: none;
-    display: flex;
-    box-sizing: border-box;
-}
-.main-navigation-item{
-    margin-right: 32px;
-}
-.main-navigation-link{
-    text-decoration: none;
-    color: var(--text-color);
-    font-size: 1.5rem;
-}
-
-.main-navigation-list:first-child::after{
-    position: absolute;
-    content: "";
-    border-right: 1px solid black;
-    height: 15px;
-    left: 125px;
-    top:20px
-}
-.model-select{
-   display: flex;
-   z-index: 5;
-   position: absolute;
-   background-color: white;
-   top: var(--nav-height);
-   left: 0;
+/* NAVIGATION BAR */
+.main-nav{
+   display:flex;
    width: 100%;
-   border-top: 1px solid #ccc;
-   /* display: none; */
-   overflow: visible;
-}
-.models{
-   background-color: red;
-}
-.models:hover .model-select{
-   /* display: flex; */
-}
-.model-select-list{
-   padding:0;
-   width: 40%;
-}   
-.model-select-item{
-   display: flex;
+   height:var(--nav-height);
    align-items: center;
-   justify-content: space-between;
-   padding: 2px 50px;
-   font-size: 1.7rem;
+   background-color: white;
+   position: relative;
+   z-index: 10;
+   padding-left: 200px;
+   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+.main-nav-item {
+   font-size: large;
+   padding-left: 30px;
+}
+.main-nav-item-heading{
+   font-size: 1.8rem;
+   font-weight: 650;
+   padding-bottom: 12px;
    color: var(--text-color);
-   list-style: none;
-   position: relative;
 }
-.model-select-item:last-child{
-   padding-bottom: 20px;
+.main-nav-item-heading:hover{
+   text-decoration: underline;
+   color: var(--main-color);
 }
-.model-select-img{
-   width: 120px;
-   height: 60px;
-}
-.model-select-item:hover{
-   border-bottom: 2px solid red;
-}
-/* ////////////////////////
-/////////// MODEL MORE///// */
-
-.model-select-718-img{
-   /* display: flex; */
-   background-size: cover;
-   background-position: center;
-   width: 100%;
-   border-left: 1px solid #ccc;
-   position: relative;
-   display: none;
-}
-#checkkey:checked ~ .model-select-718-img{
-   display: flex;
-}
-.model-select-718{
+.main-nav-item::before{
    position: absolute;
-   width: var(--width-718);
-   height: 100%;
-   background-color: #eff0f1;
+   content: "";
+   display: block;
+   width: 150px;
+   height: 30px;
+   top: 35px;
 }
-.model-select-718-list{
-   padding: 0;
-   margin: 0;
-   list-style: none;
-
+.models-select{
+   position: absolute;
+   height: var(--models-select-height);
+   width: var(--model-select-width);
+   left: 0;
+   top: var(--nav-height);
+   background-color: white;
+   /* display: none;  */
+   opacity: 1;
+  -webkit-animation: flash 0.3s;
+  animation: flash 0.3s;
 }
-.model-select-718-item{
-   padding-left: 20px;
-   text-align: left;
+.models-item{
+   padding-top: 20px;
+}
+.models-heading{
    font-size: 1.6rem;
    color: var(--text-color);
 }
-.specifications-718{
+.models-img{
+   width: 110px;
+   height: 60px;
+}
+.model-link{
+   display: flex;
+   position: relative;
+   align-items: center;
+   justify-content: space-between;
+   padding: 0 40px;
+   text-decoration: none;
+   color: #3b3b3b;
+}
+.model-link::after{
    position: absolute;
-   left: var(--width-718);
-   height: 100%;
-   width: 100%;
-   background-color: rgba(49, 54, 57,0.3);
-   color: white;
-   font-size: 2rem;
+   content: "";
+   border-bottom: 2px solid var(--main-color);
+   left: 40px;
+   right: 100%;
+   bottom: -20px;
+   animation: fade 0.3s ease;
+   display: none;
+}
+
+.models-item:hover .model-link::after{
+   right: 0%;
+   display: block;
+}
+/*/////////// MODEL 718////////////// */
+.model-718-nav{
+   position: absolute;
+   width: 300px;
+   background-color: #ffffff;
+   left: var(--model-select-width);
+   top: 0;
+   border-left: 1px solid rgb(199, 199, 199);
    text-align: left;
-   padding-left: 50px;
+   height: var(--models-select-height);
+}
+
+.model-718-nav-menu{
+   background-color: rgba(255, 255, 255,0.9);
+   background-size: cover;
+   background-position: center;
+   width: 300px;
+   height: var(--models-select-height);
+   padding-left: 20px;
+   position: relative;
+}
+.models-718-cayman-img{
+   position: absolute;
+   background-image: url(https://files.porsche.com/filestore/image/usa/en-us/jdp-2016-modelseries-flyout-718-cayman/normal/2ece0ba9-673f-11e9-80c4-005056bbdc38/porsche-normal.jpg);
+   background-size: cover;
+   background-position: center;
+   left: 300px;
+   top: 0;
+   margin-left: -20px;
+   width: calc(100vw - 700px);
+   height: var(--models-select-height);
+}
+.models-718-cayman-tech-wrap{
+   position: absolute;
+   width: 100%;
+   height: 100%;
+   background-color: rgba(0, 0, 0, 0.3);
+   padding-left: 20px;
+}
+.models-718-cayman-tech{
+   margin-top: 30px;
+}
+.models-718-value,.models-718-key{
+   color: white;
+
+}
+.models-718-value{
+   font-size: 2rem;
+   font-weight:700;
+}
+.models-718-cayman-link{
+   margin-top: 40px;
+}
+.white-btn.explore-btn{
+   background-color: #D5001C;
+}
+
+.models-718-disclaimer{
+   color: white;
+   position: absolute;
+   bottom: 0;
+   margin-bottom: 20px;
+}
+.models-718-boxster-img{
+   position: absolute;
+   background-image: url(https://files.porsche.com/filestore/image/usa/en-us/jdp-2016-modelseries-flyout-718-boxster/normal/7835f356-674b-11e9-80c4-005056bbdc38;sN;twebp065/porsche-normal.webp);
+   background-size: cover;
+   background-position: center;
+   left: 300px;
+   top: 0;
+   margin-left: -20px;
+   width: calc(100vw - 700px);
+   height: var(--models-select-height);
+   display: none;
+}
+
+.models-option.boxster:hover .models-718-boxster-img{
+   opacity: 1;
+  -webkit-animation: flash 0.3s;
+   animation: flash 0.3s;
+   display: block;
+}
+
+
+/*//////// MODEL 911/////////// */
+.models-911-nav{
+   position: absolute;
+   width: 300px;
+   background-color: #ffffff;
+   left: var(--model-select-width);
+   top: 0;
+   border-left: 1px solid rgb(199, 199, 199);
+   text-align: left;
+   height: var(--models-select-height);
+   display: none;
+}
+.model-911:hover:hover .models-911-nav{
+   display: block;
+}
+
+.models-911-nav-menu{
+   background-color: rgba(255, 255, 255,0.9);
+   background-size: cover;
+   background-position: center;
+   width: 300px;
+   height: var(--models-select-height);
+   padding-left: 20px;
+   position: relative;
+}
+
+.models-911-abc-img{
+   position: absolute;
+   background-image: url(https://files.porsche.com/filestore/image/usa/en-us/modelseries-911carrera992-flyout-background/normal/9c294107-674e-11e9-80c4-005056bbdc38;sN;twebp065/porsche-normal.webp);
+   background-size: cover;
+   background-position: center;
+   left: 300px;
+   top: 0;
+   margin-left: -20px;
+   width: calc(100vw - 700px);
+   height: var(--models-select-height);
    
+}
+.models-718-cayman-tech-wrap{
+   position: absolute;
+   width: 100%;
+   height: 100%;
+   background-color: rgba(0, 0, 0, 0.3);
+   padding-left: 20px;
+}
+.models-718-cayman-tech{
+   margin-top: 30px;
+}
+.models-718-value,.models-718-key{
+   color: white;
+
+}
+.models-718-value{
+   font-size: 2rem;
+   font-weight:700;
+}
+.models-718-cayman-link{
+   margin-top: 40px;
+}
+.models-718-disclaimer{
+   color: white;
+   position: absolute;
+   bottom: 0;
+   margin-bottom: 20px;
+}
+.models-718-boxster-img{
+   position: absolute;
+   background-image: url(https://files.porsche.com/filestore/image/usa/en-us/jdp-2016-modelseries-flyout-718-boxster/normal/7835f356-674b-11e9-80c4-005056bbdc38;sN;twebp065/porsche-normal.webp);
+   background-size: cover;
+   background-position: center;
+   left: 300px;
+   top: 0;
+   margin-left: -20px;
+   width: calc(100vw - 700px);
+   height: var(--models-select-height);
+   display: none;
+}
+
+/* /////////////TOOLS///////// */
+.tools-nav{
+   display: none; 
+}
+.tools:hover .tools-nav{
+   display: block;
+}
+.tools-nav-img{
+   position: absolute;
+   background-image: url(https://files.porsche.com/filestore/image/multimedia/none/jdp2018-mainnavi-shoppingtools/normal/9c7f645a-d91f-11e8-bec8-0019999cd470;sZ;tjpeg060/porsche-normal.jpg);
+   background-size: cover;
+   background-position: center ;
+   background-repeat: no-repeat;
+   top: var(--nav-height);
+   height: var(--models-select-height);
+   width: calc(100vw - var(--model-select-width));
+   left: var(--model-select-width);
+   border-left: 1px solid black;
+   
+}
+.tools-nav-menu{
+   position: absolute;
+   top: var(--nav-height);
+   left: 0;
+   background-color: white;
+   width: var(--model-select-width);
+   height: var(--models-select-height);
+}
+.tools-nav-menu-list{
+   list-style: none;
+   padding-left: 20;
+   margin: 0;
+   text-align: left;
+   
+}
+.tools-nav-menu-item{
+   padding: 8px 0;
+}
+.tools-nav-menu-link{
+   text-decoration: none;
+   color: #3b3b3b;
 }
 
 /* /////////////////////////
-///////BODY/////////////// */
+////////////BODY/////////// */
 .model{
    margin-top: 110px;
 }
@@ -207,42 +371,16 @@
     height: 50px;
     margin-bottom: 30px;
 }
-.item-wrap-custom{
-   font-size: 1.5rem;
-    width: 180px;
-    color: black;
-    background-color: white;
-    margin-right: 25px; 
-    transition: 0.3s ease;
-}
-.item-wrap-custom:hover{
-   transition: 0.3s ease;
-   background: #D5001C;
-   color: white;
-}
-
-.item-wrap-more{
-   font-size: 1.5rem;
-    padding: 0 30px;
-    border: 1px solid white;
-    box-sizing: border-box;
-    padding: -1px 0;
-    transition: 0.3s ease;
-}
 .item-wrap-more-icon{
    font-size: 1.8rem;
    margin-right: 4px;
    
 }
-.item-wrap-more:hover{
-   transition: 0.3s ease;
-   border-color: #D5001C;
-   color: #D5001C;
-}
+
 /* change color background */
 /* div {
   transition: background-color 0.5s ease;
-  background-color: red;
+  background-color: #D5001C;
 }
 div:hover {
   background-color: green;
@@ -271,8 +409,8 @@ div:hover {
 .map-search-input{
    min-width: 250px;
    height: 100%;
-   font-size: 1.6rem;
-   padding-left: 6px;
+   font-size: 1.4rem;
+   padding-left: 8px;
    border: none;
 }
 .map-search-btn{
@@ -287,10 +425,10 @@ div:hover {
    transition: background-color 0.2s ease;
 }
 .map-search-btn:hover{
-  background-color: red;
+  background-color: #D5001C;
 }
-.tools{
-   margin-top: 30px
+.tools-shopping{
+   
 }
 .tools__heading h2{
    font-size: 4rem;
@@ -321,11 +459,11 @@ div:hover {
 .tool__compare-icon,.finacial-icon{
    margin-right: 4px;
    font-size: 2rem;
-   color: red;
+   color: #D5001C;
 }
 
 .tool__compare-heading:hover,.build-heading:hover,.offer-heading:hover,.finacial-heading:hover{
-   color: red;
+   color: #D5001C;
 }
 
 .discover__heading h2{
@@ -343,7 +481,7 @@ div:hover {
    background-repeat: no-repeat;   
 }
 .perfomance:hover,.tech:hover,.exclusive:hover,.online-shop:hover{
-   border-bottom: 2px solid red;
+   border-bottom: 2px solid #D5001C;
    
   
 }
@@ -358,10 +496,10 @@ div:hover {
 .perfomance-icon,.exclusive-icon{
    margin-right: 4px; 
    font-size: 1.5rem;
-   color: red;
+   color: #D5001C;
 }
 .perfomance-heading:hover{
-   color: red;
+   color: #D5001C;
 }
 .footer{
    display: block;

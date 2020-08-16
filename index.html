@@ -14,6 +14,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet"> 
 </head>
 <body>
+    <div class="item-wrap-info btn-wrap"></div>
     <div class="app">
         <div class="header">
             <div class="grid wide">
@@ -23,66 +24,220 @@
                     </a>
                 </div>
             </div>
-                <!-- ////////////////
-            ////////MAIN NAVIGATION/////// -->
-            <div style="padding-left: 130px;" class="main-navigation">
-                <ul class="main-navigation-list">
-                    <div class="models">
-                        <li class="main-navigation-item" style="margin-right: 62px;">
-                            <a href="" class="main-navigation-link"> Các dòng xe</a>  
-                        </li>
-                        <div class="model-select">
-                            <!-- /////////////////////// -->
-                            <ul class="model-select-list">
-                                <li><label for="checkkey" class="model-select-item">718 <img class="model-select-img" src="https://files.porsche.com/filestore/image/multimedia/none/carrange-flyout-718/thumbnail/f45e2ee9-2012-11ea-80c6-005056bbdc38;sS;twebp065/porsche-thumbnail.webp" alt=""></label></li>
-                                <li class="model-select-item">911 <img src="https://files.porsche.com/filestore/image/multimedia/none/carrange-flyout-911/thumbnail/f45e2eea-2012-11ea-80c6-005056bbdc38;sS;twebp065/porsche-thumbnail.webp" alt="" class="model-select-img"></li>
-                                <li class="model-select-item">Taycan <img src="https://files.porsche.com/filestore/image/multimedia/none/carrange-flyout-taycan/thumbnail/23a25680-2013-11ea-80c6-005056bbdc38;sS;twebp065/porsche-thumbnail.webp" alt="" class="model-select-img"></li>
-                                <li class="model-select-item">Panamera <img src="https://files.porsche.com/filestore/image/multimedia/none/carrange-flyout-panamera/thumbnail/2ab66175-2013-11ea-80c6-005056bbdc38;sS;twebp065/porsche-thumbnail.webp" alt="" class="model-select-img"></li>
-                                <li class="model-select-item">Maccan <img src="https://files.porsche.com/filestore/image/multimedia/none/carrange-flyout-macan/thumbnail/1a141451-2013-11ea-80c6-005056bbdc38;sS;twebp065/porsche-thumbnail.webp" alt="" class="model-select-img"></li>
-                                <li class="model-select-item">Cayenne <img src="https://files.porsche.com/filestore/image/multimedia/none/carrange-flyout-cayenne/thumbnail/468c4188-200a-11ea-80c6-005056bbdc38;sS;twebp065/porsche-thumbnail.webp" alt="" class="model-select-img"></li>
-                            </ul>
-                            <input type="checkbox" id=checkkey>
-                            <div style="background-image: url(https://files.porsche.com/filestore/image/usa/en-us/jdp-2016-modelseries-flyout-718-cayman/normal/2ece0ba9-673f-11e9-80c4-005056bbdc38/porsche-normal.jpg);" class="model-select-718-img">
-                                
-                                  
-                                <div class="model-select-718">
-                                    <ul class="model-select-718-list">
-                                        <li class="model-select-718-item">718 Cayman Model</li>
-                                        <li class="model-select-718-item">Porsche sample</li>
-                                        <li class="model-select-718-item">Porsche sample</li>
-                                        <li class="model-select-718-item">Porsche sample</li>
-                                        <li class="model-select-718-item">Porsche sample</li>
-                                    </ul>
-                                </div>
-                                <div class="specifications-718">
-                                        <p class="specifications-718-detail">300 HP</p>
-                                        <p class="specifications-718-detail">300 HP</p>
-                                        <p class="specifications-718-detail">300 HP</p>
-                                        <p class="specifications-718-detail">300 HP</p>
-                                        <div class="btn-718">
-                                            Build & Prices
+            <!-- ///////////MAIN NAVIGATION///////////// -->
+            <div class="main-nav">
+                <div class="main-nav-item models">
+                    <span class="main-nav-item-heading">Models</span>
+                    <!-- ///////////EXPAND/////////////// -->
+                    <div class="models-select">
+
+                        <!--////////////// MODEL 718//////////////////// -->
+
+                        <div class="models-718 models-item">
+                            <a href="" class="model-link ">
+                                <div class="models-heading">718</div>
+                                <img class="models-img" src="https://porsche-vietnam.vn/wp-content/uploads/2018/07/porsche-718-cayman-model-1.png" alt="">
+                            </a>
+                            <nav class="model-718-nav">
+                                <div class="model-718-nav-menu">
+                                    <div class="models-option">
+                                        <div class="models-option-link">
+                                            <a href="" class="models-option-link-text">Porsche 718 Cayman</a>
                                         </div>
-                                </div>                  
-                            </div>
+                                        
+                                        <div class="models-718-cayman-img">
+                                            <div class="models-718-cayman-tech-wrap">
+                                                <div class="models-718-cayman-tech">
+                                                    <div class="models-718-value">300 hp</div>
+                                                    <div class="models-718-key">Max. power</div>
+                                                </div>
+                                                <div class="models-718-cayman-tech">
+                                                    <div class="models-718-value">4.9 s</div>
+                                                    <div class="models-718-key">0 - 60 mph</div>
+                                                </div>
+                                                <div class="models-718-cayman-tech">
+                                                    <div class="models-718-value">170 mph</div>
+                                                    <div class="models-718-key">Top track speed</div>
+                                                </div>
+                                                <div class="models-718-cayman-tech">
+                                                    <div class="models-718-value">From $ 59,900.00*</div>
+                                                    <div class="models-718-key">MSRP</div>
+                                                </div>
+                                                <div class="models-718-cayman-link btn-wrap">
+                                                    <div class="transt-btn"><a style="text-decoration: none;" href="" class=""><span style="color: white;">Build & Price</span></a></div>
+                                                    <div class="transt-btn"><a style="text-decoration: none;" href="" class=""><span style="color: white;">Compare</span></a></div>
+                                                    <div class="white-btn explore-btn"><a style="text-decoration: none;" href="" class=""><span style="color: white;">Explore</span></a></div>
+                                                </div>
+                                                <div class="models-718-cayman-tech">
+                                                   
+                                                    <div class="models-718-disclaimer">*Manufacturer’s Suggested Retail Price. Excludes options; taxes; title; registration; delivery, processing and handling fee; dealer charges. Dealer sets actual selling price.</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div  class="models-option boxster">
+                                        <div class="models-option-link">
+                                            <a href="" class="models-option-link-text">Porsche 718 Boxster</a>
+                                        </div>                                       
+                                        <div class="models-718-boxster-img">
+                                            <div class="models-718-cayman-tech-wrap">
+                                                <div class="models-718-cayman-tech">
+                                                    <div class="models-718-value">300 hp</div>
+                                                    <div class="models-718-key">Max. power</div>
+                                                </div>
+                                                <div class="models-718-cayman-tech">
+                                                    <div class="models-718-value">4.9 s</div>
+                                                    <div class="models-718-key">0 - 60 mph</div>
+                                                </div>
+                                                <div class="models-718-cayman-tech">
+                                                    <div class="models-718-value">170 mph</div>
+                                                    <div class="models-718-key">Top track speed</div>
+                                                </div>
+                                                <div class="models-718-cayman-tech">
+                                                    <div class="models-718-value">From $ 59,900.00*</div>
+                                                    <div class="models-718-key">MSRP</div>
+                                                </div>
+                                                <div class="models-718-cayman-link">
+                                                    <a href="" class=""><span>Build & Price</span></a>
+                                                    <a href="" class=""><span>Compare</span></a>
+                                                    <a href="" class=""><span>Explore</span></a>
+                                                </div>
+                                                <div class="models-718-cayman-tech">
+                                                    <div class="models-718-disclaimer">*Manufacturer’s Suggested Retail Price. Excludes options; taxes; title; registration; delivery, processing and handling fee; dealer charges. Dealer sets actual selling price.</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div  class="models-option">
+                                        <div class="models-option-link">
+                                            <a href="" class="models-option-link-text">Porsche 718 T Mode</a>
+                                        </div>
+                                    </div>
+                                    <div  class="models-option">
+                                        <div class="models-option-link">
+                                            <a href="" class="models-option-link-text">Porsche 718 GTS 4.0 </a>
+                                        </div>
+                                    </div>
+                                    <div  class="models-option">
+                                        <div class="models-option-link">
+                                            <a href="" class="models-option-link-text">Porsche 718 Cayman GT4</a>  
+                                        </div>
+                                    </div>
+                                    <div  class="models-option">
+                                        <div class="models-option-link">
+                                            <a href="" class="models-option-link-text">Porsche 718 Spyder</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </nav>
+                        </div>
+        
+                        <!-- MODEL 911 -->
+                        <div class="model-911 models-item">
+                            <a href="" class="model-link">
+                                <span class="models-heading">911</span>
+                                <img src="https://porsche-vietnam.vn/wp-content/uploads/2018/11/992-c2s-modelimage-sideshot.png" alt="" class="models-911-img models-img">
+                            </a>
+                            <nav class="models-911-nav">
+                                <div class="models-911-nav-menu">
+                                    <div class="models-option">
+                                        <div class="models-option-link">
+                                            <a href="" class="models-option-link-text">Porsche 911 ABC</a>
+                                        </div>
+                                        <div class="models-911-abc-img">
+                                            <div class="models-718-cayman-tech-wrap">
+                                                <div class="models-718-cayman-tech">
+                                                    <div class="models-718-value">300 hp</div>
+                                                    <div class="models-718-key">Max. power</div>
+                                                </div>
+                                                <div class="models-718-cayman-tech">
+                                                    <div class="models-718-value">4.9 s</div>
+                                                    <div class="models-718-key">0 - 60 mph</div>
+                                                </div>
+                                                <div class="models-718-cayman-tech">
+                                                    <div class="models-718-value">170 mph</div>
+                                                    <div class="models-718-key">Top track speed</div>
+                                                </div>
+                                                <div class="models-718-cayman-tech">
+                                                    <div class="models-718-value">From $ 59,900.00*</div>
+                                                    <div class="models-718-key">MSRP</div>
+                                                </div>
+                                                <div class="models-718-cayman-link">
+                                                    <a href="" class=""><span>Build & Price</span></a>
+                                                    <a href="" class=""><span>Compare</span></a>
+                                                    <a href="" class=""><span>Explore</span></a>
+                                                </div>
+                                                <div class="models-718-cayman-tech">
+                                                   
+                                                    <div class="models-718-disclaimer">*Manufacturer’s Suggested Retail Price. Excludes options; taxes; title; registration; delivery, processing and handling fee; dealer charges. Dealer sets actual selling price.</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div  class="models-option xyz">
+                                        <div class="models-option-link">
+                                            <a href="" class="models-option-link-text">Porsche XYZ</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </nav>
+                        </div>
+                        <div class="model-panamera models-item">
+                            <a href="" class="model-link models-panamera-link">
+                                <span class="models-heading">Panamera</span>
+                                <img src="https://porsche-vietnam.vn/wp-content/uploads/2018/11/992-c2s-modelimage-sideshot.png" alt="" class="models-panamera-img models-img">
+                            </a>
+                        </div>
+                        <div class="model-panamera models-item">
+                            <a href="" class="model-link models-panamera-link">
+                                <span class="models-heading">Panamera</span>
+                                <img src="https://porsche-vietnam.vn/wp-content/uploads/2018/11/992-c2s-modelimage-sideshot.png" alt="" class="models-panamera-img models-img">
+                            </a>
+                        </div>
+                        <div class="model-panamera models-item">
+                            <a href="" class="model-link models-panamera-link">
+                                <span class="models-heading">Panamera</span>
+                                <img src="https://porsche-vietnam.vn/wp-content/uploads/2018/11/992-c2s-modelimage-sideshot.png" alt="" class="models-panamera-img models-img">
+                            </a>
+                        </div>
+                        <div class="model-panamera models-item">
+                            <a href="" class="model-link models-panamera-link">
+                                <span class="models-heading">Panamera</span>
+                                <img src="https://porsche-vietnam.vn/wp-content/uploads/2018/11/992-c2s-modelimage-sideshot.png" alt="" class="models-panamera-img models-img">
+                            </a>
+                        </div>
+                    </div>  
+                </div>
+                <div class="main-nav-item tools">
+                    <span class="main-nav-item-heading">Shopping Tools</span>
+                    <div class="tools-nav">
+                        <div class="tools-nav-img"></div>
+                        <div class="tools-nav-menu">
+                            <ul class="tools-nav-menu-list">
+                                <li class="tools-nav-menu-item"><a href="" class="tools-nav-menu-link">Build your Posrche</a></li>
+                                <li class="tools-nav-menu-item"><a href="" class="tools-nav-menu-link">Build your Posrche</a></li>
+                                <li class="tools-nav-menu-item"><a href="" class="tools-nav-menu-link">Build your Posrche</a></li>
+                                <li class="tools-nav-menu-item"><a href="" class="tools-nav-menu-link"></a></li>
+                                <li class="tools-nav-menu-item"><a href="" class="tools-nav-menu-link">Build your Posrche</a></li>
+                                <li class="tools-nav-menu-item"><a href="" class="tools-nav-menu-link">Build your Posrche</a></li>
+                                <li class="tools-nav-menu-item"><a href="" class="tools-nav-menu-link">Build your Posrche</a></li>
+                                <li class="tools-nav-menu-item"><a href="" class="tools-nav-menu-link">Build your Posrche</a></li>
+                                <li class="tools-nav-menu-item"><a href="" class="tools-nav-menu-link">Build your Posrche</a></li>
+                            </ul>
                         </div>
                     </div>
                     
-                    <li class="main-navigation-item">
-                        <a href="" class="main-navigation-link">Xe mới</a>
-                    </li>
-                    <li class="main-navigation-item">
-                        <a href="" class="main-navigation-link">Trung tâm Porche</a>
-                    </li>
-                    <li class="main-navigation-item">
-                        <a href="" class="main-navigation-link">Dịch vụ</a>
-                    </li>
-                    <li class="main-navigation-item">
-                        <a href="" class="main-navigation-link">Về Porsche</a>
-                    </li>
-                </ul>
-            </div>   
+                </div>
+                <div class="main-nav-item services">
+                    <span class="main-nav-item-heading">Shop & Services</span>
+                </div>
+                <div class="main-nav-item world">
+                    <span class="main-nav-item-heading">Porsche World</span>
+                </div>
+            </div>
+        </div>   
         </div>
-        <div class="body">
+        <div class="container">
             <div id="slider">
                 <input type="radio" name="slider" id="slide1" checked>
                 <input type="radio" name="slider" id="slide2">
@@ -139,11 +294,11 @@
                                     <h3 class="item-name">718</h3>
                                     <p class="item-price">From $ 59,900,00*</p>
                                 </div>
-                                <div class="item-wrap-info">
-                                    <div class="item-wrap-custom">
+                                <div class="item-wrap-info btn-wrap">
+                                    <div class="white-btn">
                                         Build Your Porsche
                                     </div>
-                                    <div class="item-wrap-more">
+                                    <div class="transt-btn">
                                         <span><i class="item-wrap-more-icon fas fa-angle-right"></i></span>
                                         All Model
                                     </div>
@@ -157,11 +312,11 @@
                                     <h3 class="item-name">911</h3>
                                     <p class="item-price">From $ 99,200,00*</p>
                                 </div>
-                                <div class="item-wrap-info">
-                                    <div class="item-wrap-custom">
+                                <div class="item-wrap-info btn-wrap">
+                                    <div class="white-btn">
                                         Build Your Porsche
                                     </div>
-                                    <div class="item-wrap-more">
+                                    <div class="transt-btn">
                                         <span><i class="item-wrap-more-icon fas fa-angle-right"></i></span>
                                         All Model
                                     </div>
@@ -175,11 +330,11 @@
                                     <h3 class="item-name">Taycan</h3>
                                     <p class="item-price">From $ 103,800,00*</p>
                                 </div>
-                                <div class="item-wrap-info">
-                                    <div class="item-wrap-custom">
+                                <div class="item-wrap-info btn-wrap">
+                                    <div class="white-btn">
                                         Build Your Porsche
                                     </div>
-                                    <div class="item-wrap-more">
+                                    <div class="transt-btn">
                                         <span><i class="item-wrap-more-icon fas fa-angle-right"></i></span>
                                         All Model
                                     </div>
@@ -194,11 +349,11 @@
                                     <h3 class="item-name">Panamera</h3>
                                     <p class="item-price">From $ 87,200,00*</p>
                                 </div>
-                                <div class="item-wrap-info">
-                                    <div class="item-wrap-custom">
+                                <div class="item-wrap-info btn-wrap">
+                                    <div class="white-btn">
                                         Build Your Porsche
                                     </div>
-                                    <div class="item-wrap-more">
+                                    <div class="transt-btn">
                                         <span><i class="item-wrap-more-icon fas fa-angle-right"></i></span>
                                         All Model
                                     </div>
@@ -213,11 +368,11 @@
                                     <h3 class="item-name">Macan</h3>
                                     <p class="item-price">From $ 52,100,00*</p>
                                 </div>
-                                <div class="item-wrap-info">
-                                    <div class="item-wrap-custom">
+                                <div class="item-wrap-info btn-wrap">
+                                    <div class="white-btn">
                                         Build Your Porsche
                                     </div>
-                                    <div class="item-wrap-more">
+                                    <div class="transt-btn">
                                         <span><i class="item-wrap-more-icon fas fa-angle-right"></i></span>
                                         All Model
                                     </div>
@@ -232,11 +387,11 @@
                                     <h3 class="item-name">Cayenne</h3>
                                     <p class="item-price">From $ 67,500,00*</p>
                                 </div>
-                                <div class="item-wrap-info">
-                                    <div class="item-wrap-custom">
+                                <div class="item-wrap-info btn-wrap">
+                                    <div class="white-btn">
                                         Build Your Porsche
                                     </div>
-                                    <div class="item-wrap-more">
+                                    <div class="transt-btn">
                                         <span><i class="item-wrap-more-icon fas fa-angle-right"></i></span>
                                         All Model
                                     </div>
@@ -263,7 +418,7 @@
                     </div>
                 </div>
             </div>
-            <div class="tools">
+            <div class="tools-shopping">
                 <div class="grid wide">
                     <div class="tools__heading">
                         <h2>Shopping Tools</h2>
