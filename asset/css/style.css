@@ -123,7 +123,7 @@
 /*/////////// MODEL 718////////////// */
 .model-718-nav{
    position: absolute;
-   width: 300px;
+   width: var(--models-nav-width);
    background-color: #ffffff;
    left: var(--model-select-width);
    top: 0;
@@ -136,9 +136,8 @@
    background-color: rgba(255, 255, 255,0.9);
    background-size: cover;
    background-position: center;
-   width: 300px;
    height: var(--models-select-height);
-   padding-left: 20px;
+   padding: 0 20px;
    position: relative;
 }
 .models-718-cayman-img{
@@ -146,7 +145,7 @@
    background-image: url(https://files.porsche.com/filestore/image/usa/en-us/jdp-2016-modelseries-flyout-718-cayman/normal/2ece0ba9-673f-11e9-80c4-005056bbdc38/porsche-normal.jpg);
    background-size: cover;
    background-position: center;
-   left: 300px;
+   left: var(--models-nav-width);
    top: 0;
    margin-left: -20px;
    width: calc(100vw - 700px);
@@ -188,7 +187,7 @@
    background-image: url(https://files.porsche.com/filestore/image/usa/en-us/jdp-2016-modelseries-flyout-718-boxster/normal/7835f356-674b-11e9-80c4-005056bbdc38;sN;twebp065/porsche-normal.webp);
    background-size: cover;
    background-position: center;
-   left: 300px;
+   left: var(--models-nav-width);
    top: 0;
    margin-left: -20px;
    width: calc(100vw - 700px);
@@ -207,7 +206,7 @@
 /*//////// MODEL 911/////////// */
 .models-911-nav{
    position: absolute;
-   width: 300px;
+   width: var(--models-nav-width);
    background-color: #ffffff;
    left: var(--model-select-width);
    top: 0;
@@ -224,7 +223,6 @@
    background-color: rgba(255, 255, 255,0.9);
    background-size: cover;
    background-position: center;
-   width: 300px;
    height: var(--models-select-height);
    padding-left: 20px;
    position: relative;
@@ -235,7 +233,7 @@
    background-image: url(https://files.porsche.com/filestore/image/usa/en-us/modelseries-911carrera992-flyout-background/normal/9c294107-674e-11e9-80c4-005056bbdc38;sN;twebp065/porsche-normal.webp);
    background-size: cover;
    background-position: center;
-   left: 300px;
+   left: var(--models-nav-width);
    top: 0;
    margin-left: -20px;
    width: calc(100vw - 700px);
@@ -274,7 +272,7 @@
    background-image: url(https://files.porsche.com/filestore/image/usa/en-us/jdp-2016-modelseries-flyout-718-boxster/normal/7835f356-674b-11e9-80c4-005056bbdc38;sN;twebp065/porsche-normal.webp);
    background-size: cover;
    background-position: center;
-   left: 300px;
+   left: var(--models-nav-width);
    top: 0;
    margin-left: -20px;
    width: calc(100vw - 700px);

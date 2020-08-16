@@ -5,7 +5,7 @@
     --nav-height:60px;
     --model-select-width:400px;
     --models-select-height:550px;
-
+   --models-nav-width: 340px;
 }
 @-webkit-keyframes flash {
     0% {
@@ -84,7 +84,6 @@ html{
  }
  .models-option-link{
     position: relative;
-    width:260px ;
  }
  .models-option-link-text{
     text-decoration: none;
