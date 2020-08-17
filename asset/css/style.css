@@ -148,7 +148,7 @@
    left: var(--models-nav-width);
    top: 0;
    margin-left: -20px;
-   width: calc(100vw - 700px);
+   width: calc(100vw - var(--models-nav-width) - var(--model-select-width));
    height: var(--models-select-height);
 }
 .models-tech-wrap{
@@ -161,7 +161,7 @@
 .models-tech{
    margin-top: 30px;
 }
-.models-value,.models-718-key{
+.models-value,.models-key{
    color: white;
 
 }
@@ -176,11 +176,12 @@
    background-color: #D5001C;
 }
 
-.models-718-disclaimer{
+.models-disclaimer{
    color: white;
+   font-size: 1rem;
    position: absolute;
    bottom: 0;
-   margin-bottom: 20px;
+   margin-bottom: 6px;
 }
 .models-718-img.boxster{
    background-image: url(https://files.porsche.com/filestore/image/usa/en-us/jdp-2016-modelseries-flyout-718-boxster/normal/7835f356-674b-11e9-80c4-005056bbdc38;sN;twebp065/porsche-normal.webp);
