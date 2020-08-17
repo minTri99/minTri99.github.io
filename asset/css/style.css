@@ -121,7 +121,7 @@
    display: block;
 }
 /*/////////// MODEL 718////////////// */
-.model-718-nav{
+.models-item-nav{
    position: absolute;
    width: var(--models-nav-width);
    background-color: #ffffff;
@@ -132,7 +132,7 @@
    height: var(--models-select-height);
 }
 
-.model-718-nav-menu{
+.models-item-nav-menu{
    background-color: rgba(255, 255, 255,0.9);
    background-size: cover;
    background-position: center;
@@ -140,7 +140,7 @@
    padding: 0 20px;
    position: relative;
 }
-.models-718-cayman-img{
+.models-718-img{
    position: absolute;
    background-image: url(https://files.porsche.com/filestore/image/usa/en-us/jdp-2016-modelseries-flyout-718-cayman/normal/2ece0ba9-673f-11e9-80c4-005056bbdc38/porsche-normal.jpg);
    background-size: cover;
@@ -151,21 +151,21 @@
    width: calc(100vw - 700px);
    height: var(--models-select-height);
 }
-.models-718-cayman-tech-wrap{
+.models-tech-wrap{
    position: absolute;
    width: 100%;
    height: 100%;
    background-color: rgba(0, 0, 0, 0.3);
    padding-left: 20px;
 }
-.models-718-cayman-tech{
+.models-tech{
    margin-top: 30px;
 }
-.models-718-value,.models-718-key{
+.models-value,.models-718-key{
    color: white;
 
 }
-.models-718-value{
+.models-value{
    font-size: 2rem;
    font-weight:700;
 }
@@ -182,20 +182,12 @@
    bottom: 0;
    margin-bottom: 20px;
 }
-.models-718-boxster-img{
-   position: absolute;
+.models-718-img.boxster{
    background-image: url(https://files.porsche.com/filestore/image/usa/en-us/jdp-2016-modelseries-flyout-718-boxster/normal/7835f356-674b-11e9-80c4-005056bbdc38;sN;twebp065/porsche-normal.webp);
-   background-size: cover;
-   background-position: center;
-   left: var(--models-nav-width);
-   top: 0;
-   margin-left: -20px;
-   width: calc(100vw - 700px);
-   height: var(--models-select-height);
    display: none;
 }
 
-.models-option.boxster:hover .models-718-boxster-img{
+.models-option.boxster:hover .models-718-img.boxster{
    opacity: 1;
   -webkit-animation: flash 0.3s;
    animation: flash 0.3s;
@@ -204,81 +196,7 @@
 
 
 /*//////// MODEL 911/////////// */
-.models-911-nav{
-   position: absolute;
-   width: var(--models-nav-width);
-   background-color: #ffffff;
-   left: var(--model-select-width);
-   top: 0;
-   border-left: 1px solid rgb(199, 199, 199);
-   text-align: left;
-   height: var(--models-select-height);
-   display: none;
-}
-.model-911:hover:hover .models-911-nav{
-   display: block;
-}
 
-.models-911-nav-menu{
-   background-color: rgba(255, 255, 255,0.9);
-   background-size: cover;
-   background-position: center;
-   height: var(--models-select-height);
-   padding-left: 20px;
-   position: relative;
-}
-
-.models-911-abc-img{
-   position: absolute;
-   background-image: url(https://files.porsche.com/filestore/image/usa/en-us/modelseries-911carrera992-flyout-background/normal/9c294107-674e-11e9-80c4-005056bbdc38;sN;twebp065/porsche-normal.webp);
-   background-size: cover;
-   background-position: center;
-   left: var(--models-nav-width);
-   top: 0;
-   margin-left: -20px;
-   width: calc(100vw - 700px);
-   height: var(--models-select-height);
-   
-}
-.models-718-cayman-tech-wrap{
-   position: absolute;
-   width: 100%;
-   height: 100%;
-   background-color: rgba(0, 0, 0, 0.3);
-   padding-left: 20px;
-}
-.models-718-cayman-tech{
-   margin-top: 30px;
-}
-.models-718-value,.models-718-key{
-   color: white;
-
-}
-.models-718-value{
-   font-size: 2rem;
-   font-weight:700;
-}
-.models-718-cayman-link{
-   margin-top: 40px;
-}
-.models-718-disclaimer{
-   color: white;
-   position: absolute;
-   bottom: 0;
-   margin-bottom: 20px;
-}
-.models-718-boxster-img{
-   position: absolute;
-   background-image: url(https://files.porsche.com/filestore/image/usa/en-us/jdp-2016-modelseries-flyout-718-boxster/normal/7835f356-674b-11e9-80c4-005056bbdc38;sN;twebp065/porsche-normal.webp);
-   background-size: cover;
-   background-position: center;
-   left: var(--models-nav-width);
-   top: 0;
-   margin-left: -20px;
-   width: calc(100vw - 700px);
-   height: var(--models-select-height);
-   display: none;
-}
 
 /* /////////////TOOLS///////// */
 .tools-nav{
