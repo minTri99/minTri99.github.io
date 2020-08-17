@@ -105,3 +105,13 @@ html{
     display: block;
     right: 0%;
  }
+ .models-options-img{
+   position: absolute;
+   background-size: cover;
+   background-position: center;
+   left: var(--models-nav-width);
+   top: 0;
+   margin-left: -20px;
+   width: calc(100vw - var(--models-nav-width) - var(--model-select-width));
+   height: var(--models-select-height);
+}

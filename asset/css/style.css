@@ -92,7 +92,7 @@
    font-size: 1.6rem;
    color: var(--text-color);
 }
-.models-img{
+.models-nav-img{
    width: 110px;
    height: 60px;
 }
@@ -140,7 +140,7 @@
    padding: 0 20px;
    position: relative;
 }
-.models-718-img{
+.models-background-img{
    position: absolute;
    background-image: url(https://files.porsche.com/filestore/image/usa/en-us/jdp-2016-modelseries-flyout-718-cayman/normal/2ece0ba9-673f-11e9-80c4-005056bbdc38/porsche-normal.jpg);
    background-size: cover;
@@ -183,12 +183,12 @@
    bottom: 0;
    margin-bottom: 6px;
 }
-.models-718-img.boxster{
+.models-background-img.boxster{
    background-image: url(https://files.porsche.com/filestore/image/usa/en-us/jdp-2016-modelseries-flyout-718-boxster/normal/7835f356-674b-11e9-80c4-005056bbdc38;sN;twebp065/porsche-normal.webp);
    display: none;
 }
 
-.models-option.boxster:hover .models-718-img.boxster{
+.models-option.boxster:hover .models-background-img.boxster{
    opacity: 1;
   -webkit-animation: flash 0.3s;
    animation: flash 0.3s;
