@@ -1,7 +1,7 @@
 :root{
     --main-color: #D5001C;
     --text-color: #333;
-    --width-718: 28%;
+    --width-718: 38%;
     --nav-height:60px;
     --model-select-width:400px;
     --models-select-height:550px;
@@ -101,7 +101,7 @@ html{
     border-bottom: 2px solid var(--main-color);
     left: 0;
     right: 100%;
-    bottom: 0;
+    bottom: -10px;
     display: none;
     animation: fade 0.3s ease;
  }

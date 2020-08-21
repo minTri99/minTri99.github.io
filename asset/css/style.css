@@ -52,17 +52,20 @@
    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
 .main-nav-item {
-   font-size: large;
    padding-left: 30px;
 }
+
 .main-nav-item-heading{
+   position: relative;
    font-size: 1.8rem;
    font-weight: 650;
    padding-bottom: 12px;
    color: var(--text-color);
+   padding: 0;
 }
+
 .main-nav-item-heading:hover{
-   text-decoration: underline;
+   border-bottom: 2px solid var(--main-color);
    color: var(--main-color);
 }
 .main-nav-item::before{
@@ -169,6 +172,8 @@
 
 .white-btn.explore-btn{
    background-color: #D5001C;
+   color: white;
+   text-decoration: none;
 }
 
 .models-disclaimer{
@@ -404,7 +409,56 @@
    color: #3b3b3b;
    font-size: 1.5rem;
 }
-
+/* /////////SHOP & SERVICE////// */
+.model-link.shop-world::after{
+   bottom: -5px;
+}
+.models-select.services{
+   display: none ;
+}
+.main-nav-item.services:hover .models-select.services{
+   display: block ;
+}
+.models-background-img.shop{
+   background-image: url(https://files.porsche.com/filestore/image/multimedia/none/jdp2018-mainnavi-shop/normal/7d820ac1-8eb5-11ea-80c9-005056bbdc38;sN;twebp065/porsche-normal.webp);
+}
+.models-item-nav.services{
+   display: none;
+}
+.models-item.services:hover .models-item-nav.services{
+   display: block;
+}
+.models-background-img.services{
+   background-image: url(https://files.porsche.com/filestore/image/multimedia/none/jdp2018-mainnavi-service/normal/2deea12e-d935-11e8-bec8-0019999cd470;sD;twebp065/porsche-normal.webp);
+}
+/* ////////PORSCHE WORLD///// */
+.models-select.world{
+   display: none;
+}
+.main-nav-item.world:hover .models-select.world{
+   display: block;
+}
+.models-background-img.motosport{
+   background-image: url(https://files.porsche.com/filestore/image/multimedia/none/jdp2018-mainnavi-motorsport/normal/5fb74cc2-d935-11e8-bec8-0019999cd470;sD;twebp065/porsche-normal.webp);
+}
+.models-background-img.fascination{
+   background-image: url(https://files.porsche.com/filestore/image/multimedia/none/jdp2018-mainnavi-fascination/normal/bbf4e242-d935-11e8-bec8-0019999cd470;sD;twebp065/porsche-normal.webp);
+}
+.models-item-nav.fascination{
+   display: none;
+}
+.models-item.fascination:hover .models-item-nav.fascination{
+   display: block;
+}
+.models-background-img.company{
+   background-image: url(https://files.porsche.com/filestore/image/multimedia/none/jdp2018-mainnavi-company/normal/e6356dc2-d935-11e8-bec8-0019999cd470;sD;twebp065/porsche-normal.webp);
+}
+.models-item-nav.company{
+   display: none;
+}
+.models-item.company:hover .models-item-nav.company{
+   display: block;
+}
 /* /////////////////////////
 ////////////BODY/////////// */
 .model{
