@@ -78,12 +78,17 @@
    height: var(--models-select-height);
    width: var(--model-select-width);
    left: 0;
+   padding-left: 50px;
    top: var(--nav-height);
    background-color: white;
-   /* display: none;  */
+   display: none;
    opacity: 1;
   -webkit-animation: flash 0.3s;
   animation: flash 0.3s;
+}
+
+.main-nav-item.models:hover .models-select{
+   display: block;
 }
 .models-item{
    padding-top: 20px;
@@ -140,16 +145,8 @@
    padding: 0 20px;
    position: relative;
 }
-.models-background-img{
-   position: absolute;
+.models-background-img.cayman{
    background-image: url(https://files.porsche.com/filestore/image/usa/en-us/jdp-2016-modelseries-flyout-718-cayman/normal/2ece0ba9-673f-11e9-80c4-005056bbdc38/porsche-normal.jpg);
-   background-size: cover;
-   background-position: center;
-   left: var(--models-nav-width);
-   top: 0;
-   margin-left: -20px;
-   width: calc(100vw - var(--models-nav-width) - var(--model-select-width));
-   height: var(--models-select-height);
 }
 .models-tech-wrap{
    position: absolute;
@@ -169,9 +166,7 @@
    font-size: 2rem;
    font-weight:700;
 }
-.models-718-cayman-link{
-   margin-top: 40px;
-}
+
 .white-btn.explore-btn{
    background-color: #D5001C;
 }
@@ -187,21 +182,192 @@
    background-image: url(https://files.porsche.com/filestore/image/usa/en-us/jdp-2016-modelseries-flyout-718-boxster/normal/7835f356-674b-11e9-80c4-005056bbdc38;sN;twebp065/porsche-normal.webp);
    display: none;
 }
-
 .models-option.boxster:hover .models-background-img.boxster{
    opacity: 1;
   -webkit-animation: flash 0.3s;
    animation: flash 0.3s;
    display: block;
 }
-
-
+.models-background-img.tmode{
+   display:none;
+   background-image: url(https://files.porsche.com/filestore/image/usa/en-us/modelseries-flyout-718-t/normal/b932817e-674b-11e9-80c4-005056bbdc38;sO;twebp065/porsche-normal.webp);
+}
+.models-option.tmode:hover .models-background-img.tmode{
+   opacity: 1;
+  -webkit-animation: flash 0.3s;
+   animation: flash 0.3s;
+   display: block;
+}
+.models-background-img.gts{
+   display:none;
+   background-image: url(https://files.porsche.com/filestore/image/usa/none/modelseries-718-gts-4-flyout-background/normal/04b3ffae-ab04-11ea-80ca-005056bbdc38;sZ;twebp065/porsche-normal.webp);
+}
+.models-option.gts:hover .models-background-img.gts{
+   opacity: 1;
+  -webkit-animation: flash 0.3s;
+   animation: flash 0.3s;
+   display: block;
+}
+.models-background-img.gt4{
+   display:none;
+   background-image: url(https://files.porsche.com/filestore/image/usa/en-us/modelseries-718gt4-flyout-background/normal/76d1d974-b76d-11e9-80c4-005056bbdc38;sO;twebp065/porsche-normal.webp);
+}
+.models-option.gt4:hover .models-background-img.gt4{
+   opacity: 1;
+  -webkit-animation: flash 0.3s;
+   animation: flash 0.3s;
+   display: block;
+}
+.models-background-img.spyder{
+   display:none;
+   background-image: url(https://files.porsche.com/filestore/image/usa/en-us/modelseries-718spyder-flyout-background/normal/088c3575-86ca-11e9-80c4-005056bbdc38;sO;twebp065/porsche-normal.webp);
+}
+.models-option.spyder:hover .models-background-img.spyder{
+   opacity: 1;
+  -webkit-animation: flash 0.3s;
+   animation: flash 0.3s;
+   display: block;
+}
 /*//////// MODEL 911/////////// */
-
-
+.models-item-nav.model-911{
+   display: none;
+   opacity: 1;
+  -webkit-animation: flash 0.3s;
+   animation: flash 0.3s;
+}
+.models-item.model-911:hover .models-item-nav.model-911{
+   display:block;
+}
+.models-background-img.targa911{
+   background-image: url(https://files.porsche.com/filestore/image/usa/en-us/modelseries-911carrera992-flyout-background/normal/9c294107-674e-11e9-80c4-005056bbdc38;sO;twebp065/porsche-normal.webp);
+}
+.models-background-img.turbo{
+   display:none;
+   background-image: url(https://files.porsche.com/filestore/image/usa/en-us/modelseries-911-turbo-flyout-background/normal/77e49341-443d-11ea-80c8-005056bbdc38;sO;twebp065/porsche-normal.webp);
+}
+.models-option.turbo:hover .models-background-img.turbo{
+   opacity: 1;
+  -webkit-animation: flash 0.3s;
+   animation: flash 0.3s;
+   display: block;
+}
+/* //////////////TAYCAN////////// */
+.models-item-nav.model-taycan{
+   display: none;
+   opacity: 1;
+  -webkit-animation: flash 0.3s;
+   animation: flash 0.3s;
+}
+.models-item.model-taycan:hover .models-item-nav.model-taycan{
+   display:block;
+}
+.models-background-img.taycanmodel{
+   background-image: url(https://files.porsche.com/filestore/image/usa/none/model-series-j1-taycan-flyout-background/normal/efb9c4b5-b9b4-11e9-80c4-005056bbdc38;sO;twebp065/porsche-normal.webp);
+}
+.models-background-img.emode{
+   display:none;
+   background-image: url(https://files.porsche.com/filestore/image/multimedia/none/e-performance-flyout-taycan/preview/7a0256b0-e35f-11e9-80c6-005056bbdc38;sO;twebp065/porsche-preview.webp);
+}
+.models-option.emode:hover .models-background-img.emode{
+   opacity: 1;
+  -webkit-animation: flash 0.3s;
+   animation: flash 0.3s;
+   display: block;
+}
+/* //////////PANAMERA MODEL////// */
+.models-item-nav.panamera{
+   display: none;
+   opacity: 1;
+  -webkit-animation: flash 0.3s;
+   animation: flash 0.3s;
+}
+.models-item.model-panamera:hover .models-item-nav.panamera{
+   display:block;
+}
+.models-background-img.panamera{
+   background-image: url(https://files.porsche.com/filestore/image/usa/en-us/jdp-2016-modelseries-flyout-panamera/normal/53e1e5b3-674e-11e9-80c4-005056bbdc38;sO;twebp065/porsche-normal.webp);
+}
+.models-background-img.panamera-gts{
+   display:none;
+   background-image: url(https://files.porsche.com/filestore/image/usa/en-us/modelseries-flyout-panamera-gts/normal/7bf01bb6-674e-11e9-80c4-005056bbdc38;sO;twebp065/porsche-normal.webp);
+}
+.models-option.panamera-gts:hover .models-background-img.panamera-gts{
+   opacity: 1;
+  -webkit-animation: flash 0.3s;
+   animation: flash 0.3s;
+   display: block;
+}
+.models-background-img.panamera-turbo{
+   display:none;
+   background-image: url(https://files.porsche.com/filestore/image/usa/en-us/jdp-2016-modelseries-flyout-panameraturbo/normal/8bd8396c-674e-11e9-80c4-005056bbdc38;sO;twebp065/porsche-normal.webp);
+}
+.models-option.panamera-turbo:hover .models-background-img.panamera-turbo{
+   opacity: 1;
+  -webkit-animation: flash 0.3s;
+   animation: flash 0.3s;
+   display: block;
+}
+.models-background-img.panamera-hybird{
+   display:none;
+   background-image: url(https://files.porsche.com/filestore/image/usa/en-us/jdp-2016-modelseries-flyout-panamerae-hybrid/normal/65ca9bfc-674e-11e9-80c4-005056bbdc38;sO;twebp065/porsche-normal.webp);
+}
+.models-option.panamera-hybird:hover .models-background-img.panamera-hybird{
+   opacity: 1;
+  -webkit-animation: flash 0.3s;
+   animation: flash 0.3s;
+   display: block;
+}
+.models-background-img.panamera-perfomance{
+   display:none;
+   background-image: url(https://files.porsche.com/filestore/image/multimedia/none/e-performance-flyout-panamera/preview/70b47e1a-e35f-11e9-80c6-005056bbdc38;sO;twebp065/porsche-preview.webp);
+}
+.models-option.panamera-perfomance:hover .models-background-img.panamera-perfomance{
+   opacity: 1;
+  -webkit-animation: flash 0.3s;
+   animation: flash 0.3s;
+   display: block;
+}
+/* ////////MODEL MACCAN//////// */
+.models-item-nav.model-maccan{
+   display: none;
+   opacity: 1;
+  -webkit-animation: flash 0.3s;
+   animation: flash 0.3s;
+}
+.models-item.model-maccan:hover .models-item-nav.model-maccan{
+   display:block;
+}
+.models-background-img.model-maccan{
+   background-image: url(https://files.porsche.com/filestore/image/usa/en-us/modelseries-macan-pa-flyout-background/normal/1eb6d103-674e-11e9-80c4-005056bbdc38;sO;twebp065/porsche-normal.webp);
+}
+/* //////////MODEL CAYENNE////// */
+.models-item-nav.model-cayenne{
+   display: none;
+   opacity: 1;
+  -webkit-animation: flash 0.3s;
+   animation: flash 0.3s;
+}
+.models-item.model-cayenne:hover .models-item-nav.model-cayenne{
+   display:block;
+}
+.models-background-img.model-cayenne{
+   background-image: url(https://files.porsche.com/filestore/image/usa/none/9ya-e3-v6-flyout-background/normal/349977cc-aa64-11ea-80ca-005056bbdc38;sO;twebp065/porsche-normal.webp);
+}
+.models-background-img.cayenne-performance{
+   display:none;
+   background-image: url(https://files.porsche.com/filestore/image/usa/none/e-performance-flyout-cayenne/preview/af534190-f6eb-11e9-80c6-005056bbdc38;sO;twebp065/porsche-preview.webp);
+}
+.models-option.cayenne-performance:hover .models-background-img.cayenne-performance{
+   opacity: 1;
+  -webkit-animation: flash 0.3s;
+   animation: flash 0.3s;
+   display: block;
+}
 /* /////////////TOOLS///////// */
 .tools-nav{
    display: none; 
+   -webkit-animation: flash 0.3s;
+   animation: flash 0.3s;
 }
 .tools:hover .tools-nav{
    display: block;
@@ -217,29 +383,26 @@
    width: calc(100vw - var(--model-select-width));
    left: var(--model-select-width);
    border-left: 1px solid black;
-   
 }
 .tools-nav-menu{
    position: absolute;
    top: var(--nav-height);
+   padding-left: 50px;
    left: 0;
    background-color: white;
    width: var(--model-select-width);
    height: var(--models-select-height);
 }
-.tools-nav-menu-list{
-   list-style: none;
-   padding-left: 20;
+.models-item.tools-menu{
+   padding: 18px 0;
    margin: 0;
    text-align: left;
-   
 }
-.tools-nav-menu-item{
-   padding: 8px 0;
-}
-.tools-nav-menu-link{
+
+.model-link.tools-menu{
    text-decoration: none;
    color: #3b3b3b;
+   font-size: 1.5rem;
 }
 
 /* /////////////////////////
