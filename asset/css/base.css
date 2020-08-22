@@ -41,6 +41,7 @@ html{
 *{
     box-sizing: inherit;
 }
+
 .btn-wrap{
     position: absolute;
     display: flex;

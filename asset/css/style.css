@@ -561,9 +561,7 @@ div:hover {
 .map-search-btn:hover{
   background-color: #D5001C;
 }
-.tools-shopping{
-   
-}
+
 .tools__heading h2{
    font-size: 4rem;
    font-weight: 550;
@@ -706,15 +704,15 @@ div:hover {
 }
 .contact,.recall,.privacy{
    height: 50px;
-   min-width: 130px;
+   min-width: 50px;
    background-color: #313639;
    color: white;
-   margin:0 24px 0 12px;
+   /* margin:0 24px 0 12px; */
    text-align: center;
    line-height: 50px;
    font-size: 1.5rem;
    font-weight: 500;
-   padding:0 20px;
+   /* padding-left:14px; */
    transition: background-color 0.2s ease;
 }
 .contact:hover,.recall:hover,.privacy:hover{

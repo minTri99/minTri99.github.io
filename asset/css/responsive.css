@@ -1,0 +1,42 @@
+/* Mobile & Tablet */
+@media (max-width:1024px){
+    
+    .hide-on-mobile-tablet{
+        display: none;
+    }
+    .app{
+        overflow: hidden;
+     }
+}
+
+/* Tablet */
+@media(min-width:740px) and (max-width:1023px){
+    
+    .hide-on-tablet{
+        display:none;
+    }
+    
+}
+
+/* Mobile */
+@media (max-width:740px){
+    
+    .hide-on-mobile {
+        display: none;
+    }
+    .tools-shopping,.discover{
+      padding: 0 16px;
+    }
+    .item-wrap-price{
+        
+    }
+    .item-wrap-img{
+        height: 200px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+     }
+     .mapsite::after{
+         display: none;
+     }
+}
