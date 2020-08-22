@@ -1,3 +1,6 @@
+.app {
+   overflow: hidden;
+}
 .header{
    position: relative;
 }
@@ -526,6 +529,7 @@ div:hover {
    margin-top: 30px;
    position: relative;
 }
+
 .map-heading h2{
    
    font-size: 4rem;
@@ -702,7 +706,7 @@ div:hover {
    color: white;
    font-size: 1.5rem;
 }
-.contact,.recall,.privacy{
+.coppyright-content{
    height: 50px;
    min-width: 50px;
    background-color: #313639;
@@ -712,7 +716,6 @@ div:hover {
    line-height: 50px;
    font-size: 1.5rem;
    font-weight: 500;
-   /* padding-left:14px; */
    transition: background-color 0.2s ease;
 }
 .contact:hover,.recall:hover,.privacy:hover{

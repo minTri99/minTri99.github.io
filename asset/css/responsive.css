@@ -4,9 +4,13 @@
     .hide-on-mobile-tablet{
         display: none;
     }
-    .app{
-        overflow: hidden;
-     }
+    .slide.slide_1,.slide.slide_2,.slide.slide_3,.slide.slide_4{
+        background-size: cover;
+        background-position-x: center;
+    }
+    .slide-content-1{
+        left: 0;
+    }
 }
 
 /* Tablet */
@@ -14,6 +18,9 @@
     
     .hide-on-tablet{
         display:none;
+    }
+    .item-wrap-info{
+        left: 20px;
     }
     
 }
@@ -24,19 +31,60 @@
     .hide-on-mobile {
         display: none;
     }
-    .tools-shopping,.discover{
+    .logo::after,.logo::before{
+        width: 32%;
+    }
+    .tools-shopping,.discover,.model_heading h2,.map-heading h2,.footer{
       padding: 0 16px;
     }
+    .mapsite-heading{
+        padding-top: 20px;
+    }
+    .mapsite-select-region{
+        margin-bottom: 10px;
+    }
+    .coppyright{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    .coppyright-content{
+        margin: 8px 0;
+        text-align: left;
+        padding-left: 16px;
+    }
     .item-wrap-price{
-        
+        padding-left: 10px;
+        position: absolute;
+        left: 0;
+        font-size: 1.4rem;
+    }
+    .item-name{
+        font-size: 2.0rem;
+        margin: 140px 0 0 0;
+        font-weight: 500;
+    }
+    .item-price{
+        margin: 0;
     }
     .item-wrap-img{
         height: 200px;
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
+        
      }
      .mapsite::after{
          display: none;
+     }
+     .map-on-mobile{
+         height: 320px;
+     }
+     .map-search{
+        position: absolute;
+        height: 42px;
+        display: flex;
+        top: 18%;
+        left: 4px;
      }
 }

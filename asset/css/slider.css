@@ -1,7 +1,10 @@
+.slide-img{
+   height: 520px;
+}
 #slider {
     margin: 0 auto;
     width: 100vw;
-    height: 520px;
+    height: 100%;
     max-width: 100%;
     text-align: center;
  }

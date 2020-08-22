@@ -111,6 +111,7 @@ html{
     right: 0%;
  }
  .models-background-img{
+   
    position: absolute;
    background-size: cover;
    background-position: center;
