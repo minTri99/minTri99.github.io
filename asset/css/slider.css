@@ -1,10 +1,9 @@
 .slide-img{
-   height: 520px;
+   height: 890px;
 }
 #slider {
     margin: 0 auto;
     width: 100vw;
-    height: 100%;
     max-width: 100%;
     text-align: center;
  }
@@ -72,25 +71,28 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 200%;
+    height: 320%;
     color: #fff;
  }
  .slide.slide_1 {
     background-size: cover;
-    background-position-y: center;
-   
+    background-position: center;
+   background-repeat: no-repeat;
  }
  .slides.slide_2 {
     background-size: cover;
-    background-position: center;
+    background-position-y: center;
+    background-repeat: no-repeat;
  }
  .slides.slide_3 {
    background-size: cover;
    background-position: center;
+   background-repeat: no-repeat;
  }
  .slides.slide_4 {
    background-size: cover;
    background-position: center;
+   background-repeat: no-repeat;
  }
  #controls {
     margin: -320px 0 0 0;
