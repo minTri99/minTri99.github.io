@@ -3,56 +3,106 @@
    position: relative;
 }
 .nav-on-mobile{
-   display: flex;
    position: absolute;
-   width: 150px;
+   width: 200px;
    justify-content: space-around;
-   right: 20px;
-   top: 20px;
+   right: 40px;
+   top: 40px;
    z-index: 5;
+   display: none;
 }
 .nav-on-mobile-link{
    color: white;
-   font-size: 1.5rem;
+   font-size: 2rem;
+   font-weight: 500;
 }
 .nav-on-mobile-link.models::after{
    position: absolute;
    content: "";
    border-right: 1px solid white;
    height: 20px;
-   left: 80px;
+   left: 105px;
    top: 50%;
    transform: translateY(-50%);
 }
-.overlay{
+
+.model-on-mobile,.menu-on-mobile{
    position: fixed;
-   top: 0;
-   left: 0;
-   right: 0;
-   bottom: 0;
-   color: rgba(255, 255, 255, 0.5);
-}
-.model-on-mobile{
-   position: fixed;
-   top: var(--nav-height);
-   right: 0;
-   bottom: 0;
+   top: 83px;
+   right: -50%;
    width: 50%;
-   display: none;
+   bottom: 0;
+   background-color: white;
+   overflow-y: auto;
+   overflow-x: hidden;
+   transition: right 0.3s ease;
 }
 #model-check:checked ~ .model-on-mobile{
    display: block;
-   scroll-behavior: smooth;
+   right: 0;
+}
+
+#menu-check:checked ~ .menu-on-mobile{
+   display: block;
+   right: -65px;
+}
+.nav-mobile-close{
+   position: absolute;
+   font-size: 3rem;
+   color: gray;
+   right: 20px;
+   top: 35px;
+}
+.nav-mobile-close-menu{
+   position: absolute;
+   font-size: 3rem;
+   color: gray;
+   top:36px;
+   left: 70%;
 }
 .item-wrap-img.tablet{
    height: 200px;
 }
 .model_heading.tablet h2{
-   margin: 24px 0 0 0;
-   padding: 30px 0;
+   margin: 0;
+   padding: 40px;
    background-color: white;
 }
-
+.coppyrigt-heading.tablet{
+   color: var(--text-color);
+   font-size: 1.3rem;
+   margin-top:25px;
+   padding: 0 30px;
+}
+.menu-item-list{
+   padding : 20px 30px;
+   margin-top: 40px;
+}
+.menu-item-link{
+   
+   text-decoration: none;
+   color: var(--text-color);
+   font-size: 1.5rem;
+   padding: 12px 0;
+}
+.menu-item-link-main{
+   text-decoration: none;
+   color: var(--text-color);
+   font-size: 2rem;
+   font-weight: 600;
+   padding: 20px 0;
+   border-bottom: 1px solid gray;
+   width: 80%;
+}
+.map-search-input.tablet{
+   position: relative;
+   margin:0 30px;
+   width: 250px;
+   height: 100%;
+   font-size: 1.4rem;
+   padding-left: 8px;
+   border: 1px solid black;
+}
 #slider {
     margin: 0 auto;
     width: 100vw;

@@ -545,7 +545,7 @@ div:hover {
 }
 
 .map-search-input{
-   min-width: 250px;
+   width: 250px;
    height: 100%;
    font-size: 1.4rem;
    padding-left: 8px;

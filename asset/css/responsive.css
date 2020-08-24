@@ -11,6 +11,9 @@
     .slide-content-1{
         left: 0;
     }
+    .nav-on-mobile{
+        display: flex;
+    }
 }
 
 /* Tablet */
@@ -18,6 +21,9 @@
     
     .hide-on-tablet{
         display:none;
+    }
+    .logo::after,.logo::before{
+        width: 40%;
     }
     .item-wrap-info{
         left: 20px;
@@ -39,6 +45,21 @@
     .logo::after,.logo::before{
         width: 32%;
     }
+    .model-on-mobile,.menu-on-mobile{
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 100%;
+        bottom: 0;
+        background-color: white;
+        overflow-y: auto;
+        overflow-x: hidden;
+        transition: right 0.3s ease;
+     }
+     #menu-check:checked ~ .menu-on-mobile{
+        display: block;
+        right: 0px;
+     }
     .slide-img{
         height: 370px;
      }
