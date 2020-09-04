@@ -51,7 +51,7 @@
    background-color: white;
    position: relative;
    z-index: 10;
-   padding-left: 200px;
+   padding-left: 10rem;
    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
 .main-nav-item {
@@ -60,11 +60,13 @@
 
 .main-nav-item-heading{
    position: relative;
+   font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif ;
    font-size: 1.8rem;
-   font-weight: 650;
+   font-weight: 550;
    padding-bottom: 12px;
    color: var(--text-color);
    padding: 0;
+   padding-bottom: 5px;
 }
 
 .main-nav-item-heading:hover{
@@ -91,6 +93,7 @@
    opacity: 1;
   -webkit-animation: flash 0.3s;
   animation: flash 0.3s;
+  z-index: 10;
 }
 
 .main-nav-item.models:hover .models-select{
@@ -141,6 +144,7 @@
    border-left: 1px solid rgb(199, 199, 199);
    text-align: left;
    height: var(--models-select-height);
+   z-index: 10;
 }
 
 .models-item-nav-menu{
@@ -523,8 +527,9 @@ div:hover {
   background-color: green;
 } */
 
-/* MAP/////////////////// */
-/* /////////////////// */
+
+/* /////// MAP/////////// */
+
 .map{
    margin-top: 30px;
    position: relative;
@@ -540,8 +545,8 @@ div:hover {
    position: absolute;
    height: 42px;
    display: flex;
-   top: 10%;
-   left: 4px
+   top: 9%;
+   right: 8px;
 }
 
 .map-search-input{
@@ -549,7 +554,7 @@ div:hover {
    height: 100%;
    font-size: 1.4rem;
    padding-left: 8px;
-   border: none;
+   border: 1px solid #cccccc;
 }
 .map-search-btn{
    height: 100%;
@@ -609,19 +614,20 @@ div:hover {
 .aaa{
    position: relative;
 }
-.perfomance,.tech,.exclusive,.online-shop{
+.perfomance{
    display: block;
    height: 220px;
    background-size: cover;
    background-position-x: center; 
    background-repeat: no-repeat;   
 }
-.perfomance:hover,.tech:hover,.exclusive:hover,.online-shop:hover{
+.perfomance:hover{
    border-bottom: 2px solid #D5001C;
-   
-  
 }
-.perfomance-heading,.tech-heading,.exclusive-heading,.online-shop-heading{
+.perfomance:hover .perfomance-heading {
+   color: #D5001C;
+}
+.perfomance-heading{
    position: absolute;
    text-decoration: none;
    color: var(--text-color);
@@ -632,9 +638,6 @@ div:hover {
 .perfomance-icon,.exclusive-icon{
    margin-right: 4px; 
    font-size: 1.5rem;
-   color: #D5001C;
-}
-.perfomance-heading:hover{
    color: #D5001C;
 }
 .footer{
@@ -656,7 +659,7 @@ div:hover {
 }
 .mapsite-heading p{
    font-size:2.3rem;
-   font-weight: 600;
+   font-weight: 500;
    color: white;
 }
 .mapsite-select-region,.mapsite-select-country{
@@ -685,15 +688,15 @@ div:hover {
    color: white;
    border: none;
    padding:0 14px;
-   font-size: 1.5rem;
-   font-weight: 500;
+   font-size: 1.4rem;
+   font-weight: 400;
 }
 
 .mapsite-select-region-item{
    background-color: white;
    color: #313639;
-   font-size: 1.5rem;
-   
+   font-size: 1.4rem;
+   font-weight: 400;
 }
 .coppyright{
    margin-top: 30px;
@@ -708,16 +711,26 @@ div:hover {
 }
 .coppyright-content{
    height: 50px;
-   min-width: 50px;
+   max-width: 280px;
    background-color: #313639;
    color: white;
-   /* margin:0 24px 0 12px; */
-   text-align: center;
+   text-align: left;
+   padding: 0 1.2rem;
    line-height: 50px;
-   font-size: 1.5rem;
-   font-weight: 500;
+   font-size: 1.4rem;
+   font-weight: 400;
    transition: background-color 0.2s ease;
 }
 .contact:hover,.recall:hover,.privacy:hover{
    background-color:#D5001C ;
+}
+/* page models */
+
+.model_list {
+   list-style: none;
+   padding: 0;
+}
+.model_list li {
+   padding: 12px 0;
+   border: 1px solid #ccc;
 }

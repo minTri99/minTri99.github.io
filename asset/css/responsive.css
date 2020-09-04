@@ -69,6 +69,23 @@
      #controls {
         margin: -270px 0 0 0;
      }
+     .content-icon{
+        font-size: 2.8rem;
+        padding-right: 5px;
+        color: var(--main-color);
+     }
+     .claim-part-1{
+        font-size: 3rem;
+        font-weight: 500;
+        margin-bottom: 10px;
+        line-height: 2.4rem;
+     }
+     .claim-part-2{
+        font-size: 2rem;
+        font-weight: 500;
+        margin:0 26px;
+        line-height: 2rem;
+     }
     .tools-shopping,.discover,.model_heading h2,.map-heading h2,.footer{
       padding: 0 16px;
     }
@@ -118,6 +135,9 @@
         display: flex;
         flex-direction: column;
         justify-content: space-around;
+    }
+    .coppyright-content {
+        min-width: 100%;
     }
     .coppyrigt-heading{
         margin-top:30px;

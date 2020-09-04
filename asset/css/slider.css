@@ -129,9 +129,11 @@
    padding-right: 10px;
 }
  .slide-content-1{
+    color: white;
     position: relative;
-    left: -10%;
-    bottom: -30%;
+    width: 100%;
+    left: 4%;
+    top: 35%;
     display: block;
     text-align: left;
     transition: color 0.3s ease;
@@ -141,13 +143,14 @@
  }
  .claim-part-1{
     font-size: 4rem;
-    font-weight: 600;
-    margin-bottom: 30px;
+    font-weight: 550;
+    margin-bottom: 16px;
  }
  .claim-part-2{
     font-size: 2.5rem;
     font-weight: 500;
-    margin-left: 26px;
+    margin:0 26px;
+    line-height: 2.5rem;
  }
  #slide1:checked ~ #slides .inner {
     margin-left: 0;
@@ -197,7 +200,7 @@
    background-repeat: no-repeat;
  }
  #controls {
-    margin: -320px 0 0 0;
+    margin: -450px 0 0 0;
     width: 100%;
     height: 50px;
     z-index: 3;
