@@ -729,8 +729,42 @@ div:hover {
 .model_list {
    list-style: none;
    padding: 0;
+   position: relative;
 }
+
+.model_list::after {
+   position: absolute;
+   content: "";
+   border-right: 1px solid #ccc;
+   height: 100%;
+   right: 0;
+   top: 0;
+}
+
 .model_list li {
-   padding: 12px 0;
-   border: 1px solid #ccc;
+  height: 50px;
+   margin: 12px 0;
+   
+}
+.btn {
+   height: 100%;
+   border: 1px solid black;
+   max-width: 185px;
+   text-align: center;
+   line-height: 50px;
+   color: black;
+   font-size: 1.5rem;
+}
+/* HOME PRODUCT */
+.product-img {
+   height: 180px;
+   width: 100%;
+   background-position: center;
+   background-size: contain;
+   margin-bottom: 1rem;
+}
+
+.home_product p {
+   font-size: 1.5rem;
+   margin: 0;
 }
