@@ -4,15 +4,24 @@
     .hide-on-mobile-tablet{
         display: none;
     }
-    .slide.slide_1,.slide.slide_2,.slide.slide_3,.slide.slide_4{
-        background-size: cover;
-        background-position-x: center;
-    }
-    .slide-content-1{
-        left: 0;
-    }
-    .nav-on-mobile{
-        display: flex;
+    .claim-link {
+        padding-left: 5%;
+        padding-right: 5%;
+      }
+ 
+      .claim-part1{
+         font-size: 2.8rem;
+         font-weight: 500;
+         line-height: 3.8rem;
+      }
+      .claim-part2{
+         font-size: 1.8rem;
+         font-weight: 500;
+         line-height: 2.8rem;
+      }
+      .healine{
+        font-size: 2.8rem;
+        line-height: 3.6rem;
     }
 }
 
@@ -25,14 +34,21 @@
     .logo::after,.logo::before{
         width: 40%;
     }
-    .item-wrap-info{
-        left: 20px;
+    .info-wrap {
+        padding: 6px 20px 20px 20px;
     }
-    .slide-img{
-        height: 470px;
+    .text-wrapper {
+        color: white;
+        font-weight: 500;
      }
-    #slides .slide {
-        height: 180%;
+     .headline {
+        line-height: 34px;
+        font-size: 28px;
+       
+     }
+     .price {
+        font-size: 16px;
+        line-height: 24px;
      }
 }
 
@@ -45,106 +61,62 @@
     .logo::after,.logo::before{
         width: 32%;
     }
-    .model-on-mobile,.menu-on-mobile{
-        position: fixed;
-        top: 0;
-        right: -100%;
-        width: 100%;
-        bottom: 0;
-        background-color: white;
-        overflow-y: auto;
-        overflow-x: hidden;
-        transition: right 0.3s ease;
+    .splide__arrow {
+        opacity: 1;
+        width: 3em;
+	    height: 3em;
+    }
+    .info-wrap{
+        padding: 10px 20px 20px 20px;
+    }
+    .text-wrapper {
+        font-weight: 500;
+        position: absolute;
+        bottom: 5%;
      }
-     #menu-check:checked ~ .menu-on-mobile{
+     .headline {
+        margin: 0;
+        line-height: 30px;
+        font-size: 20px;
+        display: flex;
+        align-items: center;
+     }
+     .headline i {
         display: block;
-        right: 0px;
-     }
-    .slide-img{
-        height: 370px;
-     }
-    #slides .slide {
-        height: 150%;
-     }
-     #controls {
-        margin: -270px 0 0 0;
-     }
-     .content-icon{
-        font-size: 2.8rem;
-        padding-right: 5px;
-        color: var(--main-color);
-     }
-     .claim-part-1{
-        font-size: 3rem;
-        font-weight: 500;
-        margin-bottom: 10px;
-        line-height: 2.4rem;
-     }
-     .claim-part-2{
-        font-size: 2rem;
-        font-weight: 500;
-        margin:0 26px;
-        line-height: 2rem;
-     }
-    .tools-shopping,.discover,.model_heading h2,.map-heading h2,.footer{
-      padding: 0 16px;
+        margin-right: 4px;
+        color: red;
+        font-size: 14px;  
     }
-    .mapsite-heading{
-        padding-top: 20px;
+     .price {
+        font-size: 14px;
+        line-height: 20px;
+     }
+    .link-wrapper {
+        display: none;
     }
-    .mapsite-select-region{
-        margin-bottom: 10px;
+    .map-on-mobile {
+        height: 500px;
+    }
+    .map-search {
+        top:12%;
+    }
+    .tools-item {
+        min-height: 180px;
+    }
+    .tools-heading {
+        font-size: 1.8rem;
+    }
+    .healine.select-heading {
+        font-size: 18px;
+        margin: 0;
+    }
+    .footer-wrap {
+        padding: 20px 0;
+    }
+    .select-chosen,.coppyright-content  {
+        margin-top: 8px;
     }
     .mapsite::after{
         display: none;
-    }
-    .map-on-mobile{
-        height: 320px;
-    }
-    .map-search{
-       position: absolute;
-       height: 42px;
-       display: flex;
-       top: 18%;
-       left: 4px;
-    }
-    .item-wrap-price{
-        padding-left: 10px;
-        position: absolute;
-        left: 0;
-        font-size: 1.4rem;
-    }
-    .item-name{
-        font-size: 2.0rem;
-        margin: 140px 0 0 0;
-        font-weight: 500;
-    }
-    .item-price{
-        margin: 0;
-    }
-    .item-wrap-img{
-        height: 200px;
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center;
-     }
-     .footer{
-         padding-bottom: 50px;
-     }
-     .coppyright{
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-    }
-    .coppyright-content {
-        min-width: 100%;
-    }
-    .coppyrigt-heading{
-        margin-top:30px;
-    }
-    .coppyright-content{
-        margin: 8px 0;
-        text-align: left;
-        padding-left: 16px;
     }
 }

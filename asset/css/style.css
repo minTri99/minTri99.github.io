@@ -1,10 +1,4 @@
-.app {
-   overflow: hidden;
-}
-.header{
-   position: relative;
-   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-}
+
 
 .logo{
    z-index: 1;
@@ -36,7 +30,6 @@
    display: block;
   
 }
-
 .logo-img{
    position: relative;
    font-size: 0;
@@ -44,482 +37,283 @@
    height: 50px;  
 }
 /* NAVIGATION BAR */
-.main-nav{
-   display:flex;
-   width: 100%;
-   height:var(--nav-height);
-   align-items: center;
-   background-color: white;
+.menu-container {
    position: relative;
-   z-index: 10;
-   padding-left: 10rem;
-}
-.main-nav-item {
-   padding-left: 30px;
+   margin-top: 40px;
+   display: flex;
+   justify-content: center;
+   border-bottom: 1px solid rgb(212, 212, 212);
+   max-height: 100px;
 }
 
-.main-nav-item-heading{
-   position: relative;
-   font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif ;
-   font-size: 1.8rem;
-   font-weight: 550;
-   padding-bottom: 12px;
-   color: var(--text-color);
-   padding: 0;
-   padding-bottom: 5px;
+.menu-series {
+   display: flex;
+   align-items: stretch;
+}
+.car-series-list {
+   display: flex;
+   flex-direction: row;
+   align-items: baseline;
+}
+.car-series-item {
+   padding: 0 10px;
+   transition: 0.2 ease;
+   border-bottom: 2px solid transparent;
+}
+.car-series-item:hover {
+   border-bottom: 2px solid var(--main-color);
+}
+.car-series-item p {
+   text-align: center;
+   margin-top: -15px;
+   font-size: 14px;
+}
+.shop_more {
+    display: flex;
+    margin-left: 20px;
+    align-items: center;
+    justify-content: center;
+   }
+.shop_more-item {
+   display: flex;
+   align-items: center;
+   padding: 0 14px;
    cursor: default;
+   border-bottom: 2px solid transparent;
+   height: 100%;
 }
-.main-nav-item-heading.models {
-   cursor: pointer;
+
+.shop_more-item span {
+   font-size: 1.5rem;
 }
-.main-nav-item-heading:hover{
+.shop_more-item:hover {
    border-bottom: 2px solid var(--main-color);
    color: var(--main-color);
 }
-.main-nav-item::before{
-   position: absolute;
-   content: "";
-   display: block;
-   width: 150px;
-   height: 30px;
-   top: 35px;
-}
-.models-select{
-   position: absolute;
-   height: var(--models-select-height);
-   width: var(--model-select-width);
-   left: 0;
-   padding-left: 50px;
-   top: var(--nav-height);
-   background-color: white;
-   display: none;
-   opacity: 1;
-  -webkit-animation: flash 0.3s;
-  animation: flash 0.3s;
-  z-index: 10;
-}
 
-.main-nav-item.models:hover .models-select{
-   display: block;
-}
-.models-item{
-   padding-top: 20px;
-}
-.models-heading{
-   font-size: 1.6rem;
-   color: var(--text-color);
-}
-.models-nav-img{
-   width: 110px;
-   height: 60px;
-}
-.model-link{
+.shop_more-item:hover .expand-menu {
+   animation: fadeDown 0.3s ease;
    display: flex;
-   position: relative;
-   align-items: center;
-   justify-content: space-between;
-   padding: 0 40px;
-   text-decoration: none;
-   color: #3b3b3b;
-}
-.model-link::after{
-   position: absolute;
-   content: "";
-   border-bottom: 2px solid var(--main-color);
-   left: 40px;
-   right: 100%;
-   bottom: -20px;
-   animation: fade 0.3s ease;
-   display: none;
 }
 
-.models-item:hover .model-link::after{
-   right: 0%;
-   display: block;
-}
-/*/////////// MODEL 718////////////// */
-.models-item-nav{
-   position: absolute;
-   width: var(--models-nav-width);
-   background-color: #ffffff;
-   left: var(--model-select-width);
-   top: 0;
-   border-left: 1px solid rgb(199, 199, 199);
-   text-align: left;
-   height: var(--models-select-height);
-   z-index: 10;
+.shop_more_overview{
+   padding: 30px 0;
 }
 
-.models-item-nav-menu{
-   background-color: rgba(255, 255, 255,0.9);
-   background-size: cover;
-   background-position: center;
-   height: var(--models-select-height);
-   padding: 0 20px;
-   position: relative;
-}
-.models-background-img.cayman{
-   background-image: url(https://files.porsche.com/filestore/image/usa/en-us/jdp-2016-modelseries-flyout-718-cayman/normal/2ece0ba9-673f-11e9-80c4-005056bbdc38/porsche-normal.jpg);
-}
-.models-tech-wrap{
-   position: absolute;
-   width: 100%;
-   height: 100%;
-   background-color: rgba(0, 0, 0, 0.3);
-   padding-left: 20px;
-}
-.models-tech{
-   margin-top: 30px;
-}
-.models-value,.models-key{
-   color: white;
-
-}
-.models-value{
-   font-size: 2rem;
-   font-weight:700;
+.shop_more_overview-group {
+   width: 347px;
 }
 
-.white-btn.explore-btn{
-   background-color: #D5001C;
-   color: white;
-   text-decoration: none;
+.shop_more_overview-group p {
+   font-size: 2.2rem;
+   color: black;
+   border-bottom: 1px solid black;
+   padding-bottom: 12px;
 }
 
-.models-disclaimer{
-   color: white;
-   font-size: 1rem;
-   position: absolute;
-   bottom: 0;
-   margin-bottom: 6px;
-}
-.models-background-img.boxster{
-   background-image: url(https://files.porsche.com/filestore/image/usa/en-us/jdp-2016-modelseries-flyout-718-boxster/normal/7835f356-674b-11e9-80c4-005056bbdc38;sN;twebp065/porsche-normal.webp);
-   display: none;
-}
-.models-option.boxster:hover .models-background-img.boxster{
-   opacity: 1;
-  -webkit-animation: flash 0.3s;
-   animation: flash 0.3s;
-   display: block;
-}
-.models-background-img.tmode{
-   display:none;
-   background-image: url(https://files.porsche.com/filestore/image/usa/en-us/modelseries-flyout-718-t/normal/b932817e-674b-11e9-80c4-005056bbdc38;sO;twebp065/porsche-normal.webp);
-}
-.models-option.tmode:hover .models-background-img.tmode{
-   opacity: 1;
-  -webkit-animation: flash 0.3s;
-   animation: flash 0.3s;
-   display: block;
-}
-.models-background-img.gts{
-   display:none;
-   background-image: url(https://files.porsche.com/filestore/image/usa/none/modelseries-718-gts-4-flyout-background/normal/04b3ffae-ab04-11ea-80ca-005056bbdc38;sZ;twebp065/porsche-normal.webp);
-}
-.models-option.gts:hover .models-background-img.gts{
-   opacity: 1;
-  -webkit-animation: flash 0.3s;
-   animation: flash 0.3s;
-   display: block;
-}
-.models-background-img.gt4{
-   display:none;
-   background-image: url(https://files.porsche.com/filestore/image/usa/en-us/modelseries-718gt4-flyout-background/normal/76d1d974-b76d-11e9-80c4-005056bbdc38;sO;twebp065/porsche-normal.webp);
-}
-.models-option.gt4:hover .models-background-img.gt4{
-   opacity: 1;
-  -webkit-animation: flash 0.3s;
-   animation: flash 0.3s;
-   display: block;
-}
-.models-background-img.spyder{
-   display:none;
-   background-image: url(https://files.porsche.com/filestore/image/usa/en-us/modelseries-718spyder-flyout-background/normal/088c3575-86ca-11e9-80c4-005056bbdc38;sO;twebp065/porsche-normal.webp);
-}
-.models-option.spyder:hover .models-background-img.spyder{
-   opacity: 1;
-  -webkit-animation: flash 0.3s;
-   animation: flash 0.3s;
-   display: block;
-}
-/*//////// MODEL 911/////////// */
-.models-item-nav.model-911{
-   display: none;
-   opacity: 1;
-  -webkit-animation: flash 0.3s;
-   animation: flash 0.3s;
-}
-.models-item.model-911:hover .models-item-nav.model-911{
-   display:block;
-}
-.models-background-img.targa911{
-   background-image: url(https://files.porsche.com/filestore/image/usa/en-us/modelseries-911carrera992-flyout-background/normal/9c294107-674e-11e9-80c4-005056bbdc38;sO;twebp065/porsche-normal.webp);
-}
-.models-background-img.turbo{
-   display:none;
-   background-image: url(https://files.porsche.com/filestore/image/usa/en-us/modelseries-911-turbo-flyout-background/normal/77e49341-443d-11ea-80c8-005056bbdc38;sO;twebp065/porsche-normal.webp);
-}
-.models-option.turbo:hover .models-background-img.turbo{
-   opacity: 1;
-  -webkit-animation: flash 0.3s;
-   animation: flash 0.3s;
-   display: block;
-}
-/* //////////////TAYCAN////////// */
-.models-item-nav.model-taycan{
-   display: none;
-   opacity: 1;
-  -webkit-animation: flash 0.3s;
-   animation: flash 0.3s;
-}
-.models-item.model-taycan:hover .models-item-nav.model-taycan{
-   display:block;
-}
-.models-background-img.taycanmodel{
-   background-image: url(https://files.porsche.com/filestore/image/usa/none/model-series-j1-taycan-flyout-background/normal/efb9c4b5-b9b4-11e9-80c4-005056bbdc38;sO;twebp065/porsche-normal.webp);
-}
-.models-background-img.emode{
-   display:none;
-   background-image: url(https://files.porsche.com/filestore/image/multimedia/none/e-performance-flyout-taycan/preview/7a0256b0-e35f-11e9-80c6-005056bbdc38;sO;twebp065/porsche-preview.webp);
-}
-.models-option.emode:hover .models-background-img.emode{
-   opacity: 1;
-  -webkit-animation: flash 0.3s;
-   animation: flash 0.3s;
-   display: block;
-}
-/* //////////PANAMERA MODEL////// */
-.models-item-nav.panamera{
-   display: none;
-   opacity: 1;
-  -webkit-animation: flash 0.3s;
-   animation: flash 0.3s;
-}
-.models-item.model-panamera:hover .models-item-nav.panamera{
-   display:block;
-}
-.models-background-img.panamera{
-   background-image: url(https://files.porsche.com/filestore/image/usa/en-us/jdp-2016-modelseries-flyout-panamera/normal/53e1e5b3-674e-11e9-80c4-005056bbdc38;sO;twebp065/porsche-normal.webp);
-}
-.models-background-img.panamera-gts{
-   display:none;
-   background-image: url(https://files.porsche.com/filestore/image/usa/en-us/modelseries-flyout-panamera-gts/normal/7bf01bb6-674e-11e9-80c4-005056bbdc38;sO;twebp065/porsche-normal.webp);
-}
-.models-option.panamera-gts:hover .models-background-img.panamera-gts{
-   opacity: 1;
-  -webkit-animation: flash 0.3s;
-   animation: flash 0.3s;
-   display: block;
-}
-.models-background-img.panamera-turbo{
-   display:none;
-   background-image: url(https://files.porsche.com/filestore/image/usa/en-us/jdp-2016-modelseries-flyout-panameraturbo/normal/8bd8396c-674e-11e9-80c4-005056bbdc38;sO;twebp065/porsche-normal.webp);
-}
-.models-option.panamera-turbo:hover .models-background-img.panamera-turbo{
-   opacity: 1;
-  -webkit-animation: flash 0.3s;
-   animation: flash 0.3s;
-   display: block;
-}
-.models-background-img.panamera-hybird{
-   display:none;
-   background-image: url(https://files.porsche.com/filestore/image/usa/en-us/jdp-2016-modelseries-flyout-panamerae-hybrid/normal/65ca9bfc-674e-11e9-80c4-005056bbdc38;sO;twebp065/porsche-normal.webp);
-}
-.models-option.panamera-hybird:hover .models-background-img.panamera-hybird{
-   opacity: 1;
-  -webkit-animation: flash 0.3s;
-   animation: flash 0.3s;
-   display: block;
-}
-.models-background-img.panamera-perfomance{
-   display:none;
-   background-image: url(https://files.porsche.com/filestore/image/multimedia/none/e-performance-flyout-panamera/preview/70b47e1a-e35f-11e9-80c6-005056bbdc38;sO;twebp065/porsche-preview.webp);
-}
-.models-option.panamera-perfomance:hover .models-background-img.panamera-perfomance{
-   opacity: 1;
-  -webkit-animation: flash 0.3s;
-   animation: flash 0.3s;
-   display: block;
-}
-/* ////////MODEL MACCAN//////// */
-.models-item-nav.model-maccan{
-   display: none;
-   opacity: 1;
-  -webkit-animation: flash 0.3s;
-   animation: flash 0.3s;
-}
-.models-item.model-maccan:hover .models-item-nav.model-maccan{
-   display:block;
-}
-.models-background-img.model-maccan{
-   background-image: url(https://files.porsche.com/filestore/image/usa/en-us/modelseries-macan-pa-flyout-background/normal/1eb6d103-674e-11e9-80c4-005056bbdc38;sO;twebp065/porsche-normal.webp);
-}
-/* //////////MODEL CAYENNE////// */
-.models-item-nav.model-cayenne{
-   display: none;
-   opacity: 1;
-  -webkit-animation: flash 0.3s;
-   animation: flash 0.3s;
-}
-.models-item.model-cayenne:hover .models-item-nav.model-cayenne{
-   display:block;
-}
-.models-background-img.model-cayenne{
-   background-image: url(https://files.porsche.com/filestore/image/usa/none/9ya-e3-v6-flyout-background/normal/349977cc-aa64-11ea-80ca-005056bbdc38;sO;twebp065/porsche-normal.webp);
-}
-.models-background-img.cayenne-performance{
-   display:none;
-   background-image: url(https://files.porsche.com/filestore/image/usa/none/e-performance-flyout-cayenne/preview/af534190-f6eb-11e9-80c6-005056bbdc38;sO;twebp065/porsche-preview.webp);
-}
-.models-option.cayenne-performance:hover .models-background-img.cayenne-performance{
-   opacity: 1;
-  -webkit-animation: flash 0.3s;
-   animation: flash 0.3s;
-   display: block;
-}
-/* /////////////TOOLS///////// */
-.tools-nav{
-   display: none; 
-   -webkit-animation: flash 0.3s;
-   animation: flash 0.3s;
-}
-.tools:hover .tools-nav{
-   display: block;
-}
-.tools-nav-img{
-   position: absolute;
-   background-image: url(https://files.porsche.com/filestore/image/multimedia/none/jdp2018-mainnavi-shoppingtools/normal/9c7f645a-d91f-11e8-bec8-0019999cd470;sZ;tjpeg060/porsche-normal.jpg);
-   background-size: cover;
-   background-position: center ;
-   background-repeat: no-repeat;
-   top: var(--nav-height);
-   height: var(--models-select-height);
-   width: calc(100vw - var(--model-select-width));
-   left: var(--model-select-width);
-   border-left: 1px solid black;
-}
-.tools-nav-menu{
-   position: absolute;
-   top: var(--nav-height);
-   padding-left: 50px;
-   left: 0;
-   background-color: white;
-   width: var(--model-select-width);
-   height: var(--models-select-height);
-}
-.models-item.tools-menu{
-   padding: 18px 0;
-   margin: 0;
-   text-align: left;
+.shop_more_overview-group li {
+   padding-left: 8px;
+   margin: 14px 0;
 }
 
-.model-link.tools-menu{
-   text-decoration: none;
-   color: #3b3b3b;
+.shop_more_overview-group a {
+   color:black;
+   font-size: 1.4rem;
+}
+
+.shop_more_overview-group a:hover {
+   color: var(--main-color);
+}
+
+.separator {
+   width: 1px;
+    height: 3rem;
+    background-color: #c9cacb;
+    margin-left: 2.4rem;
+    margin-right: 2.4rem;
+    transform: translateY(100%);
+}
+
+.metafunction {
+   display: flex;
+   justify-content: center;
+   align-items:center;
+}
+.metafunction-item {
+   margin-right: 40px;
    font-size: 1.5rem;
+   color: black;
 }
-/* /////////SHOP & SERVICE////// */
-.model-link.shop-world::after{
-   bottom: -5px;
+.metafunction-item:hover {
+   color: var(--main-color);
 }
-.models-select.services{
-   display: none ;
+.metafunction-item p {
+   position: absolute;
+   font-size: 1.3rem;
+   margin: 0;
+   right: 0px;
 }
-.main-nav-item.services:hover .models-select.services{
-   display: block ;
+
+.metafunction-item>i {
+   margin-right: 6px;
 }
-.models-background-img.shop{
-   background-image: url(https://files.porsche.com/filestore/image/multimedia/none/jdp2018-mainnavi-shop/normal/7d820ac1-8eb5-11ea-80c9-005056bbdc38;sN;twebp065/porsche-normal.webp);
+/* expand menu */
+@keyframes fadeDown{
+   from{
+      top:70px;
+      opacity: 0;
+   }
+   to{
+      top: 87px;
+      opacity: 1;
+   }
 }
-.models-item-nav.services{
+.expand-menu {
+   position: absolute;
+   left: 0;
+   right: 0;
+   top: 87px;
+   background-color:rgb(255, 255, 255);
+   z-index: 10;
    display: none;
+   flex-direction: column;
+   align-items: center;
+   max-height: 1000px;
 }
-.models-item.services:hover .models-item-nav.services{
-   display: block;
+
+.car-series-item:hover .expand-menu {
+   animation: fadeDown 0.3s ease;
+   opacity: 1;
+   display: flex; 
 }
-.models-background-img.services{
-   background-image: url(https://files.porsche.com/filestore/image/multimedia/none/jdp2018-mainnavi-service/normal/2deea12e-d935-11e8-bec8-0019999cd470;sD;twebp065/porsche-normal.webp);
+
+.car-meta-function {
+   display: flex;
+   align-items: center;
+   border-bottom: 1px solid #c9cacb;
+   border-top: 1px solid #c9cacb;
+   margin: 3rem 0;
+   padding: 1.4rem 0;
 }
-/* ////////PORSCHE WORLD///// */
-.models-select.world{
-   display: none;
+
+.car-meta-function-item {
+   color: #313639;
+   margin: 0 18px;
+   font-size: 16px;
 }
-.main-nav-item.world:hover .models-select.world{
-   display: block;
+
+.car-meta-function-item i {
+   padding-right: 4px;
 }
-.models-background-img.motosport{
-   background-image: url(https://files.porsche.com/filestore/image/multimedia/none/jdp2018-mainnavi-motorsport/normal/5fb74cc2-d935-11e8-bec8-0019999cd470;sD;twebp065/porsche-normal.webp);
+
+.car-meta-function-item:hover {
+   color: var(--main-color)
 }
-.models-background-img.fascination{
-   background-image: url(https://files.porsche.com/filestore/image/multimedia/none/jdp2018-mainnavi-fascination/normal/bbf4e242-d935-11e8-bec8-0019999cd470;sD;twebp065/porsche-normal.webp);
+.car-model-list{
+   width: 1024px;
 }
-.models-item-nav.fascination{
-   display: none;
+.car-model-item{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
 }
-.models-item.fascination:hover .models-item-nav.fascination{
-   display: block;
+.car-model-item:hover p {
+   color: var(--main-color);
 }
-.models-background-img.company{
-   background-image: url(https://files.porsche.com/filestore/image/multimedia/none/jdp2018-mainnavi-company/normal/e6356dc2-d935-11e8-bec8-0019999cd470;sD;twebp065/porsche-normal.webp);
-}
-.models-item-nav.company{
-   display: none;
-}
-.models-item.company:hover .models-item-nav.company{
-   display: block;
-}
+
+
+
 /* /////////////////////////
 ////////////BODY/////////// */
-.model{
-   margin-top: 110px;
+.claim-link {
+   font-size: large;
+   color: white;
+   position: absolute;
+  bottom: 10%;
+  padding-left: 10%;
+  padding-right: 10%;
+  cursor: pointer;
 }
-.model_heading h2{
-    font-size: 4rem;
-    font-weight: 550;
-    
+.claim-link:hover {
+  color:#D5001C ;
+  transition: color ease 0.3s;
+}
+.claim-part1 {
+  margin: 0;
+  padding: 0;
+  font-size: 5.2rem;
+  line-height: 6.4rem;
+  font-weight: 600;
+} 
+.claim-part1 i {
+   color:#D5001C;
+   margin-right: .4rem;
+}
+.claim-part2 {
+  margin: 0;
+  padding: 0;
+  font-size: 2.2rem;
+  line-height: 3.4rem;
+  font-weight: 600;
+}
+.model{
+   margin-top: 4rem;
+}
+.healine{
+    font-size: 3.8rem;
+    font-weight: 520;
+    padding-left: 10%;
+    padding-right: 10%;
 }
 .item-wrap{
    position: relative;
-   background-color: sienna;
+   margin-top: -5px;
 }
-.item-wrap-img{
-   height: 340px;
-   background-repeat: no-repeat;
-   background-size: cover;
-   background-position: center;
+
+.img-wrap img {
+   width: 100%;   
 }
-.item-wrap-price{
-    padding-left: 30px;
+.info-wrap{
     position: absolute;
     top: 0;
-    left: 10px;
-    color: white;
-    font-size: 1.8rem;
-    font-weight: 500;
-}
-.item-name{
-    font-size: 3.8rem;
-    margin: 20px 0;
-    font-weight: 500;
-}
-.item-wrap-info{
-    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 10px 30px 30px 30px;
     display: flex;
-    bottom: 15px;
-    left: 40px;
-    color: white;
-    font-size: 1.7rem;
-    text-align: center;
-    line-height: 50px;
-    height: 50px;
-    margin-bottom: 30px;
+    flex-direction: column;
+    justify-content: space-between;
 }
-.item-wrap-more-icon{
-   font-size: 1.8rem;
-   margin-right: 4px;
-   
+.text-wrapper {
+   color: white;
+   font-weight: 600;
 }
+
+.headline {
+   margin: 0;
+   line-height: 40px;
+   font-size: 34px;
+   display: flex;
+   align-items: center;
+}
+.headline i {
+   display: none;
+}
+.price {
+   font-size: 20px;
+   line-height: 28px;
+}
+
+.link-wrapper {
+   display: flex;
+   flex-wrap: wrap;
+   align-items: flex-end;
+}
+.link-wrapper i {
+   top: 2px;
+   margin-right: 6px;
+}
+
 
 /* change color background */
 /* div {
@@ -534,7 +328,7 @@ div:hover {
 /* /////// MAP/////////// */
 
 .map{
-   margin-top: 30px;
+   margin-top: 40px;
    position: relative;
 }
 
@@ -574,102 +368,145 @@ div:hover {
   background-color: #D5001C;
 }
 
-.tools__heading h2{
-   font-size: 4rem;
-   font-weight: 550;
-   margin-bottom: 35px;
-   
+.shopping-tools {
+   padding-left: 10%;
+   padding-right: 10%;
+   margin-top: 40px;
 }
-.shopping{
+.shopping-tools .healine {
+   padding-left:0;
+}
+.tools-item{
    position: relative;
-}
-.tool__compare,.build,.offer,.finacial{
    display: block;
-   height: 260px;
+   min-height: 250px;
    background-size: cover;
    background-position: center;
-   
 }
-.tool__compare-heading,.build-heading,.offer-heading,.finacial-heading{
+.tools-heading{
    position: absolute;
+   padding: 6px 12px 12px 12px;
    text-decoration: none;
    color: white;
    font-size: 2rem;
    font-weight: 500;
-   top: 80%;
-   left: 10%;
+   bottom: 0;
    transition: color 0.3s ease;
 }
-.tool__compare-icon,.finacial-icon{
+.tools-icon{
    margin-right: 4px;
    font-size: 2rem;
    color: #D5001C;
 }
 
-.tool__compare-heading:hover,.build-heading:hover,.offer-heading:hover,.finacial-heading:hover{
+.tools-item:hover .tools-heading{
    color: #D5001C;
 }
 
-.discover__heading h2{
-   font-size: 4rem;
-   font-weight: 550;
+
+.live {
+   padding-left: 10%;
+   padding-right: 10%;
+   margin-top: 40px;
 }
-.aaa{
+
+.live .healine {
+   padding-left:0;
+}
+@keyframes opacity {
+   from{
+      opacity: 1;
+   }
+   to {
+      opacity: 0.3;
+   }
+}
+.live-item a:hover {
+   transition: opacity 0.4s ease;
+   opacity: 0.3;
+}
+.image-main{
+   width: 100%;
+}
+
+.image{
+   width: 100%;
+   padding-top:2px;
+}
+.discover{
+   padding-right: 10%;
+   padding-left: 10%;
+   margin-top: 40px;
+}
+.discover .healine {
+   padding-left: 0;
+}
+.discover-item{
    position: relative;
 }
-.perfomance{
-   display: block;
-   height: 220px;
-   background-size: cover;
-   background-position-x: center; 
-   background-repeat: no-repeat;   
+.discover-item img {
+   width: 100%;
 }
-.perfomance:hover{
-   border-bottom: 2px solid #D5001C;
-}
-.perfomance:hover .perfomance-heading {
-   color: #D5001C;
-}
-.perfomance-heading{
-   position: absolute;
+
+.discover-title{
+   position: relative;
    text-decoration: none;
    color: var(--text-color);
    font-size: 1.5rem; 
-   top: 100%;
    padding-top: 4px; 
 }
-.perfomance-icon,.exclusive-icon{
+.discover-title::after {
+   content: "";
+    position: absolute;
+    bottom: 125%;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background-color: var(--main-color);
+    opacity: 0;
+    transition: opacity .24s;
+    z-index: 100;
+}
+.discover-item:hover .discover-title::after{
+   opacity: 100;
+}
+.discover-item:hover .discover-title  {
+   transition: 0.2s ease;
+   color: var(--main-color);
+}
+
+.discover-icon{
    margin-right: 4px; 
    font-size: 1.5rem;
    color: #D5001C;
 }
-.footer{
-   display: block;
-   padding: 10px 0 40px 0;
-   margin-top: 50px;
+/*////////////// FOOTER /////////////*/
+.footer-wrap {
    background-color: #191f22;
+   padding: 30px 0;
+   margin-top: 40px;
+}
+.select-heading.healine {
+   color: white;
 }
 .mapsite{
    position: relative;
+   margin-left: 10%;
+   margin-right: 10%;
 }
 .mapsite::after{
    position: absolute;
    content: "";
-   border-bottom: 2px solid #494e51;
+   border-bottom: 1px solid #494e51;
    width: 100%;
-   margin-left: 12px;
    top: 170%;
 }
-.mapsite-heading p{
-   font-size:2.3rem;
-   font-weight: 500;
-   color: white;
-}
-.mapsite-select-region,.mapsite-select-country{
+
+.select-chosen{
    width: 100%;
    height: 50px;
    background-color: #313639;
-   padding: 0 20px;
+   padding-right: 20px;
    line-height: 50px;
    font-size: 1.5rem;
    font-weight: 500;
@@ -677,12 +514,10 @@ div:hover {
    display: flex;
    justify-content: space-between;
    align-items: center;
-}
-.mapsite-select-region{
    position: relative;
 }
+
 .mapsite-select-region-select{
-   position: absolute;
    width: 100%;
    height: 50px;
    top: 0;
@@ -693,6 +528,7 @@ div:hover {
    padding:0 14px;
    font-size: 1.4rem;
    font-weight: 400;
+   position: absolute;
 }
 
 .mapsite-select-region-item{
@@ -701,20 +537,23 @@ div:hover {
    font-size: 1.4rem;
    font-weight: 400;
 }
-.coppyright{
-   margin-top: 30px;
+
+.coppyright-wrap {
+   padding-left: 10%;
+   padding-right: 10%;
 }
+
 .coppyright-icon{
    padding-right: 10px;
 }
-.coppyrigt-heading{
+.coppyrigt-heading.healine{
    margin-top: 60px;
    color: white;
    font-size: 1.5rem;
+   padding-left: 0;
 }
 .coppyright-content{
-   height: 50px;
-   max-width: 280px;
+   text-decoration: none;
    background-color: #313639;
    color: white;
    text-align: left;
@@ -724,6 +563,7 @@ div:hover {
    font-weight: 400;
    transition: background-color 0.2s ease;
 }
+
 .coppyright-content:hover{
    background-color:#D5001C ;
 }
