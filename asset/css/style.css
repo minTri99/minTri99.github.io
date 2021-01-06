@@ -408,8 +408,11 @@ div:hover {
    padding-left: 10%;
    padding-right: 10%;
    margin-top: 40px;
+   position: relative;
 }
-
+.load-more {
+   display: none;
+}
 .live .healine {
    padding-left:0;
 }
@@ -432,6 +435,9 @@ div:hover {
 .image{
    width: 100%;
    padding-top:2px;
+}
+.discover-slider{
+   display: none;
 }
 .discover{
    padding-right: 10%;

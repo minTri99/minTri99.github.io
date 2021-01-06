@@ -634,7 +634,7 @@
                         <img class="image" src="./asset/image/live1.jpg" alt="">
                       </a>
                     </div>
-                    <div class="col lg-6 md-6">
+                    <div class="col lg-6 md-6 hide-on-mobile">
                       <a href="#">
                         <img class="image" src="./asset/image/live2.jpg" alt="">
                       </a>
@@ -642,7 +642,7 @@
                   </div>
                 </div>
               </div>
-              <div class="col lg-4 sm-12 hide-on-tablet">
+              <div class="col lg-4 sm-12 hide-on-mobile-tablet">
                 <div class="live-item">
                   <div class="row sm-gutter">
                     <div class="col lg-6">
@@ -661,7 +661,7 @@
                   </a>
                 </div>
               </div>
-              <div class="col lg-4 hide-on-tablet">
+              <div class="col lg-4 hide-on-mobile-tablet">
                 <div class="live-item">
                   <a href="#">
                     <img class="image-main" src="./asset/image/live-main3.jpg" alt="">
@@ -678,13 +678,16 @@
                   </div>
                 </div>
               </div>
+              <div class="load-more">
+                <a class="main-btn load-more-btn" href=""><i style="top: 3px; position: relative;" class="tools-icon fas fa-angle-right"></i>Load more</a>
+              </div>
             </div>
           </div>
         </section>
         <section class="discover">
           <div class="grid">
             <h2 class="healine">Discover</h2>
-            <div class="row no-gutter">
+            <div class="row no-gutter hide-on-mobile-tablet">
               <div class="col lg-3 md-6">
                 <a href="" class="discover-item">
                   <img
@@ -740,6 +743,48 @@
                     >
                   </div>
                 </a>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col md-12 sm-12">
+                <div id="card-slider" class="splide discover-slider">
+                  <div class="splide__track">
+                    <ul class="splide__list">
+                      <li class="splide__slide">
+                        <div class="splide__slide__container">
+                          <img src="./asset/image/discover1.webp">
+                        </div>
+                        <div class="discover-title" >
+                          <i style="top: 3px; position: relative;" class="tools-icon fas fa-angle-right"></i>Porsche Perfomance
+                        </div>
+                      </li>
+                      <li class="splide__slide">
+                        <div class="splide__slide__container">
+                          <img src="./asset/image/discover2.webp">
+                        </div>
+                        <div class="discover-title">
+                          <i style="top: 3px; position: relative;" class="tools-icon fas fa-angle-right"></i>Porsche Perfomance
+                        </div>
+                      </li>
+                      <li class="splide__slide">
+                        <div class="splide__slide__container">
+                          <img src="./asset/image/discover3.webp">
+                        </div>
+                        <div class="discover-title">
+                          <i style="top: 3px; position: relative;" class="tools-icon fas fa-angle-right"></i>Porsche Perfomance
+                        </div>
+                      </li>
+                      <li class="splide__slide">
+                        <div class="splide__slide__container">
+                          <img src="./asset/image/discover4.webp">
+                        </div>
+                        <div class="discover-title">
+                          <i style="top: 3px; position: relative;" class="tools-icon fas fa-angle-right"></i>Porsche Perfomance
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -861,6 +906,17 @@
             'heightRatio': 0.5,
             breakpoints: {740: {'heightRatio': 1,},}
         } ).mount();
+    </script>
+    <script>
+      document.addEventListener( 'DOMContentLoaded', function () {
+	new Splide( '#card-slider', {
+    'cover':true,
+    'heightRatio' :0.4,
+    type      : 'loop',
+    perPage   : 2,
+    breakpoints: {740: {'heightRatio': 1,type: 'loop', perPage: 1, },}
+	} ).mount();
+} );
     </script>
   </body>
 </html>
