@@ -5857,3 +5857,26 @@ var complete_Splide = /*#__PURE__*/function (_Core) {
 window.Splide = complete_Splide;
 /******/ })()
 ;
+
+new Splide(".splide", {
+  rewind: true,
+  cover: true,
+  heightRatio: 0.5,
+  breakpoints: { 740: { heightRatio: 1 } },
+}).mount();
+
+document.addEventListener("DOMContentLoaded", function () {
+  new Splide("#card-slider", {
+    cover: true,
+    heightRatio: 0.4,
+    perPage: 2,
+    perMove: 1,
+    breakpoints: { 740: { heightRatio: 1, type: "loop", perPage: 1 } },
+  }).mount();
+});
+
+
+function myFunction() {
+  document.querySelector('.menu-tablet').classList.toggle('open')
+  
+}
